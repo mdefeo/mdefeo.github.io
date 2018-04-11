@@ -590,7 +590,7 @@ input[type=submit]:hover {
     line-height: 110%;
 }
 
-.social p {
+.social p, .food p {
     margin: 0 20px 20px 0;
 }
 
