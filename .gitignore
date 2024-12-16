@@ -1,98 +1,23 @@
-# Dependency directories
-node_modules/
-jspm_packages/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# TypeScript cache
-*.tsbuildinfo
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Compiled binary addons
-build/Release
+# testing
+/coverage
 
-# Logs
-logs/
-*.log
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-
-# Coverage reports
-coverage/
-*.lcov
-.nyc_output
-
-# Runtime data
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# Bundler output
-dist/
-
-# Environment files
-.env*
-.env.local
-
-# Ignored files
-.DS_Store
-*.tgz
-
-# Editor directories and files
-.vscode/
-.vscode-test/
-.idea/
-
-# Testing
-/coverage
-
-# Production
-/build
-
-# Cache directories
-.cache/
-.parcel-cache/
-.next/
-.nuxt/
-.docusaurus/
-.fusebox/
-.temp
-.cache
-
-# Miscellaneous
-.serverless/
-.dynamodb/
-.tern-port
-.grunt
-.lib-cov
-.lock-wscript
-*.tsbuildinfo
-
-# Parcel, Bower, Snowpack
-.bower_components
-.web_modules
-
-# Prettier
-.prettierc
-.prettierrc.js
-
-# ESLint
-.eslintcache
-
-# Stylelint
-.stylelintcache
-
-# Bundle caches
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Yarn Berry
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
