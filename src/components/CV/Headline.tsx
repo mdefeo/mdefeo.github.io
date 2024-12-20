@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
           {/* Column 1: Content */}
           <div className="flex-1">
             <h2 className="text-3xl font-bold text-blue-600">Marcello De Feo</h2>
-            <p className="text-lg text-gray-700">Software Engineer / Leader</p>
+            <p className="text-lg text-gray-700">Full-Stack Engineer & Leader</p>
             <p className="text-sm text-gray-500">Philadelphia, PA</p>
             <p className="text-sm text-gray-500">MBA Candidate at Boston University</p>
             <p className="text-sm text-gray-500">LinkedIn: <a href="https://linkedin.com/in/marcellodefeo" target="_blank" rel="noopener noreferrer" className="text-blue-600">linkedin.com/in/marcellodefeo</a></p>

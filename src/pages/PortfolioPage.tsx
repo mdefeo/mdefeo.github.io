@@ -1,5 +1,6 @@
 import React from 'react';
 import useMetaData from '../hooks/useMetaData';
+import { Applications, Themes, Projects, Plugins } from '../components/Portfolio/Sections';
 
 const PortfolioPage: React.FC = () => {
   useMetaData({
@@ -10,11 +11,16 @@ const PortfolioPage: React.FC = () => {
   });
 
   return (
-    <div>
-      <h1>Welcome to Marcello De Feo’s Home Page</h1>
-      <p>This is the content of the home page.</p>
+    <div className="space-y-8">
+      <Applications />
+      <Plugins />
+      <Themes />
+      <Projects />
     </div>
+
   );
 };
 
 export default PortfolioPage;
+
+

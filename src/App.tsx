@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import CVPage from './pages/CVPage';
-import MusicPage from './pages/MusicPage';
+import { AboutPage, CVPage, HomePage, MusicPage, PortfolioPage } from './pages/Index';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +22,10 @@ const App: React.FC = () => {
         <Route
           path="/music"
           element={<Layout><MusicPage /></Layout>}
+        />
+        <Route
+          path="/portfolio"
+          element={<Layout><PortfolioPage /></Layout>}
         />
       </Routes>
     </Router>
