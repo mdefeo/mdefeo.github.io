@@ -1,32 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout';
-import { AboutPage, CVPage, HomePage, MusicPage, PortfolioPage } from './pages/Index';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import { AboutPage, CVPage, HomePage, MusicPage, PortfolioPage } from "./pages/Index";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={<Layout><HomePage /></Layout>}
-        />
-        <Route
-          path="/about"
-          element={<Layout><AboutPage /></Layout>}
-        />
-        <Route
-          path="/cv"
-          element={<Layout><CVPage /></Layout>}
-        />
-        <Route
-          path="/music"
-          element={<Layout><MusicPage /></Layout>}
-        />
-        <Route
-          path="/portfolio"
-          element={<Layout><PortfolioPage /></Layout>}
-        />
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/cv" element={<CVPage />} />
+          <Route path="/music" element={<MusicPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+        </Route>
+        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </Router>
   );

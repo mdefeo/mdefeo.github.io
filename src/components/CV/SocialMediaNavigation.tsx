@@ -17,8 +17,9 @@ const SocialMediaNavigation: React.FC = () => {
           >
           <Img 
             src="/social_media/linkedin.svg"
-            alt="BSky Profile"
+            alt="LinkedIn Profile"
             style={imgDimensions}
+            loading="lazy"
           />
         </Link>
         <Link
@@ -31,6 +32,7 @@ const SocialMediaNavigation: React.FC = () => {
             src="/social_media/bluesky.svg"
             alt="BSky Profile"
             style={imgDimensions}
+            loading="lazy"
           />
         </Link>
         <Link 
@@ -43,6 +45,7 @@ const SocialMediaNavigation: React.FC = () => {
             src="/social_media/facebook.svg"
             alt="Facebook Profile"
             style={imgDimensions}
+            loading="lazy"
           />
         </Link>
         <Link 
@@ -55,6 +58,7 @@ const SocialMediaNavigation: React.FC = () => {
             src="/social_media/instagram.svg"
             alt="Instagram Profile"
             style={imgDimensions}
+            loading="lazy"
           />
         </Link>
         <Link 
@@ -65,8 +69,9 @@ const SocialMediaNavigation: React.FC = () => {
           >
           <Img 
             src="/social_media/bandcamp.svg"
-            alt="BSky Profile"
+            alt="Slot Car Racers Bandcamp"
             style={imgDimensions}
+            loading="lazy"
           />            
         </Link>
       </div>

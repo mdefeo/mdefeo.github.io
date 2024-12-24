@@ -1,28 +1,28 @@
 // pages/CVPage.tsx
 import React from 'react';
-import SocialMediaNavigation from '../SocialMediaNavigation';
+import { Img } from 'react-image';
+import SocialMediaNavigation from './SocialMediaNavigation';
 
-const Skills: React.FC = () => {
+const Headline: React.FC = () => {
   return (
     <div>
       <section className="bg-gray-100 p-8 rounded-lg shadow-md">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {/* Column 1: Content */}
           <div className="flex-1">
-            <h2 className="text-3xl font-bold text-blue-600">Marcello De Feo</h2>
+            <h2 className="text-3xl font-bold text-sky-900">Marcello De Feo</h2>
             <p className="text-lg text-gray-700">Full-Stack Engineer & Leader</p>
             <p className="text-sm text-gray-500">Philadelphia, PA</p>
             <p className="text-sm text-gray-500">MBA Candidate at Boston University</p>
-            <p className="text-sm text-gray-500">LinkedIn: <a href="https://linkedin.com/in/marcellodefeo" target="_blank" rel="noopener noreferrer" className="text-blue-600">linkedin.com/in/marcellodefeo</a></p>
+            <p className="text-sm text-gray-500">LinkedIn: <a href="https://linkedin.com/in/marcellodefeo" target="_blank" rel="noopener noreferrer" className="text-sky-800">linkedin.com/in/marcellodefeo</a></p>
             <SocialMediaNavigation />
           </div>
 
-          {/* Column 2: Image */}
           <div className="flex justify-end">
-            <img 
+            <Img 
               src="/headshot.jpg"
               alt="Marcello De Feo"
-              className="rounded-full w-48 h-48 object-cover"
+              className="rounded-badge w-48 h-48 object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -31,4 +31,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;
+export default Headline;

@@ -5,8 +5,6 @@ const ThemeToggle: React.FC = () => {
 
   const handleThemeToggle = () => {
     setIsDarkTheme(!isDarkTheme);
-    // Here you can add logic to switch the theme in your application, 
-    // e.g., applying a 'dark' class to the body or toggling a theme in a state management library.
   };
 
   return (
