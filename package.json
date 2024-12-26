@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "daisyui": "^4.12.22",
+    "dompurify": "^3.2.3",
+    "dotenv": "^16.4.7",
     "gsap": "^3.12.5",
     "next": "15.1.2",
     "react": "^19.0.0",

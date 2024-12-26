@@ -1,26 +1,12 @@
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
 
-const imgDimensions = { height: 24, width: 24 };
+import Link from "next/link";
+import Image from "next/image";
 
 const SocialMediaNavigation: React.FC = () => {
   return (
     <nav>
       <div className="flex space-x-4 mt-8">
-        <Link
-          href="https://www.linkedin.com/in/marcellodefeo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center"
-        >
-          <Image
-            src="/social_media/linkedin.svg"
-            alt="LinkedIn Profile"
-            width={imgDimensions.width}
-            height={imgDimensions.height}
-            priority
-          />
-        </Link>
         <Link
           href="https://bsky.app/profile/flyers.bsky.social"
           target="_blank"
@@ -30,9 +16,23 @@ const SocialMediaNavigation: React.FC = () => {
           <Image
             src="/social_media/bluesky.svg"
             alt="BSky Profile"
-            width={imgDimensions.width}
-            height={imgDimensions.height}
-            priority
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/marcellodefeo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center"
+        >
+          <Image
+            src="/social_media/linkedin.svg"
+            alt="LinkedIn Profile"
+            width={32}
+            height={32}
+            className="h-8 w-8"
           />
         </Link>
         <Link
@@ -44,9 +44,9 @@ const SocialMediaNavigation: React.FC = () => {
           <Image
             src="/social_media/facebook.svg"
             alt="Facebook Profile"
-            width={imgDimensions.width}
-            height={imgDimensions.height}
-            priority
+            width={32}
+            height={32}
+            className="h-8 w-8"
           />
         </Link>
         <Link
@@ -58,9 +58,9 @@ const SocialMediaNavigation: React.FC = () => {
           <Image
             src="/social_media/instagram.svg"
             alt="Instagram Profile"
-            width={imgDimensions.width}
-            height={imgDimensions.height}
-            priority
+            width={32}
+            height={32}
+            className="h-8 w-8"
           />
         </Link>
         <Link
@@ -72,9 +72,9 @@ const SocialMediaNavigation: React.FC = () => {
           <Image
             src="/social_media/bandcamp.svg"
             alt="Slot Car Racers Bandcamp"
-            width={imgDimensions.width}
-            height={imgDimensions.height}
-            priority
+            width={32}
+            height={32}
+            className="h-8 w-8"
           />
         </Link>
       </div>

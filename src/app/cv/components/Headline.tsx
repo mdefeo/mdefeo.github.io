@@ -16,10 +16,9 @@ const Headline: React.FC = () => {
             <p className="text-sm text-gray-500">LinkedIn: <a href="https://linkedin.com/in/marcellodefeo" target="_blank" rel="noopener noreferrer" className="text-sky-800">linkedin.com/in/marcellodefeo</a></p>
             <SocialMediaNavigation />
           </div>
-
           <div className="flex justify-end">
             <Image 
-              src="/images/marcello-de-feo.jpg" 
+              src="/marcello-de-feo.jpg" 
               alt="Marcello De Feo" 
               width={200} 
               height={200} 

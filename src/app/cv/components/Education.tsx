@@ -9,7 +9,7 @@ const Education: React.FC = () => {
         <div className="space-y-4">
           <div>
             <h4 className="text-xl font-bold text-gray-800">Boston University, Questrom School of Business</h4>
-            <p className="text-sm text-gray-500">MBA (in progress)</p>
+            <p className="text-sm text-gray-500">MBA Candidate</p>
           </div>
           <div>
             <h4 className="text-xl font-bold text-gray-800">Saint Joseph&apos;s University</h4>
