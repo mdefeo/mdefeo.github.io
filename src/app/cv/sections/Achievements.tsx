@@ -2,18 +2,12 @@
 
 export default function Achievements() {
   return (
-    <section
-      aria-labelledby="achievements-heading"
-      role="contentinfo"
-      className="p-8"
-    >
-      <h2 id="achievements-heading" className="text-4xl font-bold">
-        Achievements
-      </h2>
-      <ul className="list-disc pl-6">
-        <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
-        <li>Experienced with GSAP and TailwindCSS</li>
-        <li>Strong knowledge of accessibility standards and best practices</li>
+    <section aria-labelledby="achievements-heading" role="contentinfo">
+      <h2 id="achievements-heading">Achievements</h2>
+      <ul>
+        <li>Mentored and managed cross-functional development teams, enhancing productivity by 25%.</li>
+        <li>Engineered scalable B2B data visualization portals that increased customer retention by 10%.</li>
+        <li>Led development of GPS tracking system that reduced theft to 0% and improved efficiency by 35%.</li>
       </ul>
     </section>
   );

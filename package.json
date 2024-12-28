@@ -32,10 +32,10 @@
     "react-dom": "^19.0.0"
   },
   "scripts": {
-    "start:dev": "cross-env NODE_ENV=development yarn next dev",
     "build:dev": "cross-env NEXT_PUBLIC_ENV=development yarn next build",
+    "start:dev": "cross-env NODE_ENV=development yarn next dev",
+    "build:prod": "cross-env NODE_ENV=production yarn next build",
     "start:prod": "yarn next start",
-    "build:prod": "yarn next build",
     "lint": "yarn next lint",
     "lint:fix": "yarn next lint --fix",
     "test": "yarn jest --passWithNoTests",
@@ -55,6 +55,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "cross-env": "^7.0.3",
     "daisyui": "^4.12.23",
+    "dompurify": "^3.2.3",
     "dotenv": "^16.4.7",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "gsap": "^3.12.5",

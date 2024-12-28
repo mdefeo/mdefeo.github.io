@@ -2,19 +2,20 @@
 
 export default function Education() {
   return (
-    <section
-      aria-labelledby="education-heading"
-      role="contentinfo"
-      className="p-8"
-    >
-      <h2 id="education-heading" className="text-4xl font-bold">
+    <section aria-labelledby="education-heading" role="contentinfo">
+      <h2 id="education-heading">
         Education
       </h2>
-      <ul className="list-disc pl-6">
-        <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
-        <li>Experienced with GSAP and TailwindCSS</li>
-        <li>Strong knowledge of accessibility standards and best practices</li>
-      </ul>
+      <div className="space-y-4">
+        <div>
+          <h4>Boston University, Questrom School of Business</h4>
+          <p>MBA Candidate</p>
+        </div>
+        <div>
+          <h4>Saint Joseph&apos;s University</h4>
+          <p>Dual Bachelor&apos;s Degree in English and Fine Arts with a focus on Digital Design</p>
+        </div>
+      </div>
     </section>
   );
 }
