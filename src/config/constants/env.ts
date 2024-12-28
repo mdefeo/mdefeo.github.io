@@ -1,7 +1,9 @@
 // env.ts
 import dotenv from "dotenv";
 
-dotenv.config();
+const envFile =
+  process.env.NODE_ENV === "development" ? ".env.development" : ".env";
+dotenv.config({ path: envFile });
 
 export const APP_ENV = process.env.APP_ENV || "development";
 export const APP_DEBUG = process.env.APP_DEBUG === "true";

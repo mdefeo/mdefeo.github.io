@@ -1,0 +1,23 @@
+/* Accessibility Styles */
+
+/* Skip to Content Link */
+.skip-to-content-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-content-link:focus {
+  top: 0;
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}

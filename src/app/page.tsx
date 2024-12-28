@@ -1,19 +1,27 @@
-import React from "react";
-import HomeContent from "./home/HomeContent";
+import HeroSection from "@/components/HeroSection";
+import { About, Chat, Hello, Personal, Professional, Writing } from "./about/sections";
 
-export const metadata = {
-  title: "Welcome",
-  description: "Explore the professional portfolio of Marcello De Feo, showcasing Full-Stack Software Engineering projects and more.",
-  openGraph: {
-    title: "Welcome",
-    description: "Explore the professional portfolio of Marcello De Feo.",
-    url: "/",
-    type: "website",
-  },
-};
-
-const Home: React.FC = () => {
-  return <HomeContent />;
-};
-
-export default Home;
+export default function CVPage() {
+  return (
+    <div id="main-content" className="focus:outline-none">
+      <HeroSection id="hello">
+        <Hello />
+      </HeroSection>
+      <HeroSection id="about">
+        <About />
+      </HeroSection>
+      <HeroSection id="chat">
+        <Chat />
+      </HeroSection>
+      <HeroSection id="personal">
+        <Personal />
+      </HeroSection>
+      <HeroSection id="professional">
+        <Professional />
+      </HeroSection>
+      <HeroSection id="writing">
+        <Writing />
+      </HeroSection>
+    </div>
+  );
+}

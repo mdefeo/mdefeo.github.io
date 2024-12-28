@@ -1,26 +1,22 @@
-import Navigation from "@/components/layout/Navigation";
-import "@/styles/globals.css";
-import DynamicMeta from "@/components/seo/DynamicMetaData";
-import { APP_THEME } from "@/config/constants/index";
-import { DEFAULT_METADATA } from "@/config/defaultMetaData";
+import MainNavigation from "@/components/navigation/MainNavigation";
+import "../styles/globals.css";
 
 export default function RootLayout({
   children,
-  metadata = DEFAULT_METADATA,
 }: {
   children: React.ReactNode;
-  metadata?: Partial<typeof DEFAULT_METADATA>;
 }) {
   return (
-    <html lang="en" data-theme={APP_THEME}>
+    <html lang="en">
       <head>
-        <DynamicMeta {...metadata} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Welcome to Marcello De Feo's portfolio." />
       </head>
-      <body className="bg-base-100">
-        <div className="min-h-screen flex flex-col">
-          <Navigation />
-          <main className="flex-1">{children}</main>
-        </div>
+      <body>
+        <header>
+          <MainNavigation />
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   );
