@@ -1,3 +1,4 @@
+// /src/app/about/sections/About.tsx
 "use client";
 
 export default function About() {

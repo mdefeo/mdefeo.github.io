@@ -1,3 +1,4 @@
+// /src/app/music/sections/index.tsx
 export { default as Bands } from "./Bands";
 export { default as Favorites } from "./Favorites";
 export { default as Gear } from "./Gear";

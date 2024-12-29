@@ -1,4 +1,4 @@
-// messages.ts
+// /src/config/constants/messages.ts
 export const ERROR_MESSAGES = {
   NETWORK_ERROR: "Unable to connect. Please check your network.",
   UNAUTHORIZED: "You are not authorized to perform this action.",

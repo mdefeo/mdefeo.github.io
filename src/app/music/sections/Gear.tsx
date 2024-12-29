@@ -1,3 +1,4 @@
+// /src/app/music/sections/Gear.tsx
 "use client";
 
 export default function Gear() {

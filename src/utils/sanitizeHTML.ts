@@ -1,8 +1,9 @@
-import DOMPurify from "dompurify";
+// /src/utils/sanitizeHTML.ts
+import sanitizeHtml from "sanitize-html";
 
 export function sanitizeHTML(html: string): string {
-  if (typeof window !== "undefined") {
-    return DOMPurify.sanitize(html);
-  }
-  return html;
+  return sanitizeHtml(html, {
+    allowedTags: sanitizeHtml.defaults.allowedTags,
+    allowedAttributes: sanitizeHtml.defaults.allowedAttributes,
+  });
 }

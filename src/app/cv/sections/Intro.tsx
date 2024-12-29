@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Intro.tsx
 "use client";
 import Image from "next/image";
 import SocialMediaNavigation from "@/components/navigation/SocialMediaNavigation";

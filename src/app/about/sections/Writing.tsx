@@ -1,3 +1,4 @@
+// /src/app/about/sections/Writing.tsx
 "use client";
 
 export default function Writing() {

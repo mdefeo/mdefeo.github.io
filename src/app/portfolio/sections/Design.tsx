@@ -1,3 +1,4 @@
+// /src/app/portfolio/sections/Design.tsx
 "use client";
 
 export default function Design() {

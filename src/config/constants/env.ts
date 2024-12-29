@@ -1,4 +1,4 @@
-// env.ts
+// /src/config/constants/env.ts
 import dotenv from "dotenv";
 
 const envFile =

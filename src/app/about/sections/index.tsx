@@ -1,3 +1,4 @@
+// /src/app/about/sections/index.tsx
 export { default as About } from "./About";
 export { default as Chat } from "./Chat";
 export { default as Hello } from "./Hello";

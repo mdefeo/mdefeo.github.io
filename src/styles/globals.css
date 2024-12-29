@@ -10,29 +10,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-ul {
-  @apply list-disc pl-6;
-}
-
-h2 {
-  @apply text-3xl font-bold;
-}
-
-h4 {
-  @apply text-xl font-bold;
-}
-
-section {
-  @apply p-8;
-}
-
-/* Root Variables */
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 /* Global Styles */
 html,
 body,
@@ -48,6 +25,13 @@ body,
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  perspective: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Typography */
@@ -62,29 +46,54 @@ h6 {
 }
 
 h3 {
-  font-size: larger;
-  margin-top: 0.75em;
+  @apply text-lg font-bold mt-3;
 }
 
-/* Layout */
+/* Content Utilities */
+ul {
+  @apply list-disc pl-6;
+}
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h4 {
+  @apply text-xl font-bold;
+}
+
+/* Layout Utilities */
 .page-container {
-  position: relative;
+  @apply flex h-screen relative;
+}
+
+.page-section-nav {
+  @apply hidden md:block w-36 flex-shrink-0 bg-white shadow-md z-50;
+}
+
+.main-content {
+  @apply flex-grow overflow-y-auto focus:outline-none;
 }
 
 .content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  text-align: center;
+  @apply relative z-10 p-5 text-center;
 }
 
 /* Hero Section */
+main {
+  @apply w-full h-full overflow-y-scroll;
+}
+
+section {
+  @apply w-full relative z-20;
+}
+
+main {
+  transform-style: preserve-3d;
+}
+
 .hero-parent-container {
-  opacity: 0;
-  transform: scale(0.75);
-  height: calc(100vh - 4em);
-  width: calc(100vw - 4em);
-  box-sizing: border-box;
+  @apply opacity-0 scale-75 h-[calc(100vh-4em)] w-[calc(100vw-4em)] box-border;
   background-image: linear-gradient(
     325deg,
     hsl(219deg 96% 9%) 0%,
@@ -98,21 +107,36 @@ h3 {
 
 /* Signature Wrapper */
 .signature-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply flex justify-center items-center;
 }
 
 /* Phrases */
 .phrases-container,
 .phrase {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-optical-sizing: auto;
-  text-align: center;
-  color: #333;
-  font-size: 1.5rem;
+  @apply font-sans text-center text-gray-800 text-xl;
 }
 
 .phrases-container .text-gray-500 {
-  margin: 0 0.5rem;
+  @apply mx-2;
+}
+
+/* Social Media Navigation (specific to CV page) */
+.social-media-nav {
+  @apply flex justify-center space-x-4 mt-8;
+}
+
+.social-media-nav a {
+  @apply text-gray-600 transition-transform duration-200 hover:text-primary;
+}
+
+.social-media-nav svg {
+  @apply h-8 w-8;
+}
+
+
+.spotify-player iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
 }

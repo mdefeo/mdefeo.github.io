@@ -1,42 +1,28 @@
+// /src/app/portfolio/page.tsx
 import HeroSection from "@/components/HeroSection";
+import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
 import { Clients, Design, Development, Freelance } from "./sections";
-import { getPageMetadata } from "@/utils/metaData";
 
-// Page-specific metadata
-export async function generateMetadata() {
-  const meta = getPageMetadata("portfolio");
-  return {
-    title: meta.title,
-    description: meta.description,
-    openGraph: {
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-  };
-}
+export { generateMetadata } from "./metadata";
 
-export default function MusicPage() {
+export default function PortfolioPage() {
   return (
-    <div id="main-content" className="focus:outline-none">
-      <HeroSection id="clients">
-        <Clients />
-      </HeroSection>
-      <HeroSection id="design">
-        <Design />
-      </HeroSection>
-      <HeroSection id="development">
-        <Development />
-      </HeroSection>
-      <HeroSection id="freelance">
-        <Freelance />
-      </HeroSection>
-    </div>
+    <ClientPageNavigation>
+      <section id="portfolio-main-content" className="focus:outline-none">
+        <h1 className="sr-only">Portfolio Page Sections</h1>
+        <HeroSection id="clients">
+          <Clients />
+        </HeroSection>
+        <HeroSection id="design">
+          <Design />
+        </HeroSection>
+        <HeroSection id="development">
+          <Development />
+        </HeroSection>
+        <HeroSection id="freelance">
+          <Freelance />
+        </HeroSection>
+      </section>
+    </ClientPageNavigation>
   );
 }

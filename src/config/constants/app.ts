@@ -1,4 +1,4 @@
-// app.ts
+// /src/config/constants/app.ts
 import { APP_URL } from "./env";
 
 export const APP_NAME = process.env.APP_NAME || "Marcello De Feo";

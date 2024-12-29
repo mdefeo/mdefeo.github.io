@@ -1,12 +1,13 @@
+// /src/components/navigation/MainNavigation.tsx
 "use client";
 
 import Link from "next/link";
 
 export default function MainNavigation() {
   return (
-    <nav className="navbar ml-6 mt-6 bg-transparent fixed top-0 z-50 bg-opacity-75">
+    <nav className="navbar ml-6 mt-6 bg-transparent fixed top-0 z-10">
       <div className="navbar-start flex">
-        <div className="dropdown">
+        <div className="dropdown" data-dropdown-trigger="click">
           <button
             tabIndex={0}
             role="button"
@@ -30,7 +31,8 @@ export default function MainNavigation() {
           </button>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-base-300"
+            className="menu menu-sm dropdown-content z-[1] mt-3 w-52 p-2"
+            data-dropdown-dismiss="true"
           >
             <li>
               <Link href="/">About</Link>
@@ -43,15 +45,6 @@ export default function MainNavigation() {
             </li>
             <li>
               <Link href="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link
-                href="https://thelastmeritocracy.medium.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Blog
-              </Link>
             </li>
           </ul>
         </div>

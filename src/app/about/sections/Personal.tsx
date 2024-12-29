@@ -1,3 +1,4 @@
+// /src/app/about/sections/Personal.tsx
 "use client";
 
 export default function Personal() {

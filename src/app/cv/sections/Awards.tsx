@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Awards.tsx
 "use client";
 
 export default function Awards() {

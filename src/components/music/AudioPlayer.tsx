@@ -1,3 +1,4 @@
+// /src/components/music/AudioPlayer.tsx
 "use client";
 
 import { AudioPlayerProps } from "../../types/AudioPlayerProps";

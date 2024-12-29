@@ -1,49 +1,34 @@
+// /src/app/page.tsx
 import HeroSection from "@/components/HeroSection";
 import { About, Chat, Hello, Personal, Professional, Writing } from "./about/sections";
-import { Metadata } from "next";
-import { getPageMetadata } from "@/utils/metaData";
+import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const meta = getPageMetadata("homepage");
-
-  return {
-    title: meta.title,
-    description: meta.description,
-    openGraph: {
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-  };
-}
+export { generateMetadata } from "./about/metadata";
 
 export default function HomePage() {
   return (
-    <div id="main-content" className="focus:outline-none">
-      <HeroSection id="hello">
-        <Hello />
-      </HeroSection>
-      <HeroSection id="about">
-        <About />
-      </HeroSection>
-      <HeroSection id="chat">
-        <Chat />
-      </HeroSection>
-      <HeroSection id="personal">
-        <Personal />
-      </HeroSection>
-      <HeroSection id="professional">
-        <Professional />
-      </HeroSection>
-      <HeroSection id="writing">
-        <Writing />
-      </HeroSection>
-    </div>
+    <ClientPageNavigation>
+      <section id="home-main-content" className="focus:outline-none">
+        <h1 className="sr-only">About Page Sections</h1>
+        <HeroSection id="hello">
+          <Hello />
+        </HeroSection>
+        <HeroSection id="about">
+          <About />
+        </HeroSection>
+        <HeroSection id="chat">
+          <Chat />
+        </HeroSection>
+        <HeroSection id="personal">
+          <Personal />
+        </HeroSection>
+        <HeroSection id="professional">
+          <Professional />
+        </HeroSection>
+        <HeroSection id="writing">
+          <Writing />
+        </HeroSection>
+      </section>
+    </ClientPageNavigation>
   );
 }

@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Education.tsx
 "use client";
 
 export default function Education() {

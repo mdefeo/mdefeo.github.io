@@ -1,3 +1,4 @@
+// /src/components/about/chatbot/Avatar.tsx
 "use client";
 
 import Image from "next/image";

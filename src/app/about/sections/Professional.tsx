@@ -1,3 +1,4 @@
+// /src/app/about/sections/Professional.ts
 "use client";
 
 export default function Professional() {

@@ -1,3 +1,4 @@
+// /src/app/about/sections/Hello.tsx
 "use client";
 
 export default function Hello() {

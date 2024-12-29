@@ -1,3 +1,4 @@
+// /src/app/music/sections/Bands.tsx
 "use client";
 
 export default function Bands() {

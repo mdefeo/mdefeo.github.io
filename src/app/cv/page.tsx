@@ -1,56 +1,40 @@
-import { getPageMetadata } from "@/utils/metaData";
+// /src/app/cv/page.tsx
 import HeroSection from "@/components/HeroSection";
+import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
 import { Achievements, Awards, Education, Entrepreneurship, Experience, Intro, Skills, Summary } from "./sections";
 
-// Page-specific metadata
-export async function generateMetadata() {
-  const meta = getPageMetadata("cv");
-  return {
-    title: meta.title,
-    description: meta.description,
-    openGraph: {
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: meta.title,
-      description: meta.description,
-      images: meta.images,
-    },
-  };
-}
+export { generateMetadata } from "./metadata";
 
-
-// Page content
 export default function CVPage() {
   return (
-    <div id="main-content" className="focus:outline-none">
-      <HeroSection id="intro">
-        <Intro />
-      </HeroSection>
-      <HeroSection id="summary">
-        <Summary />
-      </HeroSection>
-      <HeroSection id="experience">
-        <Experience />
-      </HeroSection>
-      <HeroSection id="entrepreneurship">
-        <Entrepreneurship />
-      </HeroSection>
-      <HeroSection id="education">
-        <Education />
-      </HeroSection>
-      <HeroSection id="skills">
-        <Skills />
-      </HeroSection>
-      <HeroSection id="achievements">
-        <Achievements />
-      </HeroSection>
-      <HeroSection id="awards">
-        <Awards />
-      </HeroSection>
-    </div>
+    <ClientPageNavigation>
+      <section id="cv-main-content" className="focus:outline-none">
+        <h1 className="sr-only">Curriculum Vitae</h1>
+        <HeroSection id="intro">
+          <Intro />
+        </HeroSection>
+        <HeroSection id="summary">
+          <Summary />
+        </HeroSection>
+        <HeroSection id="experience">
+          <Experience />
+        </HeroSection>
+        <HeroSection id="entrepreneurship">
+          <Entrepreneurship />
+        </HeroSection>
+        <HeroSection id="education">
+          <Education />
+        </HeroSection>
+        <HeroSection id="skills">
+          <Skills />
+        </HeroSection>
+        <HeroSection id="achievements">
+          <Achievements />
+        </HeroSection>
+        <HeroSection id="awards">
+          <Awards />
+        </HeroSection>
+      </section>
+    </ClientPageNavigation>
   );
 }

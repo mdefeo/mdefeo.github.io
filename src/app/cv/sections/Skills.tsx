@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Skills.tsx
 "use client";
 
 export default function Skills() {

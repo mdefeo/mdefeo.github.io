@@ -1,3 +1,4 @@
+// /src/app/portfolio/sections/Freelance.tsx
 "use client";
 
 export default function Freelance() {

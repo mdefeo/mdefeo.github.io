@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Summary.tsx
 "use client";
 
 export default function Summary() {

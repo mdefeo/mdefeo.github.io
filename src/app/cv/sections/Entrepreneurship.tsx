@@ -1,3 +1,4 @@
+// /src/app/cv/sections/Entrepreneurship.tsx
 "use client";
 
 export default function Entrepreneurship() {

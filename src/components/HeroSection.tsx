@@ -1,3 +1,4 @@
+// /src/components/HeroSection.tsx
 "use client";
 
 import { HeroSectionProps } from "@/types/HeroSectionProps";
@@ -37,7 +38,7 @@ export default function HeroSection({ id, heading, children }: HeroSectionProps)
           {heading}
         </h2>
       )}
-      <div className="w-full">{children}</div>
+      <div className="w-full h-screen">{children}</div>
     </section>
   );
 }

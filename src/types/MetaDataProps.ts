@@ -1,11 +1,18 @@
-export interface PageMetadata {
-  title: string;
-  description: string;
-  images: string[];
-}
-
+// /src/types/MetaDataProps.ts
 export interface MetaData {
-  homepage: PageMetadata;
-  cv: PageMetadata;
-  [key: string]: PageMetadata;
+  [key: string]: {
+    title: string;
+    description: string;
+    openGraph: {
+      title: string;
+      description: string;
+      images: string[];
+    };
+    twitter: {
+      card: string;
+      title: string;
+      description: string;
+      images: string[];
+    };
+  };
 }

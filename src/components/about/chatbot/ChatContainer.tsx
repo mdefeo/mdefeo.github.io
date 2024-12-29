@@ -1,9 +1,10 @@
+// /src/components/about/chatbot/ChatContainer.tsx
 "use client";
 
 import ChatBody from "./ChatBody";
 import ChatForm from "./ChatForm";
 import { useState, useRef, useEffect } from "react";
-import DOMPurify from "dompurify";
+import { sanitizeHTML } from "@/utils/sanitizeHTML";
 import bioDataJson from "@/data/json/bio.json";
 import curseWordsJson from "@/data/json/cursewords.json";
 import keywordsJson from "@/data/json/keywords.json";
@@ -103,7 +104,7 @@ const ChatContainer: React.FC = () => {
         setUserInput={setUserInput}
         handleSubmit={(e) => {
           e.preventDefault();
-          const sanitizedInput = DOMPurify.sanitize(userInput);
+          const sanitizedInput = sanitizeHTML(userInput);
           handleSubmit(sanitizedInput);
         }}
       />
