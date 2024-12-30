@@ -1,15 +1,60 @@
 // /src/app/cv/sections/Awards.tsx
 "use client";
 
-export default function Awards() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons"; // Importing relevant icons
+
+export default function AchievementsAndAwards() {
   return (
-    <section aria-labelledby="awards-heading" role="contentinfo">
-      <h2 id="awards-heading">Awards</h2>
-      <ul>
-        <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
-        <li>Experienced with GSAP and TailwindCSS</li>
-        <li>Strong knowledge of accessibility standards and best practices</li>
-      </ul>
-    </section>
+    <div className="space-y-8">
+      {/* Select Awards */}
+      <section aria-labelledby="select-awards-heading" className="space-y-4">
+        <h2 id="select-awards-heading" className="text-3xl font-bold">Select Awards</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Best of Award for Public Service</h3>
+            <p className="text-gray-700">
+              Philadelphia Holocaust Remembrance Foundation Website and Interactive Timeline.
+            </p>
+          </div>
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Gold Award for Broadcast/Electronic Digital</h3>
+            <p className="text-gray-700">
+              Public Service award for the Philadelphia Holocaust Remembrance Foundation Website.
+            </p>
+          </div>
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Gold Award for Product Microsites</h3>
+            <p className="text-gray-700">
+              Digital Advertising award for the IKEA New Movers Microsite.
+            </p>
+          </div>
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Gold Award for Consumer Websites</h3>
+            <p className="text-gray-700">
+              Digital Advertising award for the IKEA Interactive Seasonal Catalog.
+            </p>
+          </div>
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Web Project of the Year Nominee</h3>
+            <p className="text-gray-700">
+              Philadelphia Holocaust Remembrance Foundation website development.
+            </p>
+          </div>
+          <div className="card bg-white p-6 shadow-lg rounded-xl">
+            <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />
+            <h3 className="font-semibold text-lg">Webby Awards Honoree</h3>
+            <p className="text-gray-700">
+              IKEA Seasonal Launch Vehicle digital catalog.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

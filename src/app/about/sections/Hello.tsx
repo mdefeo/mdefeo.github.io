@@ -1,15 +1,19 @@
 // /src/app/about/sections/Hello.tsx
 "use client";
+import React from "react";
+import Signature from "@/components/about/signature/Signature";
 
 export default function Hello() {
+
   return (
-    <section aria-labelledby="hello-heading" role="contentinfo">
-      <h2 id="hello-heading">Hello</h2>
-      <ul>
-        <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
-        <li>Experienced with GSAP and TailwindCSS</li>
-        <li>Strong knowledge of accessibility standards and best practices</li>
-      </ul>
+    <section
+      aria-labelledby="hello-heading"
+      role="contentinfo"
+      className="flex flex-col items-center justify-center h-full"
+    >
+      <div className="signature-wrapper mb-4">
+        <Signature />
+      </div>
     </section>
   );
 }

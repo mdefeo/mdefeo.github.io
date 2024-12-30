@@ -4,7 +4,7 @@
 import { HeroSectionProps } from "@/types/HeroSectionProps";
 import { useState, useEffect } from "react";
 
-export default function HeroSection({ id, heading, children }: HeroSectionProps) {
+export default function HeroSection({ id, slide, heading, children }: HeroSectionProps) {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function HeroSection({ id, heading, children }: HeroSectionProps)
       <section
         id={id}
         className="hero-section min-h-screen flex flex-col items-center justify-center p-8 bg-gray-100"
-      > 
+      >
         <div className="animate-pulse">
           <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="#333" strokeWidth="4"></circle>
@@ -26,19 +26,27 @@ export default function HeroSection({ id, heading, children }: HeroSectionProps)
       </section>
     );
   }
+
   return (
     <section
       id={id}
       aria-labelledby={heading ? `${id}-heading` : undefined}
-      className="min-h-screen flex flex-col items-center justify-center p-8 bg-gray-100"
+      data-slide={slide}
+      className="section-transition min-h-screen flex flex-col items-center justify-center p-8 bg-gray-100"
       role="region"
     >
-      {heading && (
-        <h2 id={`${id}-heading`} className="text-4xl font-bold mb-4">
-          {heading}
-        </h2>
-      )}
-      <div className="w-full h-screen">{children}</div>
+      <div className="max-w-screen-lg mx-auto w-full p-4">
+        {heading && (
+          <h2 id={`${id}-heading`} className="text-4xl font-bold mb-4">
+            {heading}
+          </h2>
+        )}
+        <div className="w-full h-full flex items-center justify-center -m-4">
+          <div className="p-4">
+            {children}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

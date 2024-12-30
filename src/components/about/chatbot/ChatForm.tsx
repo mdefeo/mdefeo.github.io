@@ -1,11 +1,6 @@
 // /src/components/about/chatbot/ChatForm.tsx
 "use client";
-
-interface ChatFormProps {
-  userInput: string;
-  setUserInput: (value: string) => void;
-  handleSubmit: (e: React.FormEvent) => void;
-}
+import ChatFormProps from "@/types/ChatFormProps";
 
 const ChatForm: React.FC<ChatFormProps> = ({ userInput, setUserInput, handleSubmit }) => {
   return (

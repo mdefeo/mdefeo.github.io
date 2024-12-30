@@ -21,17 +21,15 @@ body,
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+  perspective: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html {
   scroll-behavior: smooth;
   overflow: hidden;
-}
-
-body {
-  perspective: 4px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 /* Typography */
@@ -43,6 +41,7 @@ h5,
 h6 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
+  margin-bottom: .5em;
 }
 
 h3 {
@@ -92,6 +91,20 @@ main {
   transform-style: preserve-3d;
 }
 
+/* Basic styling for the section */
+.section {
+  opacity: 0;
+  transform: translateY(50px); /* Start from a lower position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Style when the section is visible in the viewport */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0); /* End at its normal position */
+}
+
 .hero-parent-container {
   @apply opacity-0 scale-75 h-[calc(100vh-4em)] w-[calc(100vw-4em)] box-border;
   background-image: linear-gradient(
@@ -139,4 +152,61 @@ main {
   height: 100%;
   border: none;
   border-radius: 12px;
+}
+
+.section-transition {
+  box-shadow: 0 4px 10px rgba(200, 200, 200, 0.1), 0 12px 60px rgba(100, 100, 100, 0.2);
+  border-radius: 5px;
+
+}
+/* Add this CSS in your global CSS file */
+.hero-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-section.visible {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.border-animation::before,
+.border-animation::after {
+  content: '';
+  position: fixed;
+  background-color: #000;
+}
+
+.border-animation::before {
+  top: 50px;
+  left: 50px;
+  width: 0;
+  height: 1px;
+  animation: draw-right 1s forwards;
+}
+
+.border-animation::after {
+  top: 50px;
+  left: 50px;
+  width: 1px;
+  height: 0;
+  animation: draw-bottom 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes draw-right {
+  to {
+    width: 50px;
+  }
+}
+
+@keyframes draw-bottom {
+  to {
+    height: 50px;
+  }
 }

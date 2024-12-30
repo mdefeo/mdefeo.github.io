@@ -1,46 +1,102 @@
-// /src/app/cv/sections/Skills.tsx
 "use client";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons"; 
+
+import SkillIcon from "@/components/SkillIcon";
 
 export default function Skills() {
   return (
     <section aria-labelledby="skills-heading" role="contentinfo">
-      <h2 id="skills-heading">Skills</h2>
-      <div className="space-y-4">
-        <div>
-          <h4>Back-End Technologies</h4>
-          <ul>
-            <li>Node.js, PHP, Express.js, NestJS, Python, Perl, Jest, RESTful API development, Docker</li>
-          </ul>
+      <h2 id="skills-heading" className="text-3xl font-bold mb-6">Skills</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <h4 className="text-xl font-semibold">Back-End Technologies</h4>
+          </div>
+          <SkillIcon name="node" alt="Node.js" />
+          <SkillIcon name="php" alt="PHP" />
+          <SkillIcon name="express" alt="Express.js" />
+          <SkillIcon name="nest" alt="Nest.js" />
+          <SkillIcon name="python" alt="Python" />
+          <SkillIcon name="perl" alt="Perl" />
+          <SkillIcon name="jest" alt="Jest" />
+          <SkillIcon name="docker" alt="Docker" />
+          <SkillIcon name="api" alt="RESTful API Development" />
         </div>
-        <div>
-          <h4>Front-End Technologies</h4>
-          <ul>
-            <li>React, Next.js, HTML5, CSS3, JavaScript, TypeScript, Bootstrap, Tailwind, Material UI</li>
-          </ul>
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faCode} className="text-green-500 text-2xl mr-4" />
+            <h4 className="text-xl font-semibold">Front-End Technologies</h4>
+          </div>
+          <SkillIcon name="react" alt="React" />
+          <SkillIcon name="next" alt="Next.js" />
+          <SkillIcon name="html5" alt="HTML5" />
+          <SkillIcon name="css3" alt="CSS3" />
+          <SkillIcon name="javascript" alt="JavaScript" />
+          <SkillIcon name="typescript" alt="TypeScript" />
+          <SkillIcon name="bootstrap" alt="Bootstrap" />
+          <SkillIcon name="tailwind" alt="Tailwind" />
+          <SkillIcon name="material" alt="Material UI" />
         </div>
-        <div>
-          <h4>Databases & Storage</h4>
-          <ul>
-            <li>Azure SQL, MySQL, PostgreSQL, MongoDB, Redis</li>
-          </ul>
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faDatabase} className="text-purple-500 text-2xl mr-4" />
+            <h4 className="text-xl font-semibold">Databases & Storage</h4>
+          </div>
+          <SkillIcon name="azureSql" alt="Azure SQL" />
+          <SkillIcon name="mysql" alt="MySQL" />
+          <SkillIcon name="postgresql" alt="PostgreSQL" />
+          <SkillIcon name="mongodb" alt="MongoDB" />
+          <SkillIcon name="redis" alt="Redis" />
         </div>
-        <div>
-          <h4>Development Practices</h4>
-          <ul>
-            <li>Agile, Scrum, CI/CD, TDD, Git, Unit/API/E2E Testing, Web Scraping, Code Reviews, Pair Programming, Documentation</li>
-          </ul>
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faCogs} className="text-orange-500 text-2xl mr-4" />
+            <h4 className="text-xl font-semibold">Development Practices</h4>
+          </div>
+          <SkillIcon name="agile" alt="Agile" />
+          <SkillIcon name="sync" alt="CI/CD" />
+          <SkillIcon name="scrum" alt="Scrum" />
+          <SkillIcon name="git" alt="Git" />
+          <SkillIcon name="brackets" alt="Test-Driven Development" />
+          <SkillIcon name="postman" alt="Unit/API/E2E Testing" />
+          <SkillIcon name="playwright" alt="Web Scraping" />
+          <SkillIcon name="reviews" alt="Code Reviews" />
         </div>
-        <div>
-          <h4>Web Servers & Security Protocols</h4>
-          <ul>
-            <li>Apache, NGINX, SSL/TLS, OAuth, JWT, Debian Linux, SOC 2, HIPAA Compliance</li>
-          </ul>
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faTools} className="text-yellow-500 text-2xl mr-4" />
+            <h4 className="text-xl font-semibold">Web Servers & Security</h4>
+          </div>
+          <SkillIcon name="azure" alt="Azure" />
+          <SkillIcon name="aws" alt="AWS" />
+          <SkillIcon name="apache" alt="Apache" size="14" />
+          <SkillIcon name="nginx" alt="NGINX" />
+          <SkillIcon name="oauth" alt="OAuth" />
+          <SkillIcon name="jwt" alt="JWT" />
+          <SkillIcon name="debian" alt="Debian Linux" />
+          <SkillIcon name="ssl" alt="SSL/TLS" />
+          <SkillIcon name="shield" alt="SOC 2" />
+          <SkillIcon name="caduceus" alt="HIPAA Compliance" />
         </div>
-        <div>
-          <h4>Leadership & Management</h4>
-          <ul>
-            <li>Strategic Planning, Budgeting, Financial Management, Marketing, Team Leadership, Staff Development</li>
-          </ul>
+
+        <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faUsers} className="text-red-500 text-2xl mr-4" />
+            <h4 className="text-xl font-semibold">Leadership & Management</h4>
+          </div>
+          <SkillIcon name="finance" alt="Financial Management" />
+          <SkillIcon name="marketing" alt="Marketing" />
+          <SkillIcon name="chess" alt="Strategic Planning" />
+          <SkillIcon name="staff" alt="Staff Development" />
+          <SkillIcon name="budget" alt="Budgeting" />
+          <SkillIcon name="leadership" alt="Team Leadership" />
         </div>
       </div>
     </section>

@@ -3,13 +3,13 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { PageSectionNavigationProps } from "@/types/SectionNavigationProps";
+import type { PageSectionNavigation } from "@/types/SectionNavigationProps";
 import { debounce } from "lodash";
 
 
 export default function PageSectionNavigation({
   sections,
-}: PageSectionNavigationProps) {
+}: PageSectionNavigation) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {

@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import {
   faLinkedin,
   faFacebook,
-  faInstagram,
+  faSquareInstagram,
   faBandcamp,
   faBluesky,
 } from "@fortawesome/free-brands-svg-icons";
@@ -20,7 +20,7 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faBluesky} className="h-8 w-8" />
+        <FontAwesomeIcon icon={faBluesky} className="mr-4 text-[#87CEEB]" size="xl" />
       </Link>
 
       <Link
@@ -28,7 +28,7 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8" />
+        <FontAwesomeIcon icon={faLinkedin} className="mr-4 text-[#0077B5]" size="xl" />
       </Link>
 
       <Link
@@ -36,7 +36,7 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faFacebook} className="h-8 w-8" />
+        <FontAwesomeIcon icon={faFacebook} className="mr-4 text-[#316FF6]" size="xl" />
       </Link>
 
       <Link
@@ -44,7 +44,7 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
+        <FontAwesomeIcon icon={faSquareInstagram} className="mr-4 text-[#c13584]" size="xl" />
       </Link>
 
       <Link
@@ -52,7 +52,7 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faBandcamp} className="h-8 w-8" />
+        <FontAwesomeIcon icon={faBandcamp} className="text-[#629aa9]" size="xl" />
       </Link>
     </nav>
   );

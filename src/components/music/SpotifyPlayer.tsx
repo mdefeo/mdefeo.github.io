@@ -13,7 +13,6 @@ const SpotifyPlayer: React.FC<SpotifyPlayerProps> = ({ spotifyUrl }) => {
 
         const data = await response.json();
 
-        // Remove `allowfullscreen` from the oEmbed HTML if present
         const sanitizedHtml = data.html.replace(/allowfullscreen/gi, "");
         setOEmbedHtml(sanitizedHtml);
       } catch (error) {
