@@ -1,11 +1,8 @@
-// /src/components/navigation/PageSectionNavigation.tsx
 "use client";
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { PageSectionNavigation } from "@/types/SectionNavigationProps";
 import { debounce } from "lodash";
-
 
 export default function PageSectionNavigation({
   sections,

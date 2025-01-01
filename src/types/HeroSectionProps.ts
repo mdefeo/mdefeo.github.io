@@ -4,4 +4,5 @@ export interface HeroSectionProps {
   slide: string;
   heading?: string;
   children: React.ReactNode;
+  bgColor?: string;
 }

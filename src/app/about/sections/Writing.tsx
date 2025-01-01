@@ -1,10 +1,10 @@
-// /src/app/about/sections/Writing.tsx
 "use client";
+import SectionHeader from "@/components/SectionHeading";
 
 export default function Writing() {
   return (
     <section aria-labelledby="writing-heading" role="contentinfo">
-      <h2 id="writing-heading">Writing</h2>
+      <SectionHeader id="writing" name="Writing" />
       <ul>
         <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
         <li>Experienced with GSAP and TailwindCSS</li>

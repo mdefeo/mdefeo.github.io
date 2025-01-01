@@ -1,14 +1,13 @@
-// /src/app/cv/sections/Achievements.tsx
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy, faCheckCircle, faTools, faShieldAlt, faCog, faDatabase } from "@fortawesome/free-solid-svg-icons"; 
+import SectionHeader from "@/components/SectionHeading";
 
 export default function AchievementsAndAwards() {
   return (
     <div className="space-y-8">
       <section aria-labelledby="key-achievements-heading" className="space-y-4">
-        <h2 id="key-achievements-heading" className="text-3xl font-bold">Key Achievements</h2>
+        <SectionHeader id="key-achievements" name="Key Achievements" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card bg-white p-6 shadow-lg rounded-xl">
             <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />

@@ -1,8 +1,6 @@
-// /src/app/cv/page.tsx
 import HeroSection from "@/components/HeroSection";
 import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
-import { Achievements, Awards, Education, Entrepreneurship, Experience, Intro, Skills } from "./sections";
-import SectionTransitions from "@/components/SectionTransitions";
+import { Achievements, Awards, Education, Entrepreneurship, Experience, Skills } from "./sections";
 
 export { generateMetadata } from "./metadata";
 
@@ -11,26 +9,22 @@ export default function CVPage() {
     <ClientPageNavigation>
       <section id="cv-main-content" className="focus:outline-none">
         <h1 className="sr-only">Curriculum Vitae</h1>
-        <SectionTransitions />
-        <HeroSection id="intro" slide="1">
-          <Intro />
-        </HeroSection>
-        <HeroSection id="experience" slide="2">
+        <HeroSection id="experience" slide="1">
           <Experience />
         </HeroSection>
-        <HeroSection id="entrepreneurship" slide="3">
+        <HeroSection id="entrepreneurship" slide="2">
           <Entrepreneurship />
         </HeroSection>
-        <HeroSection id="education" slide="4">
+        <HeroSection id="education" slide="3">
           <Education />
         </HeroSection>
-        <HeroSection id="skills" slide="5">
+        <HeroSection id="skills" slide="4">
           <Skills />
         </HeroSection>
-        <HeroSection id="achievements" slide="6">
+        <HeroSection id="achievements" slide="5">
           <Achievements />
         </HeroSection>
-        <HeroSection id="awards" slide="7">
+        <HeroSection id="awards" slide="6">
           <Awards />
         </HeroSection>
       </section>

@@ -1,6 +1,4 @@
-// /src/components/about/chatbot/ChatContainer.tsx
 "use client";
-
 import ChatBody from "./ChatBody";
 import ChatForm from "./ChatForm";
 import { useState, useRef, useEffect } from "react";
@@ -9,12 +7,11 @@ import bioDataJson from "@/data/json/bio.json";
 import curseWordsJson from "@/data/json/cursewords.json";
 import keywordsJson from "@/data/json/keywords.json";
 import jokesJson from "@/data/json/jokes.json";
-import { KeywordMap } from "@/interfaces/KeywordMap";
-import { BioDataType } from "@/interfaces/BioDataType";
+import { KeywordMapInterface, BioDataInterface } from "@/interfaces/ChatInterface";
 
 const curseWords: string[] = curseWordsJson;
-const keywordMap: KeywordMap = keywordsJson;
-const bioData: BioDataType = bioDataJson;
+const keywordMap: KeywordMapInterface = keywordsJson;
+const bioData: BioDataInterface = bioDataJson;
 
 const ChatContainer: React.FC = () => {
   const [userInput, setUserInput] = useState("");
@@ -46,25 +43,29 @@ const ChatContainer: React.FC = () => {
     addMessage(sanitizedInput, "user", false);
 
     if (normalizedInput.some((word) => curseWords.includes(word))) {
-      addMessage(
-        "Watch your language! This is a family-friendly bot.",
-        "bot",
-        true
-      );
+      simulateBotTyping("Watch your language! This is a family-friendly bot.", true);
     } else if (/joke|funny/i.test(sanitizedInput)) {
       const randomJoke = jokesJson[Math.floor(Math.random() * jokesJson.length)];
-      addMessage(randomJoke, "bot", false);
+      simulateBotTyping(randomJoke, false);
     } else {
       const replyMessage = searchInBioData(sanitizedInput);
-      addMessage(replyMessage.message, replyMessage.type, false);
+      simulateBotTyping(replyMessage.message, replyMessage.isError);
     }
 
     setUserInput("");
   };
 
+  const simulateBotTyping = (message: string, isError: boolean) => {
+    addMessage("...", "bot", false);
+    setTimeout(() => {
+      setMessages((prev) => prev.slice(0, -1));
+      addMessage(message, "bot", isError);
+    }, 1000);
+  };
+
   const searchInBioData = (
     query: string
-  ): { message: string; type: "bot" | "user" } => {
+  ): { message: string; type: "bot" | "user"; isError: boolean } => {
     const bioDataKey = Object.entries(keywordMap).find(([keyword]) =>
       query.toLowerCase().includes(keyword.toLowerCase())
     )?.[1];
@@ -74,12 +75,14 @@ const ChatContainer: React.FC = () => {
       return {
         message: formatBioDataValue(bioDataValue),
         type: "bot",
+        isError: false,
       };
     }
 
     return {
       message: `I'm sorry, but I do not know how to respond to "${query}" yet. I am still learning, though!`,
       type: "bot",
+      isError: false,
     };
   };
 
@@ -97,7 +100,7 @@ const ChatContainer: React.FC = () => {
   };
 
   return (
-    <div className="chat-container card w-full h-[75vh] min-h-3.5 lg:w-3/4 bg-white shadow-xl flex flex-col justify-between mx-auto my-8">
+    <div className="chat-container h-[66vh] min-h-3.5 w-full bg-white flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl">
       <ChatBody messages={messages} bodyRef={bodyRef} />
       <ChatForm
         userInput={userInput}

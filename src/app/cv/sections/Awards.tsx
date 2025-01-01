@@ -1,15 +1,13 @@
-// /src/app/cv/sections/Awards.tsx
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons"; // Importing relevant icons
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import SectionHeader from '../../../components/SectionHeading';
 
 export default function AchievementsAndAwards() {
   return (
     <div className="space-y-8">
-      {/* Select Awards */}
       <section aria-labelledby="select-awards-heading" className="space-y-4">
-        <h2 id="select-awards-heading" className="text-3xl font-bold">Select Awards</h2>
+        <SectionHeader id="awards" name="Awards" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card bg-white p-6 shadow-lg rounded-xl">
             <FontAwesomeIcon icon={faTrophy} className="text-yellow-500 text-3xl mb-4" />

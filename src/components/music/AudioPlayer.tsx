@@ -1,7 +1,5 @@
-// /src/components/music/AudioPlayer.tsx
 "use client";
-
-import { AudioPlayerProps } from "../../types/AudioPlayerProps";
+import { AudioPlayerProps } from "@/types/AudioPlayerProps";
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, ariaLabel, height = 450 }) => {
   return (

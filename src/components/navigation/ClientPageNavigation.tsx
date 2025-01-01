@@ -1,6 +1,4 @@
-// /src/components/navigation/ClientPageNavigation.tsx
 "use client";
-
 export default function ClientPageNavigation({
   children,
 }: {

@@ -1,10 +1,10 @@
-// /src/app/portfolio/sections/Development.tsx
 "use client";
+import SectionHeader from "@/components/SectionHeading";
 
-export default function Development() {
+export default function About() {
   return (
-    <section aria-labelledby="development-heading" role="contentinfo">
-      <h2 id="development-heading">Development</h2>
+    <section aria-labelledby="about-heading" role="contentinfo">
+      <SectionHeader id="about" name="About" />
       <ul>
         <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
         <li>Experienced with GSAP and TailwindCSS</li>

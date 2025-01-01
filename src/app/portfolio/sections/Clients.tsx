@@ -1,10 +1,10 @@
-// /src/app/portfolio/sections/Clients.tsx
 "use client";
+import SectionHeader from "@/components/SectionHeading";
 
 export default function Clients() {
   return (
     <section aria-labelledby="clients-heading" role="contentinfo">
-      <h2 id="clients-heading">Clients</h2>
+      <SectionHeader id="clients" name="Clients" />
       <ul>
         <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
         <li>Experienced with GSAP and TailwindCSS</li>

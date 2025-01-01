@@ -1,14 +1,14 @@
 "use client";
-
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons"; 
-
 import SkillIcon from "@/components/SkillIcon";
+import SectionHeader from "@/components/SectionHeading";
 
 export default function Skills() {
   return (
     <section aria-labelledby="skills-heading" role="contentinfo">
-      <h2 id="skills-heading" className="text-3xl font-bold mb-6">Skills</h2>
+      <SectionHeader id="skills" name="Skills" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -24,6 +24,7 @@ export default function Skills() {
           <SkillIcon name="jest" alt="Jest" />
           <SkillIcon name="docker" alt="Docker" />
           <SkillIcon name="api" alt="RESTful API Development" />
+          <SkillIcon name="sqlServer" alt="SQL Server" />
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -40,6 +41,8 @@ export default function Skills() {
           <SkillIcon name="bootstrap" alt="Bootstrap" />
           <SkillIcon name="tailwind" alt="Tailwind" />
           <SkillIcon name="material" alt="Material UI" />
+          <SkillIcon name="adobe" alt="Adobe Creative Cloud" />
+          <SkillIcon name="jQuery" alt="jQuery" />
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -76,7 +79,7 @@ export default function Skills() {
           </div>
           <SkillIcon name="azure" alt="Azure" />
           <SkillIcon name="aws" alt="AWS" />
-          <SkillIcon name="apache" alt="Apache" size="14" />
+          <SkillIcon name="apache" alt="Apache" size={14} />
           <SkillIcon name="nginx" alt="NGINX" />
           <SkillIcon name="oauth" alt="OAuth" />
           <SkillIcon name="jwt" alt="JWT" />

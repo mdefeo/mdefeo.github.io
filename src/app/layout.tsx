@@ -1,5 +1,5 @@
-// /src/app/layout.tsx
 import MainNavigation from "@/components/navigation/MainNavigation";
+import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 import "@/styles/globals.css";
 
 export default function RootLayout({
@@ -10,9 +10,8 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="nord">
       <body>
-        <header className="z-20">
-          <MainNavigation />
-        </header>
+        <MainNavigation />
+        <Breadcrumbs />
         {children}
       </body>
     </html>

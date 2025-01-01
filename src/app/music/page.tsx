@@ -1,8 +1,6 @@
-// /src/app/music/page.tsx
 import HeroSection from "@/components/HeroSection";
 import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
 import { Bands, Favorites, Gear, Songs } from "./sections";
-import SectionTransitions from "@/components/SectionTransitions";
 
 export { generateMetadata } from "./metadata";
 
@@ -11,7 +9,6 @@ export default function MusicPage() {
     <ClientPageNavigation>
       <section id="music-main-content" className="focus:outline-none">
         <h1 className="sr-only">Music Page Sections</h1>
-        <SectionTransitions />
         <HeroSection id="bands" slide="1">
           <Bands />
         </HeroSection>

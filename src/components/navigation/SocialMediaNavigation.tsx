@@ -1,6 +1,4 @@
-// /src/components/navigation/SocialMediaNavigation.tsx
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -10,11 +8,12 @@ import {
   faSquareInstagram,
   faBandcamp,
   faBluesky,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 const SocialMediaNavigation: React.FC = () => {
   return (
-    <nav className="flex space-x-4 mt-8">
+    <nav className="flex space-x-4">
       <Link
         href="https://bsky.app/profile/flyers.bsky.social"
         target="_blank"
@@ -22,7 +21,6 @@ const SocialMediaNavigation: React.FC = () => {
       >
         <FontAwesomeIcon icon={faBluesky} className="mr-4 text-[#87CEEB]" size="xl" />
       </Link>
-
       <Link
         href="https://www.linkedin.com/in/marcellodefeo"
         target="_blank"
@@ -52,7 +50,15 @@ const SocialMediaNavigation: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faBandcamp} className="text-[#629aa9]" size="xl" />
+        <FontAwesomeIcon icon={faBandcamp} className="mr-4 text-[#629aa9]" size="xl" />
+      </Link>
+
+      <Link
+        href="https://github.com/mdefeo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faGithub} className="text-[#333333]" size="xl" />
       </Link>
     </nav>
   );

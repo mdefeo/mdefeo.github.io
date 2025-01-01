@@ -1,15 +1,18 @@
-// /src/app/about/sections/Professional.ts
 "use client";
+import { useState } from "react";
+import jobs from "@/data/json/jobs.json";
+import SelectedJob from "@/components/cv/SelectedJob"; 
+import { JobInterface } from "@/interfaces/JobInterface.ts";
+import SectionHeader from "@/components/SectionHeading";
 
 export default function Professional() {
+  const [selectedJob] = useState<JobInterface>(jobs[0]);
+
   return (
     <section aria-labelledby="professional-heading" role="contentinfo">
-      <h2 id="professional-heading">Professional</h2>
-      <ul>
-        <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
-        <li>Experienced with GSAP and TailwindCSS</li>
-        <li>Strong knowledge of accessibility standards and best practices</li>
-      </ul>
+      <SectionHeader id="professional" name="Professional" />
+      <SelectedJob job={selectedJob} />
+
     </section>
   );
 }

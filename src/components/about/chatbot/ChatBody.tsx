@@ -1,13 +1,8 @@
-// /src/components/about/chatbot/ChatBody.tsx
 "use client";
-
 import React from "react";
 import ChatMessage from "./ChatMessage";
+import { ChatBodyProps } from "@/types/ChatProps";
 
-interface ChatBodyProps {
-  messages: { message: string; type: "bot" | "user"; isError: boolean }[];
-  bodyRef: React.RefObject<HTMLDivElement | null>;
-}
 
 const ChatBody: React.FC<ChatBodyProps> = ({ messages, bodyRef }) => {
   return (

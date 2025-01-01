@@ -1,13 +1,20 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { playSignatureAnimation } from "@/utils/animations/signatureAnimation";
 import { SignaturePath } from "./SignaturePath";
 
-const Signature = () => {
+const Signature = ({ onComplete }: { onComplete?: () => void }) => {
+  const [hasRun, setHasRun] = useState(false);
+
   useEffect(() => {
-    playSignatureAnimation();
-  }, []);
+    if (!hasRun) {
+      playSignatureAnimation(() => {
+        setHasRun(true);
+        if (onComplete) onComplete();
+      });
+    }
+  }, [hasRun, onComplete]);
 
   return (
     <div className="signature-wrapper">

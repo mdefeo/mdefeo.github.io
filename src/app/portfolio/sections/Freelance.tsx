@@ -1,10 +1,10 @@
-// /src/app/portfolio/sections/Freelance.tsx
 "use client";
+import SectionHeader from "@/components/SectionHeading";
 
 export default function Freelance() {
   return (
     <section aria-labelledby="freelance-heading" role="contentinfo">
-      <h2 id="freelance-heading">Freelance</h2>
+      <SectionHeader id="freelance" name="Freelance" />
       <ul>
         <li>Proficient in React, Next.js, Node.js, and TypeScript</li>
         <li>Experienced with GSAP and TailwindCSS</li>

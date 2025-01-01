@@ -1,6 +1,5 @@
-// /src/components/about/chatbot/ChatForm.tsx
 "use client";
-import ChatFormProps from "@/types/ChatFormProps";
+import { ChatFormProps } from "@/types/ChatProps";
 
 const ChatForm: React.FC<ChatFormProps> = ({ userInput, setUserInput, handleSubmit }) => {
   return (
@@ -13,13 +12,13 @@ const ChatForm: React.FC<ChatFormProps> = ({ userInput, setUserInput, handleSubm
         type="text"
         id="userInput"
         placeholder="Ask me anything..."
-        className="input input-bordered w-full"
+        className="input w-full bg-gray-100 text-gray-600"
         value={userInput}
         onChange={(e) => setUserInput(e.target.value)}
         aria-label="Type your question"
       />
       <button
-        className="btn btn-neutral"
+        className="btn bg-gray-500 border-none text-white disabled:bg-gray-300  disabled:text-white hover:bg-blue-600 hover:shadow-lg"
         type="submit"
         disabled={userInput.length < 3}
         title={

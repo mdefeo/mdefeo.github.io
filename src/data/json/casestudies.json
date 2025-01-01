@@ -1,0 +1,23 @@
+[
+  {
+    "name": "IKEA",
+    "href": "/portfolio#ikea",
+    "image": "default.jpg",
+    "description": "Project for IKEA to redesign their online store with React.",
+    "details": "Detailed case study for the IKEA project, including the use of React, Redux, and TailwindCSS to build a responsive, scalable web application for their online store."
+  },
+  {
+    "name": "Toll Brothers",
+    "href": "/portfolio#toll-brothers",
+    "image": "default.jpg",
+    "description": "Redesigned the Toll Brothers website to enhance the user experience.",
+    "details": "This project involved a complete overhaul of the Toll Brothers website, focusing on user experience and improving site navigation. Built using Next.js and styled with TailwindCSS."
+  },
+  {
+    "name": "MarketShare Movers",
+    "href": "/portfolio#marketshare-movers",
+    "image": "default.jpg",
+    "description": "Developed a custom data visualization platform for MarketShare Movers.",
+    "details": "MarketShare Movers wanted a custom data visualization platform for their B2B clients. This project used D3.js for data visualization and React for the front-end."
+  }
+]
