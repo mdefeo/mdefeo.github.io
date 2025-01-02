@@ -28,6 +28,7 @@
       { "name": "Jest", "icon": "jest" },
       { "name": "Docker", "icon": "docker" },
       { "name": "Playwright", "icon": "playwright" },
+      { "name": "NestJS", "icon": "nest" },
       { "name": "Git", "icon": "git" },
       { "name": "Agile", "icon": "agile" },
       { "name": "JavaScript", "icon": "javascript" },
@@ -69,7 +70,11 @@
       { "name": "PostgreSQL", "icon": "postgresql" },
       { "name": "Redis", "icon": "redis" },
       { "name": "CI/CD", "icon": "sync" },
-      { "name": "HIPAA", "icon": "caduceus" }
+      { "name": "HIPAA", "icon": "hipaa" },
+      { "name": "SOC 2", "icon": "soc2" },
+      { "name": "Git", "icon": "git" },
+      { "name": "Agile", "icon": "agile" },
+      { "name": "jQuery", "icon": "jQuery" }
     ]
   },
   {

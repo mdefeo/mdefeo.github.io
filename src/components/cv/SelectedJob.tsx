@@ -1,7 +1,7 @@
 // /components/cv/SelectedJob.tsx
 import { SelectedJobProps } from "../../interfaces/JobInterface";
 import Image from "next/image";
-import SkillIcon from "@/components/SkillIcon";
+import SkillIcon from "@/components/ui/SkillIcon";
 
 const SelectedJob: React.FC<SelectedJobProps> = ({ job }) => {
   return (
@@ -32,13 +32,14 @@ const SelectedJob: React.FC<SelectedJobProps> = ({ job }) => {
               <li key={index}>{desc}</li>
             ))}
           </ul>
-        </div>
-      </div>
-      <div className="mt-8">
-        <div className="grid grid-cols-12 gap-4">
-          {job.technologies.map((tech, index) => (
-            <SkillIcon key={index} name={tech.icon} alt={tech.name} />
-          ))}
+          <div className="mt-8">
+            <div className="grid grid-cols-12 gap-4">
+              {job.technologies.map((tech, index) => (
+                <SkillIcon key={index} name={tech.icon} alt={tech.name} />
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

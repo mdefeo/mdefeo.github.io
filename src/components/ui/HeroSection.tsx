@@ -1,13 +1,16 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { HeroSectionProps } from "@/types/HeroSectionProps"; 
 
-export default function HeroSection({ id, slide, heading, children }: any) {
+export default function HeroSection({ id, slide, heading, children, bgColor }: HeroSectionProps) {
   const [isHydrated, setIsHydrated] = useState(false);
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setIsHydrated(true);
+
+    const sectionElement = sectionRef.current;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -20,23 +23,24 @@ export default function HeroSection({ id, slide, heading, children }: any) {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(sectionRef.current);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, [id]);
+
+  const sectionBgColor = bgColor || "bg-gray-100";
 
   if (!isHydrated) {
     return (
       <section
         id={id}
-        className="hero-section md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 bg-gray-100"
+        className={`hero-section  md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 ${sectionBgColor}`}
         ref={sectionRef}
       >
         <div className="animate-pulse">
@@ -63,7 +67,7 @@ export default function HeroSection({ id, slide, heading, children }: any) {
       id={id}
       aria-labelledby={heading ? `${id}-heading` : undefined}
       data-slide={slide}
-      className="section-transition md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 bg-gray-100"
+      className={`section-transition md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 ${sectionBgColor}`}
       role="region"
       ref={sectionRef}
     >

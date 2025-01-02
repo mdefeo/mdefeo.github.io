@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Education() {
   return (

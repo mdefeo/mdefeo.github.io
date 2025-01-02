@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/ui/HeroSection";
 import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
 import { Bands, Favorites, Gear, Songs } from "./sections";
 
@@ -17,9 +17,6 @@ export default function MusicPage() {
         </HeroSection>
         <HeroSection id="favorites" slide="3">
           <Favorites />
-        </HeroSection>
-        <HeroSection id="gear" slide="4">
-          <Gear />
         </HeroSection>
       </section>
     </ClientPageNavigation>

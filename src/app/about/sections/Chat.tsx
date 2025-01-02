@@ -1,6 +1,6 @@
 "use client";
 import ChatContainer from "@/components/about/chatbot/ChatContainer";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Chat() {
   return (

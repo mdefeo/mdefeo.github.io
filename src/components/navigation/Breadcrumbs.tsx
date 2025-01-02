@@ -29,10 +29,16 @@ const Breadcrumbs: React.FC = () => {
 
         if (mainCategory) {
           newBreadcrumbs = [{ name: mainCategory.name, href: mainCategory.href }];
-        }
 
-        if (hash) {
-          newBreadcrumbs.push({ name: hash.charAt(0).toUpperCase() + hash.slice(1), href: `#${hash}` });
+          if (hash) {
+            const subItem = mainCategory.subItems.find((item) => item.href === `/${pathParts[0]}#${hash}`);
+            if (subItem) {
+              newBreadcrumbs.push({ name: subItem.name, href: subItem.href });
+            } else {
+              const formattedHash = hash.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+              newBreadcrumbs.push({ name: formattedHash, href: `#${hash}` });
+            }
+          }
         }
       }
 
@@ -49,7 +55,7 @@ const Breadcrumbs: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed top-8 left-10 text-sm z-10 mt-[-3px]">
+    <div className="md:block hidden fixed top-8 left-12 text-sm z-10">
       <div className="breadcrumbs py-0 my-0">
         <ul className="flex items-top space-x-2">
           {breadcrumbs.map((crumb, index) => (

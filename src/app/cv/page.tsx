@@ -1,6 +1,6 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/ui/HeroSection";
 import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
-import { Achievements, Awards, Education, Entrepreneurship, Experience, Skills } from "./sections";
+import { Education, Experience, Skills } from "./sections";
 
 export { generateMetadata } from "./metadata";
 
@@ -12,20 +12,11 @@ export default function CVPage() {
         <HeroSection id="experience" slide="1">
           <Experience />
         </HeroSection>
-        <HeroSection id="entrepreneurship" slide="2">
-          <Entrepreneurship />
-        </HeroSection>
-        <HeroSection id="education" slide="3">
+        <HeroSection id="education" slide="2">
           <Education />
         </HeroSection>
-        <HeroSection id="skills" slide="4">
+        <HeroSection id="skills" slide="3">
           <Skills />
-        </HeroSection>
-        <HeroSection id="achievements" slide="5">
-          <Achievements />
-        </HeroSection>
-        <HeroSection id="awards" slide="6">
-          <Awards />
         </HeroSection>
       </section>
     </ClientPageNavigation>

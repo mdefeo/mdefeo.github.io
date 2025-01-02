@@ -1,6 +1,6 @@
 "use client";
 import AudioPlayer from "@/components/music/AudioPlayer";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Songs() {
   return (

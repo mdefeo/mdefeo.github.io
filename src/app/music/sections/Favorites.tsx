@@ -1,6 +1,6 @@
 "use client";
 import SpotifyPlayer from "@/components/music/SpotifyPlayer";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Favorites() {
   return (

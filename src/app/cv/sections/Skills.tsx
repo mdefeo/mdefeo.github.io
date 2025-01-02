@@ -2,8 +2,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons"; 
-import SkillIcon from "@/components/SkillIcon";
-import SectionHeader from "@/components/SectionHeading";
+import SkillIcon from "@/components/ui/SkillIcon";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Skills() {
   return (
@@ -83,10 +83,13 @@ export default function Skills() {
           <SkillIcon name="nginx" alt="NGINX" />
           <SkillIcon name="oauth" alt="OAuth" />
           <SkillIcon name="jwt" alt="JWT" />
+          <SkillIcon name="googleanalytics" alt="Google Analytics" />
+          <SkillIcon name="gtm" alt="Google Tag Manager" />
+          <SkillIcon name="nagios" alt="Nagios" />
           <SkillIcon name="debian" alt="Debian Linux" />
           <SkillIcon name="ssl" alt="SSL/TLS" />
-          <SkillIcon name="shield" alt="SOC 2" />
-          <SkillIcon name="caduceus" alt="HIPAA Compliance" />
+          <SkillIcon name="soc2" alt="SOC 2" />
+          <SkillIcon name="hipaa" alt="HIPAA Compliance" />
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg">

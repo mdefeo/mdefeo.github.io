@@ -4,7 +4,7 @@ import jobs from "@/data/json/jobs.json";
 import { Job } from "@/interfaces/JobInterface";
 import SelectedJob from "@/components/cv/SelectedJob";
 import JobsDrawer from "@/components/cv/JobsDrawer";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 const Experience: React.FC = () => {
   const [selectedJob, setSelectedJob] = useState<Job>(jobs[0]);

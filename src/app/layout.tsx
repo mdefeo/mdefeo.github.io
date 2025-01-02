@@ -1,5 +1,7 @@
 import MainNavigation from "@/components/navigation/MainNavigation";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
+import Footer from "@/components/ui/Footer";
+
 import "@/styles/globals.css";
 
 export default function RootLayout({
@@ -13,6 +15,7 @@ export default function RootLayout({
         <MainNavigation />
         <Breadcrumbs />
         {children}
+        <Footer />
       </body>
     </html>
   );

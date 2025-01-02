@@ -1,7 +1,7 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
-import SectionHeader from '../../../components/SectionHeading';
+import SectionHeader from '@/components/ui/SectionHeading';
 
 export default function AchievementsAndAwards() {
   return (

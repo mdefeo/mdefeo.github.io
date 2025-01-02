@@ -13,7 +13,7 @@ export default function Intro() {
           <h5 className="text-lg mb-2">Philadelphia, PA</h5>
           <p className="text-lg">MBA Candidate at Boston University</p>
           <p className="text-lg mb-8">
-            Linke dIn:{" "} 
+            LinkedIn:{" "} 
             <Link
               href="https://linkedin.com/in/marcellodefeo"
               target="_blank"

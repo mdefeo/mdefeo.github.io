@@ -3,7 +3,7 @@ import { useState } from "react";
 import { CaseStudiesInterface } from "@/interfaces/CaseStudiesInterface";
 import CaseStudy from "@/components/portfolio/CaseStudy";
 import caseStudiesData from "@/data/json/caseStudies.json";
-import SectionHeader from "@/components/SectionHeading";
+import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function CaseStudies() {
   const [caseStudies] = useState<CaseStudy[]>(caseStudiesData);
@@ -18,7 +18,7 @@ export default function CaseStudies() {
           <button
             key={study.name}
             onClick={() => setSelectedCaseStudy(study)}
-            className={`tab ${selectedCaseStudy.name === study.name ? "tab-active" : ""}`}
+            className={`tab ${selectedCaseStudy.name === study.name ? "tab-active text-gray-700 font-semibold" : ""}`}
           >
             {study.name}
           </button>

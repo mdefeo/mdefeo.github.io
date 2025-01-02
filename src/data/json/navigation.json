@@ -2,55 +2,49 @@
   {
     "name": "About",
     "href": "/",
-    "icon": "faChartPie",
+    "icon": "faFireBurner",
     "previewImage": "about.jpg",
     "previewDescription": "I may work in dev, but grew up in kitchens.", 
     "subItems": [
+      { "name": "Welcome", "href": "/" },
       { "name": "About", "href": "/#about" },
-      { "name": "Chat", "href": "/#chat" },
-      { "name": "Professional", "href": "/#professional" },
-      { "name": "Personal", "href": "/#personal" },
-      { "name": "Writing", "href": "/#writing" }
+      { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" }
     ]
   },
   {
     "name": "CV",
     "href": "/cv",
-    "icon": "faMousePointer",
+    "icon": "faDisplay",
     "previewImage": "cv.jpg",
     "previewDescription": "I spend my days writing code, and my nights studying for my MBA.",
     "subItems": [
-      { "name": "Experience", "href": "/cv#experience" },
+      { "name": "Experience", "href": "/cv" },
       { "name": "Education", "href": "/cv#education" },
-      { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" },
-      { "name": "Skills", "href": "/cv#skills" },
-      { "name": "Awards", "href": "/cv#awards" }
+      { "name": "Skills", "href": "/cv#skills" }
     ]
   },
   {
     "name": "Portfolio",
     "href": "/portfolio",
-    "icon": "faFingerprint",
+    "icon": "faCode",
     "previewImage": "portfolio.jpg",
     "previewDescription": "Ooh, shiny things!",
     "subItems": [
-      { "name": "Freelance", "href": "/portfolio#freelance" },
-      { "name": "Case Studies", "href": "/portfolio#case-studies" },
-      { "name": "Design", "href": "/portfolio#design" },
-      { "name": "Clients", "href": "/portfolio#clients" }
+      { "name": "Case Studies", "href": "/portfolio" },
+      { "name": "Projects", "href": "/portfolio#projects" },
+      { "name": "Awards", "href": "/portfolio#awards" }
     ]
   },
   {
     "name": "Music",
     "href": "/music",
-    "icon": "faSquarePlus",
+    "icon": "faGuitar",
     "previewImage": "music.jpg",
     "previewDescription": "I am excited to share music from my new band very soon.",
     "subItems": [
-      { "name": "Bands", "href": "/music#bands" },
+      { "name": "Bands", "href": "/music" },
       { "name": "Songs", "href": "/music#songs" },
-      { "name": "Gear", "href": "/music#gear" },
-      { "name": "Favorites", "href": "/music#favorites" }
+      { "name": "Gear", "href": "/music#favorites" }
     ]
   }
 ]
