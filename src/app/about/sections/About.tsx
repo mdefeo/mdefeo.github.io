@@ -8,7 +8,7 @@ export default function About() {
     <section
       aria-labelledby="about-heading"
       role="contentinfo"
-      className="flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen text-gray-500 text-sm"
+      className="flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen text-gray-500 text-sm gp-4"
     >
       <div className="lg:w-5/12 p-4 hidden lg:flex lg:flex-col lg:justify-center">
         <SectionHeader id="about" name="About" />
@@ -21,7 +21,7 @@ export default function About() {
         />
         <p className="mb-2 italic">Some quick facts about me:</p>
         <ul className="list-disc list-outside mb-2 leading-relaxed">
-          <li>I have been a business owner since 2008.</li>
+          <li>I have owned award-winning businesses since 2008.</li>
           <li>My work ethic took root when I began working in kitchens at the age of 12.</li>
           <li>I have two decades of eperience in software engineering.</li>
           <li>I am a hockey nerd who ran a site credentialed to cover hockey teams.</li>

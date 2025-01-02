@@ -1,19 +1,24 @@
 "use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons"; 
+import { faServer, faCode, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons"; 
 import SkillIcon from "@/components/ui/SkillIcon";
 import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Skills() {
   return (
-    <section aria-labelledby="skills-heading" role="contentinfo">
+    <section
+      aria-labelledby="skills-heading"
+      role="contentinfo"
+      className="skills-section flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
+    >
       <SectionHeader id="skills" name="Skills" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <div className="flex items-center mb-4">
-            <h4 className="text-xl font-semibold">Back-End Technologies</h4>
+          <FontAwesomeIcon icon={faServer} className="text-green-500 text-2xl mr-4" />
+          <h4 className="text-xl font-semibold">Back-End Technologies</h4>
           </div>
           <SkillIcon name="node" alt="Node.js" />
           <SkillIcon name="php" alt="PHP" />
@@ -23,8 +28,8 @@ export default function Skills() {
           <SkillIcon name="perl" alt="Perl" />
           <SkillIcon name="jest" alt="Jest" />
           <SkillIcon name="docker" alt="Docker" />
+          <SkillIcon name="bash" alt="Bash" />
           <SkillIcon name="api" alt="RESTful API Development" />
-          <SkillIcon name="sqlServer" alt="SQL Server" />
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg">
@@ -55,6 +60,8 @@ export default function Skills() {
           <SkillIcon name="postgresql" alt="PostgreSQL" />
           <SkillIcon name="mongodb" alt="MongoDB" />
           <SkillIcon name="redis" alt="Redis" />
+          <SkillIcon name="sqlServer" alt="SQL Server" />
+          <SkillIcon name="sqlite" alt="SQLite" />
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg">

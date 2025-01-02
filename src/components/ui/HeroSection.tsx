@@ -34,13 +34,13 @@ export default function HeroSection({ id, slide, heading, children, bgColor }: H
     };
   }, [id]);
 
-  const sectionBgColor = bgColor || "bg-gray-100";
+  const sectionBgColor = bgColor || "";
 
   if (!isHydrated) {
     return (
       <section
         id={id}
-        className={`hero-section  md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 ${sectionBgColor}`}
+        className={`hero-section md:min-h-screen md:flex block flex-col items-center justify-center md:p-8 sm:p-4 ${sectionBgColor}`}
         ref={sectionRef}
       >
         <div className="animate-pulse">

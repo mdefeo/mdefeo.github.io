@@ -10,14 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["nord"],
+    themes: ["nord", "night"],
+    base: true,
+    styled: true,
+    utils: true,
+    darkTheme: "night",
+    themeRoot: ":root"
   },
 };
 

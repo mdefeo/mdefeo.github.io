@@ -21,7 +21,6 @@ body,
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
   perspective: 4px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -67,7 +66,7 @@ h4 {
 }
 
 .page-section-nav {
-  @apply hidden md:block w-36 flex-shrink-0 bg-white shadow-md z-50;
+  @apply hidden md:block w-36 flex-shrink-0 shadow-md z-40;
 }
 
 .main-content {
@@ -88,7 +87,7 @@ section {
 }
 
 img {
-  @apply hover:shadow-2xl transition-shadow duration-500 ease-in-out;
+  @apply hover:shadow-2xl transition-shadow duration-500 ease-in-out ;
 }
 
 
@@ -121,7 +120,7 @@ main {
   transform: translateY(0); /* End at its normal position */
 }
 
-
+/*
 @media (min-width: 768px) {
   .hero-parent-container {
     @apply opacity-0 scale-75 h-[calc(100vh-4em)] w-[calc(100vw-4em)] box-border;
@@ -136,6 +135,7 @@ main {
     );
   }
 }
+*/
 
 /* Signature Wrapper */
 .signature-wrapper {
@@ -192,7 +192,6 @@ main {
 }
 
 .hero-section.visible {
-  background-color: rgba(0, 128, 0, 0.2);
 }
 
 .border-animation::before,
@@ -270,7 +269,6 @@ main {
   position: fixed;
   inset: 0;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +293,6 @@ main {
 }
 
 .active-job {
-  background-color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -308,7 +305,6 @@ main {
 }
 
 .job-card {
-  background-color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

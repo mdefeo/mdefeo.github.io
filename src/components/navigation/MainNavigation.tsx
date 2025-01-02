@@ -41,7 +41,7 @@ export default function MainNavigation() {
   return (
     <Popover className="relative">
       <PopoverButton
-        className="inline-flex items-center gap-x-1 text-sm font-semibold z-50 text-gray-900 absolute top-8 left-7 focus:outline-none"
+        className="inline-flex items-center gap-x-1 text-sm font-semibold z-40 text-gray-900 absolute top-8 left-7 focus:outline-none"
         onMouseEnter={() => setIsOpen(true)}
       >
         <FontAwesomeIcon icon={faBars} aria-hidden="true" className="h-7 w-7 text-lg" />
@@ -57,7 +57,7 @@ export default function MainNavigation() {
         leaveTo="opacity-0"
       >
         <PopoverPanel
-          className="absolute bg-white left-0 z-40 mt-5 w-full h-full px-4 focus:outline-none"
+          className="absolute left-0 z-30 py-5 w-full h-full px-4 focus:outline-none"
           onMouseLeave={(e) => {
             const relatedTarget = e.relatedTarget as Node | null;
             if (!relatedTarget || !(e.currentTarget as Node).contains(relatedTarget)) {
@@ -66,7 +66,7 @@ export default function MainNavigation() {
             }
           }}
         >
-          <div className="w-full bg-white flex-auto overflow-hidden text-sm shadow-lg ring-1 ring-gray-900/5">
+          <div className="w-full flex-auto overflow-hidden text-sm shadow-lg ring-1 ring-gray-900/5">
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0 p-4">
               {navigationItems.map((item) => (
                 <div
@@ -78,7 +78,7 @@ export default function MainNavigation() {
                   }}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
-                  <div className="h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white hidden md:flex">
+                  <div className="h-11 w-11 flex-none items-center justify-center rounded-lg group-hover:bg-white hidden md:flex">
                     <FontAwesomeIcon
                       icon={iconMap[item.icon]}
                       aria-hidden="true"
@@ -111,7 +111,7 @@ export default function MainNavigation() {
                   )}
                   {hoveredItem && (
                     <Image
-                      src={`/images/previews/${hoveredItem.previewImage || 'about.jpg'}`}
+                      src={`/images/previews/${hoveredItem.previewImage || 'default.jpg'}`}
                       alt={hoveredItem.previewDescription}
                       className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 shadow-lg ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                       layout="fill"

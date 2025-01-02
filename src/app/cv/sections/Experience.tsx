@@ -41,7 +41,11 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section aria-labelledby="experience-heading" role="contentinfo" className="max-w-4xl mx-auto p-4">
+    <section
+      aria-labelledby="experience-heading"
+      role="contentinfo"
+      className="experience-section flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
+    >
       <SectionHeader id="experience" name="experience" />
       <div className="relative w-full">
         {selectedJob && <SelectedJob job={selectedJob} />}

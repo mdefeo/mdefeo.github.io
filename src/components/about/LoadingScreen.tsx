@@ -4,20 +4,32 @@ import Signature from "@/components/about/signature/Signature";
 import gsap from "gsap";
 
 export default function LoadingScreen({ onAnimationEnd }: { onAnimationEnd: () => void }) {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [isRemoved, setIsRemoved] = useState(false);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+    const hasHash = window.location.hash;
+
+    if (!hasVisited && !hasHash) {
+      setIsVisible(true);
+      localStorage.setItem("hasVisited", "true");
+    } else {
+      setIsRemoved(true);
+      onAnimationEnd();
+    }
+  }, [onAnimationEnd]);
 
   const handleSignatureComplete = () => {
     gsap.timeline({
       onComplete: () => {
         setIsVisible(false);
         setTimeout(() => {
-          setIsRemoved(false);
+          setIsRemoved(true);
           onAnimationEnd();
         }, 1000);
       },
     });
-
   };
 
   useEffect(() => {

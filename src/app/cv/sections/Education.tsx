@@ -4,7 +4,11 @@ import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Education() {
   return (
-    <section aria-labelledby="education-heading" role="contentinfo">
+    <section
+      aria-labelledby="education-heading"
+      role="contentinfo"
+      className="education-section flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
+    >
       <SectionHeader id="education" name="Education" />
       <div className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:space-x-8 mb-8">
@@ -14,7 +18,7 @@ export default function Education() {
               alt="Boston University Seal"
               width={80}
               height={80}
-              className="object-contain"
+              className="object-contain rounded-full"
             />
           </div>
           <div className="flex-1">
@@ -39,7 +43,7 @@ export default function Education() {
               alt="Saint Joseph's University Seal"
               width={80}
               height={80}
-              className="object-contain"
+              className="object-contain rounded-full"
             />
           </div>
           <div className="flex-1">

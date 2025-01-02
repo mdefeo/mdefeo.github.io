@@ -1,10 +1,10 @@
-// /components/cv/JobsDrawer.tsx
+"use client";
 import { useState, useEffect } from 'react';
-import { JobListProps, Job } from "../../interfaces/JobInterface"; 
+import { JobsDrawerProps, Job } from "../../interfaces/JobInterface"; 
 import Image from "next/image";
 
-const JobsDrawer: React.FC<JobListProps> = ({ jobs, onJobSelect }) => {
-  const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
+const JobsDrawer: React.FC<JobsDrawerProps> = ({ jobs, onJobSelect }) => {
+  const [selectedJobId, setSelectedJobId] = useState<number | null>(null);
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '');

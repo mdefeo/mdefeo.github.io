@@ -7,9 +7,9 @@ export default function Chat() {
     <section
       aria-labelledby="chat-heading"
       role="contentinfo"
-      className="flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen"
+      className="flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
     >
-      <div className="lg:w-5/12 p-4 hidden lg:flex lg:flex-col lg:justify-center">
+      <div className="lg:w-5/12 hidden lg:flex lg:flex-col lg:justify-center">
         <SectionHeader id="chat" name="Chat" />
         <p className="mb-4">Welcome to the chat section. Here you can interact with our chatbot.</p>
         <p className="mb-4">Feel free to ask any questions or get more information about our services.</p>

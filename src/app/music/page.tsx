@@ -1,6 +1,6 @@
 import HeroSection from "@/components/ui/HeroSection";
 import ClientPageNavigation from "@/components/navigation/ClientPageNavigation";
-import { Bands, Favorites, Gear, Songs } from "./sections";
+import { Bands, Favorites, Songs } from "./sections";
 
 export { generateMetadata } from "./metadata";
 

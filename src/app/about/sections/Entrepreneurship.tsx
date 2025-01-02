@@ -4,7 +4,11 @@ import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function Entrepreneurship() {
   return (
-    <section aria-labelledby="entrepreneurship-heading" role="contentinfo">
+    <section
+      aria-labelledby="entrepreneurship-heading"
+      role="contentinfo"
+      className="flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
+    >
       <SectionHeader id="entrepreneurship" name="Entrepreneurship" />
       <div className="space-y-12">
         <div className="flex flex-col sm:flex-row sm:space-x-8">

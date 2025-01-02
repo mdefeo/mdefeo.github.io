@@ -5,7 +5,11 @@ import SocialMediaNavigation from "@/components/navigation/SocialMediaNavigation
 
 export default function Intro() {
   return (
-    <section aria-labelledby="intro-heading" role="contentinfo" className="intro-section">
+    <section
+      aria-labelledby="hello-heading"
+      role="contentinfo"
+      className="hello-section flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
+    >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-4xl w-full">
         <div className="sm:order-1 order-2 text-gray-500">
           <h2 className="text-3xl mb-3 text-gray-600">Marcello De Feo</h2>

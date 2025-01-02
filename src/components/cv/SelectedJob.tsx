@@ -1,4 +1,3 @@
-// /components/cv/SelectedJob.tsx
 import { SelectedJobProps } from "../../interfaces/JobInterface";
 import Image from "next/image";
 import SkillIcon from "@/components/ui/SkillIcon";
@@ -39,7 +38,6 @@ const SelectedJob: React.FC<SelectedJobProps> = ({ job }) => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -6,12 +6,16 @@ import caseStudiesData from "@/data/json/caseStudies.json";
 import SectionHeader from "@/components/ui/SectionHeading";
 
 export default function CaseStudies() {
-  const [caseStudies] = useState<CaseStudy[]>(caseStudiesData);
+  const [caseStudies] = useState<CaseStudiesInterface[]>(caseStudiesData);
 
   const [selectedCaseStudy, setSelectedCaseStudy] = useState<CaseStudiesInterface>(caseStudies[0]);
 
   return (
-    <section aria-labelledby="case-studies-heading" role="contentinfo">
+    <section
+      aria-labelledby="case-studies-heading"
+      role="contentinfo"
+      className="case-studies-section gap-4"
+    >
       <SectionHeader id="case-studies-heading" name="Case Studies" />
       <div className="tabs tabs-bordered mb-6">
         {caseStudies.map((study) => (

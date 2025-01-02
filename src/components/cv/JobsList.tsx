@@ -1,5 +1,4 @@
-// /components/cv/JobList.tsx
-import { JobListProps } from "../../interfaces/JobInterface.ts"; 
+import { JobListProps } from "../../interfaces/JobInterface";
 
 const JobList: React.FC<JobListProps> = ({ jobs, selectedJob, onJobSelect }) => {
   return (

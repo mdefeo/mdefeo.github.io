@@ -71,7 +71,7 @@ const ChatContainer: React.FC = () => {
     )?.[1];
 
     if (bioDataKey) {
-      const bioDataValue = bioData[bioDataKey as keyof BioDataType];
+      const bioDataValue = bioData[bioDataKey as keyof BioDataInterface];
       return {
         message: formatBioDataValue(bioDataValue),
         type: "bot",
@@ -100,7 +100,7 @@ const ChatContainer: React.FC = () => {
   };
 
   return (
-    <div className="chat-container h-[66vh] min-h-3.5 w-full bg-white flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl">
+    <div className="chat-container h-[66vh] min-h-3.5 w-full flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl transition-all duration-500 ease-in-out">
       <ChatBody messages={messages} bodyRef={bodyRef} />
       <ChatForm
         userInput={userInput}

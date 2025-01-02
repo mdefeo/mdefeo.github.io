@@ -10,13 +10,9 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
   const { name, title, image, url, description, challenges = [], outcomes = [], skills = [], clientLogo, role, team, duration } = caseStudy;
 
   return (
-    <div className="flex flex-col items-start md:flex-row md:items-start gap-6 mb-8">
+    <div className="flex flex-col items-start md:flex-row md:items-start gap-8 mb-8">
       <div className="w-full md:w-1/3">
-        <Link 
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href={url} target="_blank" rel="noopener noreferrer">
           <Image
             src={`/images/studies/${image || 'default.jpg'}`}
             alt={name}
@@ -30,7 +26,7 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
         <div className="flex flex-wrap mt-6">
           {skills.length > 0 ? (
             skills.map((skill, index) => (
-              <SkillIcon key={index} name={skill.icon} alt={skill.name} size="18" className="inline-flex text-lg mr-4 mb-4" />
+              <SkillIcon key={index} name={skill.icon} alt={skill.alt} size={18} className="inline-flex text-lg mr-4 mb-4" />
             ))
           ) : (
             <p>No skills available.</p>
@@ -41,7 +37,7 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
         <h4 className="pt-0 font-semibold">Challenges</h4>
 
         {Array.isArray(challenges) ? (
-          <ul className="list-disc list-outside mb-4">
+          <ul className="list-disc list-outside mt-4 pl-3">
             {challenges.map((challenge, index) => (
               <li key={index} className="text-sm leading-relaxed">{challenge}</li>
             ))}
@@ -63,7 +59,7 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
           </>
         )}
       </div>
-      <div className="w-full hidden lg:w-1/6 self-start text-sm text-gray-700">
+      <div className="w-full md:block hidden md:w-1/6 self-start text-sm text-gray-700">
         <div className="mb-4">
           <Image
             src={`/images/businesses/${clientLogo || 'default-logo.jpg'}`}
