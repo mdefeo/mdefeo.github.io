@@ -1,9 +1,9 @@
 {
   "name": "mdefeo.github.io",
-"version": "0.1.0",
-"private": true,
-"type": "module",
-"license": "UNLICENSED",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
   "author": "Marcello De Feo <your-email@example.com>",
   "homepage": "https://mdefeo.github.io",
   "repository": {
