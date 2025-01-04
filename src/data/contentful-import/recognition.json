@@ -1,0 +1,64 @@
+{
+  "recognition": [
+    {
+      "type": "award",
+      "name": "Best of Award for Public Service",
+      "description": "Philadelphia Holocaust Remembrance Foundation Website and Interactive Timeline.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Public Service",
+      "source": "Philadelphia Holocaust Remembrance Foundation",
+      "url": "https://www.phila.gov"
+    },
+    {
+      "type": "award",
+      "name": "Gold Award for Broadcast/Electronic Digital",
+      "description": "Public Service award for the Philadelphia Holocaust Remembrance Foundation Website.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Broadcast/Electronic Digital",
+      "source": "Philadelphia Holocaust Remembrance Foundation",
+      "url": "https://www.phila.gov"
+    },
+    {
+      "type": "award",
+      "name": "Gold Award for Product Microsites",
+      "description": "Digital Advertising award for the IKEA New Movers Microsite.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Product Microsites",
+      "source": "IKEA",
+      "url": "https://www.ikea.com"
+    },
+    {
+      "type": "award",
+      "name": "Gold Award for Consumer Websites",
+      "description": "Digital Advertising award for the IKEA Interactive Seasonal Catalog.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Consumer Websites",
+      "source": "IKEA",
+      "url": "https://www.ikea.com"
+    },
+    {
+      "type": "award",
+      "name": "Web Project of the Year Nominee",
+      "description": "Philadelphia Holocaust Remembrance Foundation website development.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Web Project",
+      "source": "Philadelphia Holocaust Remembrance Foundation",
+      "url": "https://www.phila.gov"
+    },
+    {
+      "type": "award",
+      "name": "Webby Awards Honoree",
+      "description": "IKEA Seasonal Launch Vehicle digital catalog.",
+      "icon": "faTrophy",
+      "year": 2023,
+      "category": "Web Design",
+      "source": "IKEA",
+      "url": "https://www.ikea.com"
+    }
+  ]
+}

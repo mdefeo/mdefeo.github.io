@@ -1,0 +1,5823 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "recognition",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:25:30.317Z",
+        "updatedAt": "2025-01-03T05:18:46.609Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2025-01-03T05:18:46.609Z",
+        "firstPublishedAt": "2025-01-03T04:25:30.621Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/recognition"
+      },
+      "displayField": "name",
+      "name": "Recognition",
+      "description": "Press, awards, nominations, etc.",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subject",
+          "name": "Subject",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "client",
+          "name": "Client",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "recognition",
+          "name": "Recognition",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "icon",
+          "name": "Icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "year",
+          "name": "Year",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "jobs",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:42:16.827Z",
+        "updatedAt": "2025-01-03T05:17:46.576Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2025-01-03T05:17:46.576Z",
+        "firstPublishedAt": "2025-01-03T04:42:17.359Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/jobs"
+      },
+      "displayField": "title",
+      "name": "Jobs",
+      "description": "Career experiences",
+      "fields": [
+        {
+          "id": "id",
+          "name": "ID",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "company",
+          "name": "Company",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "clients"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "titleShortName",
+          "name": "Title Short Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "years",
+          "name": "Years",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "jokes",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:43:38.462Z",
+        "updatedAt": "2025-01-03T04:43:38.885Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T04:43:38.885Z",
+        "firstPublishedAt": "2025-01-03T04:43:38.885Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/jokes"
+      },
+      "displayField": "joke",
+      "name": "Jokes",
+      "description": "Dad jokes for the chat bot",
+      "fields": [
+        {
+          "id": "joke",
+          "name": "Joke",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "skillCategories",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:48:21.792Z",
+        "updatedAt": "2025-01-03T04:48:22.099Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T04:48:22.099Z",
+        "firstPublishedAt": "2025-01-03T04:48:22.099Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/skillCategories"
+      },
+      "displayField": "category",
+      "name": "Skill Categories",
+      "description": "List of skill categories",
+      "fields": [
+        {
+          "id": "id",
+          "name": "id",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "skills",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:50:20.904Z",
+        "updatedAt": "2025-01-03T04:50:51.413Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-03T04:50:51.413Z",
+        "firstPublishedAt": "2025-01-03T04:50:21.341Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/skills"
+      },
+      "displayField": "skill",
+      "name": "Skills",
+      "description": "List of skills and their categories",
+      "fields": [
+        {
+          "id": "id",
+          "name": "ID",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "skill",
+          "name": "Skill",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "skillCategory",
+          "name": "Skill Category",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "skillCategories"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "icon",
+          "name": "Icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "caseStudies",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:58:00.084Z",
+        "updatedAt": "2025-01-03T04:58:00.477Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T04:58:00.477Z",
+        "firstPublishedAt": "2025-01-03T04:58:00.477Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/caseStudies"
+      },
+      "displayField": "case",
+      "name": "Case Studies",
+      "description": "Projects on which I have worked.",
+      "fields": [
+        {
+          "id": "id",
+          "name": "ID",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "case",
+          "name": "Case",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "project",
+          "name": "Project",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "challenges",
+          "name": "Challenges",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "outcomes",
+          "name": "Outcomes",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "skills",
+          "name": "Skills",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "skills"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "clientLogo",
+          "name": "Client Logo",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "role",
+          "name": "Role",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "team",
+          "name": "Team",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "duration",
+          "name": "Duration",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "year",
+          "name": "Year",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "recognition",
+          "name": "Recognition",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "recognition"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "cursewords",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T04:59:07.640Z",
+        "updatedAt": "2025-01-03T04:59:07.938Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T04:59:07.938Z",
+        "firstPublishedAt": "2025-01-03T04:59:07.938Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/cursewords"
+      },
+      "displayField": "curse",
+      "name": "Cursewords",
+      "description": "Prohibited words for the chatbot.",
+      "fields": [
+        {
+          "id": "curse",
+          "name": "Curse",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "clients",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T05:02:00.032Z",
+        "updatedAt": "2025-01-03T05:16:45.853Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-03T05:16:45.853Z",
+        "firstPublishedAt": "2025-01-03T05:02:00.316Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/clients"
+      },
+      "displayField": "name",
+      "name": "Clients",
+      "description": "Lists of companies for which I have worked or have done work.",
+      "fields": [
+        {
+          "id": "id",
+          "name": "ID",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortName",
+          "name": "Short Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "keywords",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T05:03:52.227Z",
+        "updatedAt": "2025-01-03T05:03:52.996Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T05:03:52.996Z",
+        "firstPublishedAt": "2025-01-03T05:03:52.996Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/keywords"
+      },
+      "displayField": "key",
+      "name": "Keywords",
+      "description": "Associations for the chatbot",
+      "fields": [
+        {
+          "id": "key",
+          "name": "Key",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "bio",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T05:12:34.442Z",
+        "updatedAt": "2025-01-03T05:12:34.949Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T05:12:34.949Z",
+        "firstPublishedAt": "2025-01-03T05:12:34.949Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/bio"
+      },
+      "displayField": "key",
+      "name": "Bio",
+      "description": "Data for the chatbot.",
+      "fields": [
+        {
+          "id": "key",
+          "name": "Key",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 16,
+        "createdAt": "2025-01-03T04:25:30.995Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T05:18:47.247Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "recognition",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subject",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "client",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "recognition",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "icon",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "category",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "source",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "year",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 26,
+        "createdAt": "2025-01-03T04:42:17.631Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T05:17:47.129Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "jobs",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "company",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleShortName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "years",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T04:43:39.018Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T04:43:39.434Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "jokes",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "joke",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T04:48:22.308Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T04:48:22.779Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "skillCategories",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "category",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-01-03T04:50:21.506Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T04:50:51.956Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "skills",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "skill",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "skillCategory",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "icon",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T04:58:00.658Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T04:58:01.372Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "caseStudies",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "case",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "project",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "challenges",
+          "widgetId": "listInput",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "outcomes",
+          "widgetId": "listInput",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "skills",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "clientLogo",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "role",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "team",
+          "widgetId": "listInput",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "duration",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "year",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "recognition",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T04:59:08.074Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T04:59:08.422Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "cursewords",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "curse",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-01-03T05:02:00.476Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T05:16:46.411Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "clients",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "location",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "shortName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T05:03:53.117Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T05:03:53.523Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "keywords",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "key",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "value",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "msubj2mi4az3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-01-03T05:12:35.058Z",
+        "createdBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-03T05:12:35.620Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0srmVRIHbY6UtR6krcLHEw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "bio",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "key",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "value",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6RuH3vQHLfQHpIgJ7eX5V5",
+        "type": "Entry",
+        "createdAt": "2025-01-03T04:25:34.986Z",
+        "updatedAt": "2025-01-03T04:36:35.981Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2025-01-03T04:36:35.981Z",
+        "firstPublishedAt": "2025-01-03T04:28:37.096Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recognition"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6RuH3vQHLfQHpIgJ7eX5V5"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Philadelphia Holocaust Remembrance Foundation Website and Interactive Timeline"
+        },
+        "subject": {
+          "en-US": "Philadelphia Holocaust Remembrance Foundation Website"
+        },
+        "recognition": {
+          "en-US": "Best of Award for Public Service"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "c",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "type": {
+          "en-US": "award"
+        },
+        "icon": {
+          "en-US": "faTrophy"
+        },
+        "category": {
+          "en-US": "Public Service"
+        },
+        "source": {
+          "en-US": "Addys"
+        },
+        "url": {
+          "en-US": "https://www.philaholocaustmemorial.org/"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "1z8UKv33adJ3smzyoGMI3g",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:20:49.678Z",
+        "updatedAt": "2025-01-03T05:22:19.471Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2025-01-03T05:22:19.471Z",
+        "firstPublishedAt": "2025-01-03T05:22:19.471Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/1z8UKv33adJ3smzyoGMI3g"
+      },
+      "fields": {
+        "id": {
+          "en-US": 1
+        },
+        "name": {
+          "en-US": "Medical Solutions"
+        },
+        "logo": {
+          "en-US": "Medical_Solutions.svg"
+        },
+        "url": {
+          "en-US": "https://www.medicalsolutions.com/"
+        },
+        "location": {
+          "en-US": "Omaha, NE"
+        },
+        "shortName": {
+          "en-US": "Medical Solutions"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7d8TTIGOkFPV2Lfl3GDpsK",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:22:33.962Z",
+        "updatedAt": "2025-01-03T05:24:13.182Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-01-03T05:24:13.182Z",
+        "firstPublishedAt": "2025-01-03T05:24:13.182Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7d8TTIGOkFPV2Lfl3GDpsK"
+      },
+      "fields": {
+        "id": {
+          "en-US": 2
+        },
+        "name": {
+          "en-US": "Tris Pharma"
+        },
+        "logo": {
+          "en-US": "Tris_Pharma.png"
+        },
+        "url": {
+          "en-US": "https://www.trispharma.com/"
+        },
+        "location": {
+          "en-US": "Monmouth Junction, NJ"
+        },
+        "shortName": {
+          "en-US": "Tris"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6lMesQobaULX7UpaxiXZQM",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:24:24.138Z",
+        "updatedAt": "2025-01-03T05:25:14.647Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-01-03T05:25:14.647Z",
+        "firstPublishedAt": "2025-01-03T05:25:14.647Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6lMesQobaULX7UpaxiXZQM"
+      },
+      "fields": {
+        "id": {
+          "en-US": 3
+        },
+        "name": {
+          "en-US": "IKEA"
+        },
+        "logo": {
+          "en-US": "IKEA.svg"
+        },
+        "url": {
+          "en-US": "https://www.ikea.com/us/en/"
+        },
+        "location": {
+          "en-US": "Conshohocken, PA"
+        },
+        "shortName": {
+          "en-US": "IKEA"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2i1CoOckwYpcIoHeaopr3n",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:25:35.346Z",
+        "updatedAt": "2025-01-03T05:26:50.475Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-03T05:26:50.475Z",
+        "firstPublishedAt": "2025-01-03T05:26:50.475Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2i1CoOckwYpcIoHeaopr3n"
+      },
+      "fields": {
+        "id": {
+          "en-US": 4
+        },
+        "name": {
+          "en-US": "Toll Brothers"
+        },
+        "logo": {
+          "en-US": "Toll_Brothers.svg"
+        },
+        "url": {
+          "en-US": "https://www.tollbrothers.com/"
+        },
+        "location": {
+          "en-US": "Horsham, PA"
+        },
+        "shortName": {
+          "en-US": "Toll Brothers"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2ZSe10y35JJI6eS2GXLpBJ",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:27:02.021Z",
+        "updatedAt": "2025-01-03T05:28:26.665Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-03T05:28:26.665Z",
+        "firstPublishedAt": "2025-01-03T05:28:26.665Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2ZSe10y35JJI6eS2GXLpBJ"
+      },
+      "fields": {
+        "id": {
+          "en-US": 5
+        },
+        "name": {
+          "en-US": "Marketshare Movers (United BioSource)"
+        },
+        "logo": {
+          "en-US": "United_BioSource.svg"
+        },
+        "url": {
+          "en-US": "https://ubc.com/"
+        },
+        "location": {
+          "en-US": "Furlong, PA"
+        },
+        "shortName": {
+          "en-US": "MarketShare Movers"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4z1AoswO2I1s8TqjsTN6bi",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:28:40.544Z",
+        "updatedAt": "2025-01-03T05:29:46.784Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-01-03T05:29:46.784Z",
+        "firstPublishedAt": "2025-01-03T05:29:46.784Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4z1AoswO2I1s8TqjsTN6bi"
+      },
+      "fields": {
+        "id": {
+          "en-US": 6
+        },
+        "name": {
+          "en-US": "Interstate Aerials (Sunbelt)"
+        },
+        "logo": {
+          "en-US": "Sunbelt_Rentals.svg"
+        },
+        "url": {
+          "en-US": "https://www.sunbeltrentals.com/"
+        },
+        "location": {
+          "en-US": "Fort Mill, SC"
+        },
+        "shortName": {
+          "en-US": "Interstate Aerials"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6IYoOD2xBilIzKSiRYUtqO",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:30:10.313Z",
+        "updatedAt": "2025-01-03T05:31:11.819Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-01-03T05:31:11.819Z",
+        "firstPublishedAt": "2025-01-03T05:31:11.819Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6IYoOD2xBilIzKSiRYUtqO"
+      },
+      "fields": {
+        "id": {
+          "en-US": 7
+        },
+        "name": {
+          "en-US": "Brownstein Group"
+        },
+        "logo": {
+          "en-US": "Brownstein_Group.svg"
+        },
+        "url": {
+          "en-US": "https://www.brownsteingroup.com/"
+        },
+        "location": {
+          "en-US": "Philadelphia, PA"
+        },
+        "shortName": {
+          "en-US": "Brownstein Group"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4VTw6u2kYVPjsiOcizajZk",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:31:21.590Z",
+        "updatedAt": "2025-01-03T05:31:59.236Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-01-03T05:31:59.236Z",
+        "firstPublishedAt": "2025-01-03T05:31:59.236Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "clients"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4VTw6u2kYVPjsiOcizajZk"
+      },
+      "fields": {
+        "id": {
+          "en-US": 8
+        },
+        "name": {
+          "en-US": "Saint Joseph's University"
+        },
+        "logo": {
+          "en-US": "Saint_Josephs_University.svg"
+        },
+        "url": {
+          "en-US": "https://www.sju.edu/"
+        },
+        "location": {
+          "en-US": "Philadelphia, PA"
+        },
+        "shortName": {
+          "en-US": "SJU"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "3UQ3XBNZKUJBixt96N7Hje",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:33:21.425Z",
+        "updatedAt": "2025-01-03T05:33:31.951Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:33:31.951Z",
+        "firstPublishedAt": "2025-01-03T05:33:31.951Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/3UQ3XBNZKUJBixt96N7Hje"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "annoying"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4eSfWe7qSRMcxGpMmpK0Rd",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:34:12.352Z",
+        "updatedAt": "2025-01-03T05:34:16.142Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:34:16.142Z",
+        "firstPublishedAt": "2025-01-03T05:34:16.142Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4eSfWe7qSRMcxGpMmpK0Rd"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "arse"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7HlRlJzkukZNqgHEav5i0X",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:34:30.340Z",
+        "updatedAt": "2025-01-03T05:34:33.329Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:34:33.329Z",
+        "firstPublishedAt": "2025-01-03T05:34:33.329Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7HlRlJzkukZNqgHEav5i0X"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "ass"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6MVfxcIAJMILgUHhjnh2ps",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:34:39.663Z",
+        "updatedAt": "2025-01-03T05:34:43.065Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:34:43.065Z",
+        "firstPublishedAt": "2025-01-03T05:34:43.065Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6MVfxcIAJMILgUHhjnh2ps"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "asshole"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "35RqBOyxPBz2v0YzNmw7uI",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:34:50.758Z",
+        "updatedAt": "2025-01-03T05:34:53.655Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:34:53.655Z",
+        "firstPublishedAt": "2025-01-03T05:34:53.655Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/35RqBOyxPBz2v0YzNmw7uI"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bastard"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2HuG3zXo53SXo4CMlS7fiG",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:00.971Z",
+        "updatedAt": "2025-01-03T05:35:03.378Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:03.378Z",
+        "firstPublishedAt": "2025-01-03T05:35:03.378Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2HuG3zXo53SXo4CMlS7fiG"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bitch"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "67cHB6XrRUQrml2kWoMqeB",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:22.237Z",
+        "updatedAt": "2025-01-03T05:35:24.846Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:24.846Z",
+        "firstPublishedAt": "2025-01-03T05:35:24.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/67cHB6XrRUQrml2kWoMqeB"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bollocks"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "25YgwTuYgP5hzPLygKZaRh",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:31.411Z",
+        "updatedAt": "2025-01-03T05:35:33.754Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:33.754Z",
+        "firstPublishedAt": "2025-01-03T05:35:33.754Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/25YgwTuYgP5hzPLygKZaRh"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bugger"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "5rhgfIEGPm0b1iAinV0tvA",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:39.284Z",
+        "updatedAt": "2025-01-03T05:35:41.600Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:41.600Z",
+        "firstPublishedAt": "2025-01-03T05:35:41.600Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/5rhgfIEGPm0b1iAinV0tvA"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "cock"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2otZdriChwPJXRJFferUa9",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:47.026Z",
+        "updatedAt": "2025-01-03T05:35:49.213Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:49.213Z",
+        "firstPublishedAt": "2025-01-03T05:35:49.213Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2otZdriChwPJXRJFferUa9"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "crap"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "1GZmo7tZdxG5IKasVrUpZH",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:35:53.915Z",
+        "updatedAt": "2025-01-03T05:35:56.404Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:35:56.404Z",
+        "firstPublishedAt": "2025-01-03T05:35:56.404Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/1GZmo7tZdxG5IKasVrUpZH"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "cunt"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "78hPAcGCKPZh9dU50sGns",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:03.503Z",
+        "updatedAt": "2025-01-03T05:36:06.204Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:06.204Z",
+        "firstPublishedAt": "2025-01-03T05:36:06.204Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/78hPAcGCKPZh9dU50sGns"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "damn"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "3VyQzFalvO8CFr97nwSmQ0",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:13.902Z",
+        "updatedAt": "2025-01-03T05:36:16.293Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:16.293Z",
+        "firstPublishedAt": "2025-01-03T05:36:16.293Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/3VyQzFalvO8CFr97nwSmQ0"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "damm"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "5YocQauDdukWnxlrNwhkFI",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:21.142Z",
+        "updatedAt": "2025-01-03T05:36:23.417Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:23.417Z",
+        "firstPublishedAt": "2025-01-03T05:36:23.417Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/5YocQauDdukWnxlrNwhkFI"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "dick"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "ImW9DPkbm2Jxg0O3cvhKV",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:32.629Z",
+        "updatedAt": "2025-01-03T05:36:35.067Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:35.067Z",
+        "firstPublishedAt": "2025-01-03T05:36:35.067Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/ImW9DPkbm2Jxg0O3cvhKV"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "douche"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2HSb32737HKii3hiyDKWVA",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:39.748Z",
+        "updatedAt": "2025-01-03T05:36:41.832Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:41.832Z",
+        "firstPublishedAt": "2025-01-03T05:36:41.832Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2HSb32737HKii3hiyDKWVA"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "faggot"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "Db2tNLroNHDXMNN1D2sEN",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:46.947Z",
+        "updatedAt": "2025-01-03T05:36:48.907Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:36:48.907Z",
+        "firstPublishedAt": "2025-01-03T05:36:48.907Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/Db2tNLroNHDXMNN1D2sEN"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "fuck"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "3Wp6daPa6xoUSCYO7LReat",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:36:58.992Z",
+        "updatedAt": "2025-01-03T05:37:01.491Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:01.491Z",
+        "firstPublishedAt": "2025-01-03T05:37:01.491Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/3Wp6daPa6xoUSCYO7LReat"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "fucker"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "1mxFMOwFH5Lqbf02XH12uS",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:06.839Z",
+        "updatedAt": "2025-01-03T05:37:09.235Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:09.235Z",
+        "firstPublishedAt": "2025-01-03T05:37:09.235Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/1mxFMOwFH5Lqbf02XH12uS"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "motherfucker"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6y1GeibHMki8SRVyRp0qAn",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:17.082Z",
+        "updatedAt": "2025-01-03T05:37:19.251Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:19.251Z",
+        "firstPublishedAt": "2025-01-03T05:37:19.251Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6y1GeibHMki8SRVyRp0qAn"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "prick"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "5YYNwalkBM6QZxeBQuTLIt",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:24.630Z",
+        "updatedAt": "2025-01-03T05:37:27.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:27.214Z",
+        "firstPublishedAt": "2025-01-03T05:37:27.214Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/5YYNwalkBM6QZxeBQuTLIt"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "pussy"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "26hOfiNvl37vFchkNEkV9g",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:32.580Z",
+        "updatedAt": "2025-01-03T05:37:35.203Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:35.203Z",
+        "firstPublishedAt": "2025-01-03T05:37:35.203Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/26hOfiNvl37vFchkNEkV9g"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "shit"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4QxTbSBH8hScrQ0nY5Krn6",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:40.308Z",
+        "updatedAt": "2025-01-03T05:37:42.867Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:42.867Z",
+        "firstPublishedAt": "2025-01-03T05:37:42.867Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4QxTbSBH8hScrQ0nY5Krn6"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "shitty"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7JtUI7INZiWwLuAHN5hvAN",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:37:54.967Z",
+        "updatedAt": "2025-01-03T05:37:57.513Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:37:57.513Z",
+        "firstPublishedAt": "2025-01-03T05:37:57.513Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7JtUI7INZiWwLuAHN5hvAN"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "slut"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "67n2CV6pHXPrtws4CnQqHC",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:03.789Z",
+        "updatedAt": "2025-01-03T05:38:06.470Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:06.470Z",
+        "firstPublishedAt": "2025-01-03T05:38:06.470Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/67n2CV6pHXPrtws4CnQqHC"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "suck"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "35Rdrr6PiWTykyv0wa4RGX",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:12.552Z",
+        "updatedAt": "2025-01-03T05:38:15.249Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:15.249Z",
+        "firstPublishedAt": "2025-01-03T05:38:15.249Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/35Rdrr6PiWTykyv0wa4RGX"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "turd"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4xVeGiPCHUNdYdTRQ4yt03",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:21.053Z",
+        "updatedAt": "2025-01-03T05:38:31.865Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:31.865Z",
+        "firstPublishedAt": "2025-01-03T05:38:31.865Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4xVeGiPCHUNdYdTRQ4yt03"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "twat"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2xW6GAe6qsowGOdfYUbyQ5",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:38.841Z",
+        "updatedAt": "2025-01-03T05:38:41.237Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:41.237Z",
+        "firstPublishedAt": "2025-01-03T05:38:41.237Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2xW6GAe6qsowGOdfYUbyQ5"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "wanker"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6ugXoWhRP5FIaxJ4FvoE8D",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:46.790Z",
+        "updatedAt": "2025-01-03T05:38:48.620Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:48.620Z",
+        "firstPublishedAt": "2025-01-03T05:38:48.620Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6ugXoWhRP5FIaxJ4FvoE8D"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "whore"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "2nJr55bWN6tRNH1L1fmq0i",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:38:54.850Z",
+        "updatedAt": "2025-01-03T05:38:57.426Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:38:57.426Z",
+        "firstPublishedAt": "2025-01-03T05:38:57.426Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/2nJr55bWN6tRNH1L1fmq0i"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bollock"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7nlpDoQEQ0JzCJhcmuMHYW",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:02.738Z",
+        "updatedAt": "2025-01-03T05:39:05.098Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:05.098Z",
+        "firstPublishedAt": "2025-01-03T05:39:05.098Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7nlpDoQEQ0JzCJhcmuMHYW"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "tosser"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "4oig5694o44O62NDiDxwk9",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:09.648Z",
+        "updatedAt": "2025-01-03T05:39:12.049Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:12.049Z",
+        "firstPublishedAt": "2025-01-03T05:39:12.049Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/4oig5694o44O62NDiDxwk9"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bloody"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "32EVzhPIx1OloelbBqJdIB",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:18.028Z",
+        "updatedAt": "2025-01-03T05:39:20.352Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:20.352Z",
+        "firstPublishedAt": "2025-01-03T05:39:20.352Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/32EVzhPIx1OloelbBqJdIB"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "hell"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "62eAaPme1pFRmllCFrWVW6",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:27.955Z",
+        "updatedAt": "2025-01-03T05:39:30.252Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:30.252Z",
+        "firstPublishedAt": "2025-01-03T05:39:30.252Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/62eAaPme1pFRmllCFrWVW6"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "bimbo"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "5yyQDKPSJ85OJ8OsBkg0ad",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:35.872Z",
+        "updatedAt": "2025-01-03T05:39:38.191Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:38.191Z",
+        "firstPublishedAt": "2025-01-03T05:39:38.191Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/5yyQDKPSJ85OJ8OsBkg0ad"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "jackass"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "6tbK9SdUtmwC6ILJZfA8uM",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:45.173Z",
+        "updatedAt": "2025-01-03T05:39:47.408Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:47.408Z",
+        "firstPublishedAt": "2025-01-03T05:39:47.408Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/6tbK9SdUtmwC6ILJZfA8uM"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "moron"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7H5yvqJPBuSRCbnmeXxblz",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:51.803Z",
+        "updatedAt": "2025-01-03T05:39:53.960Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:39:53.960Z",
+        "firstPublishedAt": "2025-01-03T05:39:53.960Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7H5yvqJPBuSRCbnmeXxblz"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "idiot"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "7KRSdAifNcnjTsrHLF7GVO",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:39:58.833Z",
+        "updatedAt": "2025-01-03T05:40:01.231Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:40:01.231Z",
+        "firstPublishedAt": "2025-01-03T05:40:01.231Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/7KRSdAifNcnjTsrHLF7GVO"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "retard"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "567bC7kZDefFY6kuB44RL9",
+        "type": "Entry",
+        "createdAt": "2025-01-03T05:40:07.171Z",
+        "updatedAt": "2025-01-03T05:40:09.525Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-03T05:40:09.525Z",
+        "firstPublishedAt": "2025-01-03T05:40:09.525Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cursewords"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/entries/567bC7kZDefFY6kuB44RL9"
+      },
+      "fields": {
+        "curse": {
+          "en-US": "retarded"
+        }
+      }
+    }
+  ],
+  "assets": [
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0Ai3IuTvzyjuWZrFJRYSug",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "81013498-e1a2-4fd9-934f-f26872b141e1"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "createdAt": "2025-01-03T04:13:56Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedAt": "2025-01-03T04:13:56Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "0AJuyARWNFEqYI4MExbDXu",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "createdAt": "2025-01-03T04:13:57Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedAt": "2025-01-03T04:13:57Z"
+      }
+    }
+  ]
+}

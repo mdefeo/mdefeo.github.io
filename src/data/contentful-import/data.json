@@ -1,0 +1,959 @@
+{
+  "contentTypes": [
+    {
+      "name": "Jokes",
+      "description": "A collection of jokes",
+      "displayField": "joke",
+      "fields": [
+        {
+          "id": "joke",
+          "name": "Joke",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ],
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "msubj2mi4az3"
+          }
+        },
+        "id": "jokes",
+        "type": "ContentType",
+        "createdAt": "2025-01-03T05:03:52.227Z",
+        "updatedAt": "2025-01-03T05:03:52.996Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-01-03T05:03:52.996Z",
+        "firstPublishedAt": "2025-01-03T05:03:52.996Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0srmVRIHbY6UtR6krcLHEw"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/msubj2mi4az3/environments/master/content_types/jokes"
+      }
+    }
+  ],
+  "entries": [
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I'm afraid for the calendar. Its days are numbered."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "My wife said I should do lunges to stay in shape. That would be a big step forward."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do fathers take an extra pair of socks when they go golfing? In case they get a hole in one!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Singing in the shower is fun until you get soap in your mouth. Then it's a soap opera."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do a tick and the Eiffel Tower have in common? They're both Paris sites."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a fish wearing a bowtie? Sofishticated."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "How do you follow Will Smith in the snow? You follow the fresh prints."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "If April showers bring May flowers, what do May flowers bring? Pilgrims."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I thought the dryer was shrinking my clothes. Turns out it was the refrigerator all along."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "How does dry skin affect you at work? You don’t have any elbow grease to put into it."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a factory that makes okay products? A satisfactory."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Dear Math, grow up and solve your own problems."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the janitor say when he jumped out of the closet? Supplies!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Have you heard about the chocolate record player? It sounds pretty sweet."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the ocean say to the beach? Nothing, it just waved."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do seagulls fly over the ocean? Because if they flew over the bay, we'd call them bagels."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I only know 25 letters of the alphabet. I don't know y."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "How does the moon cut his hair? Eclipse it."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did one wall say to the other? I'll meet you at the corner."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the zero say to the eight? That belt looks good on you."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "A skeleton walks into a bar and says, 'Hey, bartender. I'll have one beer and a mop.'"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Where do fruits go on vacation? Pear-is!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I asked my dog what's two minus two. He said nothing."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did Baby Corn say to Mama Corn? Where's Pop Corn?"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What's the best thing about Switzerland? I don't know, but the flag is a big plus."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What does a sprinter eat before a race? Nothing, they fast!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Where do you learn to make a banana split? Sundae school."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What has more letters than the alphabet? The post office!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Dad, did you get a haircut? No, I got them all cut!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a poor Santa Claus? St. Nickel-less."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I got carded at a liquor store, and my Blockbuster card accidentally fell out. The cashier said never mind."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Where do boats go when they're sick? To the boat doc."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I don't trust those trees. They seem kind of shady."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff and right!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "How do you get a squirrel to like you? Act like a nut."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don't eggs tell jokes? They'd crack each other up."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "I don't trust stairs. They're always up to something."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call someone with no body and no nose? Nobody knows."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Did you hear the rumor about butter? Well, I'm not going to spread it!"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn't the bicycle stand up by itself? It was two tired."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did one hat say to the other? Stay here! I'm going on ahead."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did Billy get fired from the banana factory? He kept throwing away the bent ones."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don't skeletons fight each other? They don't have the guts."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call cheese that isn't yours? Nacho cheese."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn't the leopard play hide and seek? Because he was always spotted."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a pile of cats? A meowtain."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the math book sad? It had too many problems."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don't oysters donate to charity? Because they are shellfish."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call fake spaghetti? An impasta."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a belt made of watches? A waist of time."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the scarecrow promoted? He was outstanding in his field."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a group of musical whales? An orca-stra."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the golfer bring an extra pair of pants? In case he got a hole in one."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the computer go to the doctor? It caught a virus."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the tomato blushing? Because it saw the salad dressing."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "How do you make a tissue dance? Put a little boogey in it."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why are ghosts bad liars? Because you can see right through them."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a snowman with a six-pack? An abdominal snowman."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do cows wear bells? Because their horns don’t work."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the broom late? It swept in."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t melons get married? Because they cantaloupe."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the fisherman say to the magician? Pick a cod, any cod."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do bees have sticky hair? Because they use honeycombs."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the chicken cross the playground? To get to the other slide."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the baby strawberry say to the other strawberry? If you weren't so fresh, we wouldn’t be in this jam."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do ducks always pay with cash? Because they never carry a bill."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a sleeping bull? A bulldozer."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t scientists trust atoms? Because they make up everything."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the coffee file a police report? It got mugged."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn’t the bicycle find its way home? It lost its bearings."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the picture sent to jail? It was framed."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the cookie go to the doctor? Because it was feeling crumby."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a can opener that doesn’t work? A can’t opener."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the coach yelling at the vending machine? He wanted his quarter back."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What kind of car does a sheep drive? A lamborghini."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the left eye say to the right eye? Between us, something smells."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why are elevator jokes so good? They work on so many levels."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t skeletons ever start a band? They don’t have the organs."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a dog magician? A labracadabrador."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the big cat disqualified from the race? Because it was a cheetah."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the man fall into the well? Because he didn’t see that well."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What’s orange and sounds like a parrot? A carrot."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the banana go to the doctor? It wasn’t peeling well."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t vampires go to barbecues? They don’t like steaks."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the golfer bring a ladder? To get to the next level."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t crabs give to charity? Because they’re shellfish."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a boomerang that won’t come back? A stick."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the little strawberry sad? Its mom was in a jam."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the skeleton go to the party alone? He had no body to go with him."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a bear with no teeth? A gummy bear."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the belt arrested? It held up a pair of pants."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a dinosaur with an extensive vocabulary? A thesaurus."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t graveyards ever get overcrowded? People are dying to get in."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn’t the pony sing? It was a little hoarse."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What’s a ninja’s favorite type of shoes? Sneakers."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t eggs play sports? They crack under pressure."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a factory that makes okay products? A satisfactory."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the mushroom go to the party? Because he was a fungi."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did one plate say to another? Dinner’s on me."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a fish without an eye? Fsh."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the barber win the race? He took a short cut."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t cannibals eat clowns? Because they taste funny."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the orange stop rolling down the hill? It ran out of juice."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the calendar get arrested? It had too many dates."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a boomerang that doesn’t work? A stick."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn’t the pirate learn the alphabet? Because he kept getting lost at C."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the scarecrow win an award? He was outstanding in his field."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do cows have hooves instead of feet? Because they lactose."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a guy with a rubber toe? Roberto."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a fake noodle? An impasta."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you get if you cross a snowman and a vampire? Frostbite."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why couldn’t the car play soccer? It only had one boot."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the kid bring a ladder to school? He wanted to go to high school."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the tomato turn red? Because it saw the salad dressing."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call an alligator in a vest? An investigator."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do fish live in saltwater? Because pepper makes them sneeze."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the chicken cross the road? To prove to the armadillo that it could be done."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the melon jump into the lake? It wanted to be a watermelon."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why was the math book sad? It had too many problems."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do cows wear bells? Because their horns don’t work."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the snowman say to the other snowman? Do you smell carrots?"
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do bananas never get lonely? Because they hang out in bunches."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why don’t you ever see elephants hiding in trees? Because they’re really good at it."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What do you call a funny mountain? Hill-arious."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why did the bicycle fall over? Because it was two-tired."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "What did the grape do when it got stepped on? It let out a little wine."
+      }
+    }
+  },
+  {
+    "fields": {
+      "joke": {
+        "en-US": "Why do seagulls fly over the sea? Because if they flew over the bay, they’d be bagels."
+      }
+    }
+  }
+] 
+}

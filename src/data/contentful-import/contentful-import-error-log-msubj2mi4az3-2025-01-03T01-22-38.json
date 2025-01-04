@@ -1,0 +1,1 @@
+{"ts":"2025-01-03T06:22:39.596Z","level":"error","error":{"originalError":{},"stacktrace":["Error: TypeError: Cannot read properties of undefined (reading 'id')","/Users/mdefeo/.config/yarn/global/node_modules/contentful-batch-libs/dist/listr.js:21:35"]}}
