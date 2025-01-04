@@ -1,0 +1,50 @@
+[
+  {
+    "name": "About",
+    "href": "/",
+    "icon": "faFireBurner",
+    "previewImage": "about.jpg",
+    "previewDescription": "I may work in dev, but grew up in kitchens.", 
+    "subItems": [
+      { "name": "Welcome", "href": "/" },
+      { "name": "About", "href": "/#about" },
+      { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" }
+    ]
+  },
+  {
+    "name": "CV",
+    "href": "/cv",
+    "icon": "faDisplay",
+    "previewImage": "cv.jpg",
+    "previewDescription": "I spend my days writing code, and my nights studying for my MBA.",
+    "subItems": [
+      { "name": "Experience", "href": "/cv" },
+      { "name": "Education", "href": "/cv#education" },
+      { "name": "Skills", "href": "/cv#skills" }
+    ]
+  },
+  {
+    "name": "Portfolio",
+    "href": "/portfolio",
+    "icon": "faCode",
+    "previewImage": "portfolio.jpg",
+    "previewDescription": "Ooh, shiny things!",
+    "subItems": [
+      { "name": "Case Studies", "href": "/portfolio" },
+      { "name": "Projects", "href": "/portfolio#projects" },
+      { "name": "Recognition", "href": "/portfolio#recognition" }
+    ]
+  },
+  {
+    "name": "Music",
+    "href": "/music",
+    "icon": "faGuitar",
+    "previewImage": "music.jpg",
+    "previewDescription": "I am excited to share music from my new band very soon.",
+    "subItems": [
+      { "name": "Bands", "href": "/music" },
+      { "name": "Songs", "href": "/music#songs" },
+      { "name": "Gear", "href": "/music#favorites" }
+    ]
+  }
+]

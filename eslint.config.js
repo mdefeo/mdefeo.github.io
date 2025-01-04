@@ -6,59 +6,72 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import importPlugin from 'eslint-plugin-import';
 import prettierConfig from 'eslint-config-prettier';
+import nextConfig from 'eslint-config-next';
 import globals from 'globals';
 
 export default [
-{
+  {
     ignores: ['node_modules/**', 'dist/**', 'build/**']
 },
 eslint.configs.recommended,
+nextConfig,
 prettierConfig,
-{
+  {
     files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: {
-    '@typescript-eslint': tseslint,
-    'react': reactPlugin,
-    'react-hooks': reactHooksPlugin,
-    'jsx-a11y': jsxA11yPlugin,
-    'import': importPlugin
+      '@typescript-eslint': tseslint,
+      'react': reactPlugin,
+      'react-hooks': reactHooksPlugin,
+      'jsx-a11y': jsxA11yPlugin,
+      'import': importPlugin
     },
     languageOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    parser: tsparser,
-    parserOptions: {
+      ecmaVersion: 2020,
+      sourceType: 'module',
+      parser: tsparser,
+      parserOptions: {
         ecmaFeatures: {
-        jsx: true
+          jsx: true
         }
-    },
-    globals: {
-    ...Object.fromEntries(
-        Object.entries({
-        ...globals.browser,
-        ...globals.es2020
-        }).map(([key, value]) => [key.trim(), value])
-    )
-    }
+      },
+      globals: {
+        ...Object.fromEntries(
+          Object.entries({
+            ...globals.browser,
+            ...globals.es2020,
+            ...globals.node
+          }).map(([key, value]) => [key.trim(), value])
+        )
+      }
     },
     settings: {
-    react: {
+      react: {
         version: 'detect'
-    },
-    'import/parsers': {
+      },
+      'import/resolver': {
+        node: {
+          paths: ['src'],
+          extensions: ['.js', '.jsx', '.ts', '.tsx']
+        },
+        typescript: {
+          alwaysTryTypes: true,
+          project: '.'
+        }
+      },
+      'import/parsers': {
         '@typescript-eslint/parser': ['.ts', '.tsx']
-    }
+      }
     },
     rules: {
-    'react/react-in-jsx-scope': 'off',
-    'no-console': 'warn',
-    'import/no-unresolved': 'error',
-    'jsx-a11y/anchor-is-valid': 'warn',
-    ...tseslint.configs.recommended.rules,
-    ...reactPlugin.configs.recommended.rules,
-    ...reactHooksPlugin.configs.recommended.rules,
-    ...jsxA11yPlugin.configs.recommended.rules,
-    ...importPlugin.configs.recommended.rules
+      'react/react-in-jsx-scope': 'off',
+      'no-console': 'warn',
+      'import/no-unresolved': 'error',
+      'jsx-a11y/anchor-is-valid': 'warn',
+      ...tseslint.configs.recommended.rules,
+      ...reactPlugin.configs.recommended.rules,
+      ...reactHooksPlugin.configs.recommended.rules,
+      ...jsxA11yPlugin.configs.recommended.rules,
+      ...importPlugin.configs.recommended.rules
     }
-}
+  }
 ];

@@ -1,8 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
-import UISettings from "@/components/ui/UISettings";
-import "../styles/globals.css";
-import "../styles/accessibility.css";
+import MainNavigation from "@/components/navigation/MainNavigation";
+import AnimationClient from "@/components/ui/animations/AnimationClient";
+import "@/styles/globals.css";
+import "@/styles/accessibility.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,12 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="nord">
+    <html lang="en" data-theme="aTributeToSinclair">
       <body>
-        <UISettings />
-        <main>
-          {children}
-        </main>
+        <MainNavigation />
+        <AnimationClient />
+        <main>{children}</main>
       </body>
     </html>
   );

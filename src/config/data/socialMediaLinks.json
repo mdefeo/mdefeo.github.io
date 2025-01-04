@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Bluesky",
+    "href": "https://bsky.app/profile/flyers.bsky.social",
+    "icon": "faBluesky",
+    "color": "text-[#87CEEB]"
+  },
+  {
+    "name": "LinkedIn",
+    "href": "https://www.linkedin.com/in/marcellodefeo",
+    "icon": "faLinkedin",
+    "color": "text-[#0077B5]"
+  },
+  {
+    "name": "Facebook",
+    "href": "https://www.facebook.com/notmarchello",
+    "icon": "faFacebook",
+    "color": "text-[#316FF6]"
+  },
+  {
+    "name": "Instagram",
+    "href": "https://www.instagram.com/thelastmeritocracy",
+    "icon": "faSquareInstagram",
+    "color": "text-[#c13584]"
+  },
+  {
+    "name": "Bandcamp",
+    "href": "https://slot-car-racers.bandcamp.com/",
+    "icon": "faBandcamp",
+    "color": "text-[#629aa9]"
+  },
+  {
+    "name": "GitHub",
+    "href": "https://github.com/mdefeo",
+    "icon": "faGithub",
+    "color": "text-[#333333]"
+  }
+]
