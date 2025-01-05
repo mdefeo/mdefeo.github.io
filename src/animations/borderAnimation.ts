@@ -44,6 +44,10 @@ export const animateBorders = (callback: () => void, iconRef: React.RefObject<SV
                         borders.right?.classList.add(END_BORDER_CLASS);
                         borders.bottom?.classList.add(END_BORDER_CLASS);
                         borders.left?.classList.add(END_BORDER_CLASS);
+
+                        setTimeout(() => {
+                          callback();
+                        }, 300);
                       },
                     });
                   }
