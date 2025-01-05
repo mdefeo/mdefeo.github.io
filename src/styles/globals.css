@@ -1,0 +1,39 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  @apply min-h-screen overflow-hidden bg-primary text-neutral;
+  font-family: "Inter", sans-serif;
+}
+
+/* Layout Styles */
+main {
+  @apply w-full h-screen grid grid-cols-1 bg-primary align-middle;
+}
+
+/* Section Layout */
+section {
+  @apply w-full h-screen flex items-center justify-center p-6 overflow-auto opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100;
+}
+
+/* Image Hover Effects */
+img {
+  @apply hover:shadow-2xl transition-shadow duration-500 ease-in-out;
+}
+
+/* Navigation */
+nav {
+  @apply bg-secondary;
+}
+
+/* Apply the font to heading tags */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
