@@ -6,8 +6,8 @@
     "previewImage": "about.jpg",
     "previewDescription": "I may work in dev, but grew up in kitchens.", 
     "subItems": [
-      { "name": "Welcome", "href": "/" },
-      { "name": "About", "href": "/#about" },
+      { "name": "Summary", "href": "/" },
+      { "name": "Chat", "href": "/#chat" },
       { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" }
     ]
   },
