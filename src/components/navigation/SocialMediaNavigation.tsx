@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +8,7 @@ import iconMap from "@/config/iconMap";
 
 const SocialMediaNavigation: React.FC<SocialMediaNavigationProps> = ({ size = "xl", links }) => {
   return (
-    <nav className="flex space-x-4">
+    <nav className="flex space-x-4 bg-primary">
       {links.map((social) => {
         const IconComponent = iconMap[social.icon as keyof typeof iconMap];
         return (
@@ -19,7 +20,11 @@ const SocialMediaNavigation: React.FC<SocialMediaNavigationProps> = ({ size = "x
             className="tooltip tooltip-top"
             data-tip={social.name}
           >
-            <FontAwesomeIcon icon={IconComponent} className={`mr-4 ${social.color}`} size={size} />
+            <FontAwesomeIcon
+              icon={IconComponent}
+              className={`mr-4 ${social.color}`}  // Apply Tailwind color classes like 'text-blue-600'
+              size={size}
+            />
           </Link>
         );
       })}

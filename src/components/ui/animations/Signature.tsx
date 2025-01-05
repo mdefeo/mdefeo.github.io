@@ -18,7 +18,7 @@ const Signature = ({ onComplete }: { onComplete?: () => void }) => {
 
   return (
     <div className="signature-wrapper">
-      <SignaturePath style={{ stroke: "black", fill: "black" }} className="signature-svg w-44 left-20 top-8 absolute" />
+      <SignaturePath style={{ stroke: "#4A4C5C", fill: "#4A4C5C" }} className="signature-svg w-48 text-primary-content left-20 top-10 absolute" />
     </div>
   );
 };

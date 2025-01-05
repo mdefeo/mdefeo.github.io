@@ -1,8 +1,9 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import navigationData from "@/config/data/mainNavigation.json";
 import SocialMediaLinks from "@/config/data/socialMediaLinks.json";
 import { NavigationItem } from "@/interfaces/MainNavigationInterface";
@@ -14,6 +15,9 @@ export default function MainNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<NavigationItem | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Find the "About" item from the navigation data
+  const aboutItem = navigationData.find((item) => item.name === "About");
 
   useEffect(() => {
     if (isOpen) {
@@ -34,20 +38,20 @@ export default function MainNavigation() {
 
   return (
     <Popover className="relative">
-    <Popover.Button
-    className="inline-flex items-center gap-x-1 text-sm font-semibold z-40 text-secondary absolute p-0 m-0 top-3 left-4 focus:outline-none"
+      <Popover.Button
+        className="popover-button inline-flex items-center gap-x-1 z-40 text-neutral absolute p-0 m-0 top-10 left-10 focus:outline-none"
         onMouseEnter={() => setIsOpen(true)}
       >
-        <FontAwesomeIcon 
-          icon={faBars} 
-          aria-hidden="true" 
-          className={`h-6 w-6 text-md ${isOpen ? 'opacity-30' : 'opacity-100'} hover:opacity-70`} 
+        <FontAwesomeIcon
+          icon={faBars}
+          aria-hidden="true"
+          className={`h-6 w-6 ${isOpen ? "opacity-30" : "opacity-100"} hover:opacity-70`}
         />
-    </Popover.Button>
+      </Popover.Button>
 
       <Transition
         show={isOpen}
-        enter="transition-opacity duration-300"
+        enter="transition-opacity duration-100"
         enterFrom="opacity-0"
         enterTo="opacity-100"
         leave="transition-opacity duration-300"
@@ -55,19 +59,18 @@ export default function MainNavigation() {
         leaveTo="opacity-0"
       >
         <Popover.Panel
-        className="absolute left-0 z-30 py-5 w-full h-full px-4 focus:outline-none"
+          className="absolute left-1 top-1 mt-0 z-50 py-0 w-full h-full px-0 focus:outline-none"
           onMouseLeave={(e) => {
             const relatedTarget = e.relatedTarget as Node | null;
             const currentTarget = e.currentTarget as Node | null;
-            
-            // Check if both relatedTarget and currentTarget are valid Node objects
+
             if (!(relatedTarget instanceof Node) || !(currentTarget instanceof Node) || !currentTarget.contains(relatedTarget)) {
               setHoveredItem(null);
               setIsOpen(false);
             }
           }}
         >
-          <div className="w-full flex-auto overflow-hidden text-sm shadow-lg ring-1 ring-gray-900/5">
+          <div className="w-full flex-auto overflow-hidden text-sm shadow-lg ring-0">
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0 p-4">
               {navigationData.map((item) => (
                 <MainNavigationItem
@@ -78,25 +81,28 @@ export default function MainNavigation() {
                 />
               ))}
               <div className="hidden lg:flex flex-col items-center justify-start p-4 lg:col-span-2">
-                <div className="relative w-full pb-[56.25%] mb-4 bg-gray-300">
+                <div className="relative w-full pb-[56.25%] mb-4">
                   {!imageLoaded && (
                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                       <div className="w-full h-full bg-gray-360 animate-pulse skeleton"></div>
                     </div>
                   )}
-                  <Image 
-                    src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : 'about.jpg'}`}
-                    alt={hoveredItem ? hoveredItem.previewDescription || 'Default Image' : 'Default Image'}
+
+                  <Image
+                    src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : aboutItem?.previewImage || "about.jpg"}`}
+                    alt={hoveredItem ? hoveredItem.previewDescription || "Default Image" : aboutItem?.previewDescription || "Default Image"}
                     layout="fill"
                     objectFit="contain"
-                    className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 shadow-lg ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 shadow-lg ${imageLoaded ? "opacity-100" : "opacity-0"}`}
                     onLoad={handleImageLoad}
                   />
                 </div>
-                <p className="text-left text-gray-600">{hoveredItem ? hoveredItem.previewDescription : 'Default Description'}&nbsp;</p>
+                <p className="text-left text-secondary-content">
+                  {hoveredItem ? hoveredItem.previewDescription : aboutItem?.previewDescription || "Default Description"}
+                </p>
               </div>
             </div>
-            <div className="p-4 bg-gray-50 justify-center flex">
+            <div className="p-4 justify-center flex">
               <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
             </div>
           </div>

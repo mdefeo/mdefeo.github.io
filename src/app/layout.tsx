@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="aTributeToSinclair">
-      <body>
+      <body className="bg-secondary text-secondary-content">
         <MainNavigation />
         <AnimationClient />
         <main>{children}</main>

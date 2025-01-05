@@ -11,6 +11,8 @@ export const SignaturePath: React.FC<SignaturePathProps> = ({
     id="canvas" 
     viewBox="219.774 296.447 950.912 104.246"
     style={style}
+    stroke="#fff"
+    fill="#fff"
     className={`${className}`}
     {...props}
     >

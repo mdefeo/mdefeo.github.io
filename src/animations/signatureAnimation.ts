@@ -20,8 +20,8 @@ export const playSignatureAnimation = (onComplete?: () => void) => {
     gsap.set(path, {
       strokeDasharray: length,
       strokeDashoffset: length,
-      stroke: "#000",
-      strokeWidth: 2.5,
+      stroke: "#4A4C5C",
+      strokeWidth: 4,
       fill: "none",
     });
   });
@@ -35,7 +35,7 @@ export const playSignatureAnimation = (onComplete?: () => void) => {
       stagger: 0.1,
       onComplete: () => {
         paths.forEach((path) => {
-          path.style.fill = "#000";
+          path.style.fill = "#4A4C5C";
         });
       },
     },
