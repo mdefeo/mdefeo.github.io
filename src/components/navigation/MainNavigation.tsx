@@ -88,14 +88,14 @@ export default function MainNavigation() {
                     </div>
                   )}
 
-                  <Image
-                    src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : aboutItem?.previewImage || "about.jpg"}`}
-                    alt={hoveredItem ? hoveredItem.previewDescription || "Default Image" : aboutItem?.previewDescription || "Default Image"}
-                    layout="fill"
-                    objectFit="contain"
-                    className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 shadow-lg ${imageLoaded ? "opacity-100" : "opacity-0"}`}
-                    onLoad={handleImageLoad}
-                  />
+                <Image
+                src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : aboutItem?.previewImage || "about.jpg"}`}
+                alt={hoveredItem ? hoveredItem.previewDescription || "Default Image" : aboutItem?.previewDescription || "Default Image"}
+                fill={true}
+                style={{ objectFit: 'contain' }}
+                className={`absolute top-0 left-0 w-full h-full transition-opacity duration-300 shadow-lg ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+                onLoad={handleImageLoad}
+                />
                 </div>
                 <p className="text-left text-secondary-content">
                   {hoveredItem ? hoveredItem.previewDescription : aboutItem?.previewDescription || "Default Description"}

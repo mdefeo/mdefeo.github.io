@@ -22,7 +22,7 @@ const SocialMediaNavigation: React.FC<SocialMediaNavigationProps> = ({ size = "x
           >
             <FontAwesomeIcon
               icon={IconComponent}
-              className={`mr-4 ${social.color}`}  // Apply Tailwind color classes like 'text-blue-600'
+              className={`mr-4 ${social.color}`}
               size={size}
             />
           </Link>
