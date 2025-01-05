@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import MainNavigation from "@/components/navigation/MainNavigation";
+import AnimationClient from "@/components/ui/AnimationClient";
 import "@/styles/globals.css";
 import "@/styles/accessibility.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" data-theme="aTributeToSinclair">
       <body className="bg-secondary text-secondary-content">
         <MainNavigation />
+        <AnimationClient />
         <main>{children}</main>
       </body>
     </html>

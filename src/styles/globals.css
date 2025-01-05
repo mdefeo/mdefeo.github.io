@@ -36,3 +36,53 @@ nav {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+/* Initial Border Styling Using Tailwind */
+div[class^="border-"] {
+  @apply absolute bg-neutral w-3 h-3 z-10 opacity-0;
+}
+
+.border-top {
+  @apply top-0 left-0 h-3 w-[10vw];
+}
+
+.border-right {
+  @apply top-0 right-0 w-3 h-[10vh];
+}
+
+.border-bottom {
+  @apply bottom-0 right-0 h-3 w-[10vw];
+}
+
+.border-left {
+  @apply bottom-0 left-0 w-3 h-[10vh]; 
+}
+
+/* Final state after the animation */
+.end-border {
+  @apply transition-all ease-in duration-300;
+}
+
+.end-border.border-top, .end-border.border-bottom {
+  @apply h-5;
+}
+
+.end-border.border-left, .end-border.border-right {
+  @apply w-5;
+}
+/* Keyframe for fading in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to the button */
+.popover-button {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 1.5s 1 forwards;
+}
+
