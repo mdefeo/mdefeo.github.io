@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
+import { Summary, Chat, Entrepreneurship } from "./about/sections";
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <div>
-      Lorem ipsum
-    </div>
+    <>
+      <Summary />
+      <Entrepreneurship />
+      <Chat />
+    </>
   );
 }
