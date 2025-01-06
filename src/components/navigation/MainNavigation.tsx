@@ -16,9 +16,6 @@ export default function MainNavigation() {
   const [hoveredItem, setHoveredItem] = useState<NavigationItem | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  // Find the "About" item from the navigation data
-  const aboutItem = navigationData.find((item) => item.name === "About");
-
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -39,7 +36,7 @@ export default function MainNavigation() {
   return (
     <Popover className="relative">
       <Popover.Button
-        className="popover-button inline-flex items-center gap-x-1 z-40 text-neutral absolute p-0 m-0 top-10 left-10 focus:outline-none"
+        className="popover-button"
         onMouseEnter={() => setIsOpen(true)}
       >
         <FontAwesomeIcon
@@ -59,7 +56,7 @@ export default function MainNavigation() {
         leaveTo="opacity-0"
       >
         <Popover.Panel
-          className="absolute left-1 top-1 mt-0 z-50 py-0 w-full h-full px-0 focus:outline-none"
+          className="absolute left-1 top-1 mt-0 z-50 py-0 w-full h-full px-0 focus:outline-none bg-white"
           onMouseLeave={(e) => {
             const relatedTarget = e.relatedTarget as Node | null;
             const currentTarget = e.currentTarget as Node | null;
@@ -70,7 +67,7 @@ export default function MainNavigation() {
             }
           }}
         >
-          <div className="w-full flex-auto overflow-hidden text-sm shadow-lg ring-0">
+          <div className="main-nav w-full flex-auto overflow-hidden text-sm shadow-lg ring-0 bg-white z-50">
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0 p-4">
               {navigationData.map((item) => (
                 <MainNavigationItem
@@ -84,25 +81,25 @@ export default function MainNavigation() {
                 <div className="relative w-full pb-[56.25%] mb-4">
                   {!imageLoaded && (
                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                      <div className="w-full h-full bg-gray-360 animate-pulse skeleton"></div>
+                      <div className="w-full h-full bg-accent animate-pulse skeleton"></div>
                     </div>
                   )}
 
-                <Image
-                src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : aboutItem?.previewImage || "about.jpg"}`}
-                alt={hoveredItem ? hoveredItem.previewDescription || "Default Image" : aboutItem?.previewDescription || "Default Image"}
-                fill={true}
-                style={{ objectFit: 'contain' }}
-                className={`absolute top-0 left-0 w-full h-full transition-opacity duration-300 shadow-lg ${imageLoaded ? "opacity-100" : "opacity-0"}`}
-                onLoad={handleImageLoad}
-                />
+                  <Image
+                    src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : "default.jpg"}`}
+                    alt={hoveredItem?.previewDescription ?? "Family is everything."}
+                    layout="fill"
+                    objectFit="contain"
+                    className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-300 shadow-lg ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+                    onLoad={handleImageLoad}
+                  />
                 </div>
                 <p className="text-left text-secondary-content">
-                  {hoveredItem ? hoveredItem.previewDescription : aboutItem?.previewDescription || "Default Description"}
+                  {hoveredItem ? hoveredItem.previewDescription : "Family is everything."}
                 </p>
               </div>
             </div>
-            <div className="p-4 justify-center flex">
+            <div className="p-4 justify-center flex bg-white">
               <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
             </div>
           </div>

@@ -5,44 +5,56 @@ import SocialMediaNavigation from "@/components/navigation/SocialMediaNavigation
 import SocialMediaLinks from "@/config/data/socialMediaLinks.json";
 
 export default function Summary() {
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href")?.substring(1);
+    const targetElement = document.getElementById(targetId!);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section
-      aria-labelledby="hello-heading"
-      role="contentinfo"
-      className="hello-section flex flex-col lg:flex-row lg:items-center lg:justify-between min-h-screen gap-4"
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-4xl w-full">
-        <div className="sm:order-1 order-2 text-gray-500">
-          <h2 className="text-3xl mb-3 text-gray-600">Marcello De Feo</h2>
-          <h4 className="text-xl mb-0">Full-Stack Engineer & Leader</h4>
-          <h5 className="text-lg mb-2">Philadelphia, PA</h5>
-          <p className="text-lg">MBA Candidate at Boston University</p>
-          <p className="text-lg mb-8">
+    <section id="summary" aria-labelledby="summary-heading" role="contentinfo">
+      <div className="summary-grid">
+        <div className="sm:order-1 order-2">
+          <h2>Marcello De Feo</h2>
+          <h3 className="font-normal">Full-Stack Engineer & Leader</h3>
+          <h4 className="font-normal mb-2 md:block hidden">Philadelphia, PA</h4>
+          <h4 className="font-lg font-normal md:font-base md:font-light">MBA Candidate at Boston University</h4>
+          <p className="text-lg mb-5 font-light text-base-300">
             LinkedIn:{" "} 
             <Link
               href="https://linkedin.com/in/marcellodefeo"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-300"
             >
               linkedin.com/in/marcellodefeo
             </Link>
           </p>
           <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
-          <p className="mt-10 italic text-sm">
-            Innovative software engineer and leader with over two decades of experience in full-stack development, team leadership, and scalable system architecture.
+          <p className="my-5 italic text-lg md:text-sm font-light">
+            Experienced software engineer and leader with 20+ years in full-stack development, team management, and business ownership.
           </p>
+          <p className="italic text-secondary-content text-lg md:text-sm font-light"> Want to learn more? 
+            <Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
         </div>
 
         <div className="sm:order-2 order-1 flex justify-center sm:justify-end items-center">
-          <div className="relative w-40 h-40 md:w-80 md:h-80">
-            <Image
-              src="/images/marcello-de-feo.jpg"
-              alt="Marcello De Feo"
-              fill={true}
-              className="rounded-full object-cover w-full h-full shadow-sm"
-              priority
-            />
+          <div className="relative mx-auto w-80 h-80">
+          <Link
+              href="https://linkedin.com/in/marcellodefeo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/images/marcello-de-feo.jpg"
+                alt="Marcello De Feo"
+                fill={true}
+                className="md:rounded-full md:object-cover w-full h-full shadow-sm rounded-badge"
+                priority
+              />
+            </Link>
           </div>
         </div>
       </div>

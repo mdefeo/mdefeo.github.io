@@ -14,21 +14,21 @@ const MainNavigationItem: React.FC<Props> = ({ item, setHoveredItem, setImageLoa
   return (
     <nav
       key={item.name}
-      className="group relative flex flex-col items-center md:items-start gap-y-2 p-4 bg-accent"
+      className="group relative flex flex-col items-center md:items-start gap-y-2 p-4 bg-white"
       onMouseEnter={() => {
         setHoveredItem(item);
         setImageLoaded(false);
       }}
       onMouseLeave={() => setHoveredItem(null)}
     >
-      <div className="h-14 w-14 flex-none items-center justify-center rounded-lg group-hover:bg-base-200 hover:text-info hidden md:flex">
+      <div className="h-14 w-14 flex-none items-center justify-center rounded-lg group-hover:bg-primary hover:text-info hidden md:flex ">
         <FontAwesomeIcon 
           icon={IconComponent} 
-          className="h-6 w-6 text-secondary-content group-hover:text-info-content"
+          className="h-6 w-6 text-secondary-content group-hover:text-primary-content"
         />
       </div>
       <div className="text-left">
-        <a href={item.href} className="font-bold text-primary">
+        <a href={item.href} className="font-bold text-primary-content">
           {item.name}
         </a>
       </div>

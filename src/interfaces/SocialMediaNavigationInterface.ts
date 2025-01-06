@@ -2,7 +2,6 @@ export interface SocialMediaLink {
   name: string;
   href: string;
   icon: string;
-  color: string;
 }
 
 export interface SocialMediaNavigationProps {

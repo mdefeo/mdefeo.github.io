@@ -14,10 +14,10 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, type, isError }) => 
       <div
         className={`chat-bubble ${
           isError
-            ? "bg-red-200 text-red-700"
+            ? "bg-error text-error-content"
             : type === "user"
-            ? "bg-blue-500 text-white"
-            : "bg-gray-100 text-gray-400"
+            ? "bg-accent-content text-accent"
+            : "bg-primary text-secondary-content"
         }`}
         role="alert"
         aria-live={isError ? "assertive" : "polite"}

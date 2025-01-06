@@ -1,16 +1,13 @@
 "use client";
-import React, { useState } from "react";
-import { Chat, Summary, Entrepreneurship } from "./about/sections";
+import React from "react";
+import { Summary, Chat, Entrepreneurship } from "./about/sections";
 
-export default function HomePage() {
-  const [showLoadingScreen, setShowLoadingScreen] = useState(true);
-
+export default function AboutPage() {
   return (
-    <section id="about-main-content" className="focus:outline-none">
-      <h1 className="sr-only">About Page Sections</h1>
-        <Summary />
-        <Chat />
-        <Entrepreneurship />
-    </section>
+    <>
+      <Summary />
+      <Entrepreneurship />
+      <Chat />
+    </>
   );
 }

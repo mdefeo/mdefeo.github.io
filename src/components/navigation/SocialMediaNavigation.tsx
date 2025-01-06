@@ -8,7 +8,7 @@ import iconMap from "@/config/iconMap";
 
 const SocialMediaNavigation: React.FC<SocialMediaNavigationProps> = ({ size = "xl", links }) => {
   return (
-    <nav className="flex space-x-4 bg-primary">
+    <nav className="social-media-nav flex space-x-1 md:space-x-2 lg:space-x-4">
       {links.map((social) => {
         const IconComponent = iconMap[social.icon as keyof typeof iconMap];
         return (
@@ -22,8 +22,8 @@ const SocialMediaNavigation: React.FC<SocialMediaNavigationProps> = ({ size = "x
           >
             <FontAwesomeIcon
               icon={IconComponent}
-              className={`mr-4 ${social.color}`}
               size={size}
+              className="social-media-icon"
             />
           </Link>
         );

@@ -8,7 +8,7 @@ const ChatBody: React.FC<ChatBodyProps> = ({ messages, bodyRef }) => {
   return (
     <div
       ref={bodyRef as React.RefObject<HTMLDivElement>}
-      className="card-body overflow-y-auto flex-grow p-4"
+      className="card-body overflow-y-auto flex-grow p-4 bg-white"
       aria-live="polite"
     >
       {messages.map((msg, index) => (

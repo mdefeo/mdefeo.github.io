@@ -26,12 +26,15 @@ const ChatContainer: React.FC = () => {
   ]);
 
   const bodyRef = useRef<HTMLDivElement | null>(null);
+  const [isFirstRender, setIsFirstRender] = useState(true);
 
   useEffect(() => {
-    if (bodyRef.current) {
-      bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+    if (!isFirstRender && bodyRef.current) {
+      // bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+    } else {
+      setIsFirstRender(false); // After the first render, allow scrolling
     }
-  }, [messages]);
+  }, [messages, isFirstRender]);
 
   const addMessage = (message: string, type: "bot" | "user", isError: boolean) => {
     setMessages((prev) => [...prev, { message, type, isError }]);
@@ -100,7 +103,7 @@ const ChatContainer: React.FC = () => {
   };
 
   return (
-    <div className="chat-container h-[66vh] min-h-3.5 w-full flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl transition-all duration-500 ease-in-out">
+    <div className="chat-container h-96 md:h-[66vh] min-h-full w-full flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl transition-all duration-500 ease-in-out">
       <ChatBody messages={messages} bodyRef={bodyRef} />
       <ChatForm
         userInput={userInput}
