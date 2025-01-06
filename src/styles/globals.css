@@ -32,6 +32,8 @@ main {
 /* Section Layout */
 section {
   @apply w-full h-auto lg:h-screen flex items-center justify-center p-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary;
+  /* @apply w-full h-auto lg:h-screen flex items-center justify-center p-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary transform rotate-12 md:rotate-0 transition-transform duration-700 ease-in-out; */
+
 }
 
 /* Image Hover Effects */
@@ -80,7 +82,7 @@ ul li {
 
 /* Initial Border Styling Using Tailwind */
 div[class^="border-"] {
-  @apply hidden md:block fixed bg-neutral w-3 h-3 z-40 opacity-0;
+  @apply hidden md:block fixed bg-success w-3 h-3 z-40 opacity-0;
 }
 
 .border-top {

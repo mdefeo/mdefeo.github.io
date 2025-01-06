@@ -36,7 +36,7 @@ const MainNavigationItem: React.FC<Props> = ({ item, setHoveredItem, setImageLoa
       {item.subItems && (
         <div className="mt-2 space-y-1 hidden md:block ml-1">
           {item.subItems.map((subItem) => (
-            <a key={subItem.name} href={subItem.href} className="block text-primary-content hover:text-info">
+            <a key={subItem.name} href={subItem.href} className="block ">
               {subItem.name}
             </a>
           ))}

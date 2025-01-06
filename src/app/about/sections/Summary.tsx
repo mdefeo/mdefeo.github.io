@@ -37,7 +37,7 @@ export default function Summary() {
             Experienced software engineer and leader with 20+ years in full-stack development, team management, and business ownership.
           </p>
           <p className="italic text-secondary-content text-lg md:text-sm font-light"> Want to learn more? 
-            <Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
+            &nbsp;<Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
         </div>
 
         <div className="sm:order-2 order-1 flex justify-center sm:justify-end items-center">
