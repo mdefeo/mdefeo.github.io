@@ -103,7 +103,7 @@ const ChatContainer: React.FC = () => {
   };
 
   return (
-    <div className="chat-container h-96 md:h-[66vh] min-h-full w-full flex flex-col justify-between mx-auto my-8 shadow-sm hover:card hover:shadow-2xl transition-all duration-500 ease-in-out">
+    <div className="chat-container h-96 md:h-[66vh] min-h-full w-full flex flex-col justify-between mx-auto mt-0 mb-8 shadow-sm hover:card hover:shadow-2xl transition-all duration-500 ease-in-out">
       <ChatBody messages={messages} bodyRef={bodyRef} />
       <ChatForm
         userInput={userInput}

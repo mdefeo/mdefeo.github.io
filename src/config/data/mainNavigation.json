@@ -7,7 +7,7 @@
     "previewDescription": "I may work in dev, but grew up in kitchens.", 
     "subItems": [
       { "name": "Summary", "href": "/#summary" },
-      { "name": "Entrepreneurship", "href": "/#entrepreneurship" },
+      { "name": "Education", "href": "/#education" },
       { "name": "Chat", "href": "/#chat" }
     ]
   },
@@ -18,8 +18,8 @@
     "previewImage": "cv.jpg",
     "previewDescription": "Engineer by day, MBA student by night.",
     "subItems": [
+      { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" },
       { "name": "Experience", "href": "/cv#experience" },
-      { "name": "Education", "href": "/cv#education" },
       { "name": "Skills", "href": "/cv#skills" }
     ]
   },

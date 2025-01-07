@@ -16,14 +16,14 @@ export default function Summary() {
 
   return (
     <section id="summary" aria-labelledby="summary-heading" role="contentinfo">
-      <div className="summary-grid">
-        <div className="sm:order-1 order-2">
+      <div className="summary-grid grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="sm:order-1 order-2 h-auto sm:h-auto">
           <h2>Marcello De Feo</h2>
           <h3 className="font-normal">Full-Stack Engineer & Leader</h3>
-          <h4 className="font-normal mb-2 md:block hidden">Philadelphia, PA</h4>
-          <h4 className="font-lg font-normal md:font-base md:font-light">MBA Candidate at Boston University</h4>
+          <h4 className="font-normal mb-2 lg:block hidden">Philadelphia, PA</h4>
+          <h4 className="font-md md:font-lg font-normal md:font-base md:font-light">MBA Candidate at Boston University</h4>
           <p className="text-lg mb-5 font-light text-base-300">
-            LinkedIn:{" "} 
+            <span className="hidden lg:inline">LinkedIn:{" "}</span>
             <Link
               href="https://linkedin.com/in/marcellodefeo"
               target="_blank"
@@ -33,25 +33,27 @@ export default function Summary() {
             </Link>
           </p>
           <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
-          <p className="my-5 italic text-lg md:text-sm font-light">
+          <p className="my-5 italic text-lg sm:text-sm font-light">
             Experienced software engineer and leader with 20+ years in full-stack development, team management, and business ownership.
           </p>
           <p className="italic text-secondary-content text-lg md:text-sm font-light"> Want to learn more? 
             &nbsp;<Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
         </div>
 
-        <div className="sm:order-2 order-1 flex justify-center sm:justify-end items-center">
-          <div className="relative mx-auto w-80 h-80">
-          <Link
+        <div className="sm:order-2 order-1 flex justify-center sm:justify-end items-center h-full sm:h-auto">
+          <div className="relative mx-auto md:w-80 md:h-80 sm:h-auto">
+            <Link
               href="https://linkedin.com/in/marcellodefeo"
               target="_blank"
               rel="noopener noreferrer"
+              className="relative block w-full h-auto md:h-full md:aspect-square"
             >
               <Image
-                src="/images/marcello-de-feo.jpg"
+                src="/images/marcello-de-feo.png"
                 alt="Marcello De Feo"
-                fill={true}
-                className="md:rounded-full md:object-cover w-full h-full shadow-sm rounded-badge"
+                height={320}
+                width={320}
+                className="relative rounded-full md:object-cover w-3/4 h-3/4 md:w-full md:h-full shadow-sm bg-success hover:bg-secondary-content aspect-square mx-auto"
                 priority
               />
             </Link>
