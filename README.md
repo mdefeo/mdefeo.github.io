@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marcello De Feo - Personal and Professional Portfolio
 
-## Getting Started
+Welcome to the personal and professional portfolio of Marcello De Feo. This project showcases my skills, experience, and projects as a Full-Stack Engineer and Leader.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Marcello De Feo - Personal and Professional Portfolio](#marcello-de-feo---personal-and-professional-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Credits](#credits)
+    - [Media](#media)
+    - [Other](#other)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio is designed to highlight my professional journey, skills, and projects. It includes sections such as About, CV, Portfolio, Music, and more.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **About Section**: Overview of my background and professional journey.
+- **CV Section**: Detailed information about my education, experience, and skills.
+- **Portfolio Section**: Showcase of my projects and achievements.
+- **Music Section**: Information about my musical interests and projects.
+- **Interactive Chat**: A chat feature to interact and learn more about me.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **TypeScript**: Typed superset of JavaScript for type safety.
+- **GSAP**: JavaScript animation library for creating animations.
+- **FontAwesome**: Icon library for adding icons to the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+To get started with this project, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    git clone https://github.com/mdefeo/mdefeo.github.io.git
+    cd your-repo-name
+    ```
+
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+4. **Open your browser** and navigate to `http://localhost:3000` to see the project in action.
+
+## Usage
+
+- **Navigate through the sections**: Use the navigation menu to explore different sections of the portfolio.
+- **Interactive Chat**: Use the chat feature to interact and learn more about me.
+- **Smooth Scrolling**: Click on links to smoothly scroll to different sections of the page.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
+
+## Credits
+
+### Media
+
+- [TyliJura](https://pixabay.com/users/tylijura-22072131/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8829735): CV Menu Navigation photo
+- [Javier Dumont](https://pixabay.com/users/javierdumont-14443229/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4702977): Musc Menu Navigation photo
+- [Ecommdesign](https://iconscout.com/contributors/ecommdesign): SEO Icon
+- [SVG Repo](https://www.svgrepo.com/) and [Font Awesome](https://fontawesome.com/icons): Remaining SVG icons
+- Business images are curteous of the respective businesses
+
+### Other
+
+- OpenAI was used for simple tasks, such as data extraction from persona files and formatting JSON.

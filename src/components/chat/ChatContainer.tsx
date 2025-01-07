@@ -19,7 +19,7 @@ const ChatContainer: React.FC = () => {
     { message: string; type: "bot" | "user"; isError: boolean }[]
   >([
     {
-      message: "Hello, I'm bot.cello, the virtual Marcello. How can I help you today?",
+      message: "Hello, I'm bot.cello, the virtual Marcello. What would you like to know about me?",
       type: "bot",
       isError: false,
     },
@@ -30,9 +30,8 @@ const ChatContainer: React.FC = () => {
 
   useEffect(() => {
     if (!isFirstRender && bodyRef.current) {
-      // bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
     } else {
-      setIsFirstRender(false); // After the first render, allow scrolling
+      setIsFirstRender(false);
     }
   }, [messages, isFirstRender]);
 

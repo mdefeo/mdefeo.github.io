@@ -17,7 +17,7 @@ export default function Summary() {
   return (
     <section id="summary" aria-labelledby="summary-heading" role="contentinfo">
       <div className="summary-grid grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="sm:order-1 order-2 h-auto sm:h-auto">
+        <div className="sm:order-1 order-2 h-auto sm:h-auto text-center mx-auto md:text-left">
           <h2>Marcello De Feo</h2>
           <h3 className="font-normal">Full-Stack Engineer & Leader</h3>
           <h4 className="font-normal mb-2 lg:block hidden">Philadelphia, PA</h4>
@@ -33,10 +33,10 @@ export default function Summary() {
             </Link>
           </p>
           <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
-          <p className="my-5 italic text-lg sm:text-sm font-light">
+          <p className="my-5 italic text-base sm:text-sm font-light">
             Experienced software engineer and leader with 20+ years in full-stack development, team management, and business ownership.
           </p>
-          <p className="italic text-secondary-content text-lg md:text-sm font-light"> Want to learn more? 
+          <p className="italic text-secondary-content text-base md:text-sm font-light"> Want to learn more? 
             &nbsp;<Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
         </div>
 
@@ -53,7 +53,7 @@ export default function Summary() {
                 alt="Marcello De Feo"
                 height={320}
                 width={320}
-                className="relative rounded-full md:object-cover w-3/4 h-3/4 md:w-full md:h-full shadow-sm bg-success hover:bg-secondary-content aspect-square mx-auto"
+                className="relative rounded-full md:object-cover md:w-full md:h-full shadow-sm bg-success hover:bg-secondary-content aspect-square mx-auto"
                 priority
               />
             </Link>
