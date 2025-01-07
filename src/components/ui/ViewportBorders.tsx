@@ -20,10 +20,10 @@ const ViewportBorders: React.FC = () => {
 
   return (
     <>
-      <div className="border-top fixed sm:w-[5vw] md:w-[10vw] lg:w-[15vw]"></div>
-      <div className="border-right fixed sm:h-[5vh] md:h-[10vh] lg:h-[15vh]"></div>
-      <div className="border-bottom fixed sm:w-[5vw] md:w-[10vw] lg:w-[15vw]"></div>
-      <div className="border-left fixed sm:h-[5vh] md:h-[10vh] lg:h-[15vh]"></div>
+      <div className="border-top h-border"></div>
+      <div className="border-right v-border"></div>
+      <div className="border-bottom h-border"></div>
+      <div className="border-left v-border"></div>
     </>
   );
 };

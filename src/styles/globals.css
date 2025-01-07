@@ -25,14 +25,12 @@ a {
 
 /* Layout Styles */
 main {
-  @apply w-screen h-auto md:h-screen grid grid-cols-1 bg-primary align-middle flex-col lg:flex-row py-10 gap-4 md:gap-8 md:fixed md:overflow-x-hidden z-10 mx-auto;
-
+  @apply w-screen h-auto md:h-screen grid grid-cols-1 bg-primary align-middle py-10 gap-4 md:gap-8 md:fixed md:overflow-x-hidden z-10 mx-auto;
 }
 
 /* Section Layout */
 section {
-  @apply w-full h-auto md:min-h-screen flex items-center justify-center py-1 px-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary max-h-none;
-  /* @apply w-full h-auto lg:h-screen flex items-center justify-center p-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary transform rotate-12 md:rotate-0 transition-transform duration-700 ease-in-out; */
+  @apply w-full h-auto md:min-h-screen grid place-items-center py-1 px-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary max-h-none;
 }
 
 /* Image Hover Effects */
@@ -85,31 +83,40 @@ div[class^="border-"] {
 }
 
 .border-top {
-  @apply top-0 left-0 h-3 w-[10vw];
+  @apply top-0 left-0;
 }
 
 .border-right {
-  @apply top-0 right-0 w-3 h-[10vh];
+  @apply top-0 right-0;
 }
 
 .border-bottom {
-  @apply bottom-0 right-0 h-3 w-[10vw];
+  @apply bottom-0 right-0;
 }
 
 .border-left {
-  @apply bottom-0 left-0 w-3 h-[10vh]; 
+  @apply bottom-0 left-0; 
 }
+
+.h-border {
+  @apply  h-3 w-[10vw] sm:w-[5vw] md:w-[10vw] lg:w-[15vw];
+}
+
+.v-border {
+  @apply w-3 h-[10vh] sm:h-[5vh] md:h-[10vh] lg:h-[15vh];
+}
+
 
 /* Final state after the animation */
 .end-border {
   @apply transition-all ease-in duration-300;
 }
 
-.end-border.border-top, .end-border.border-bottom {
+.end-border.h-border {
   @apply h-5;
 }
 
-.end-border.border-left, .end-border.border-right {
+.end-border.v-border {
   @apply w-5;
 }
 
@@ -130,7 +137,7 @@ div[class^="border-"] {
 }
 
 .social-media-icon {
-  @apply mx-1 md:mx-2 mt-1 transition-all ease-in-out hover:opacity-75 hover:shadow-2xl;
+  @apply mx-1 md:mx-2 lg:mx-4 mt-1 transition-all ease-in-out hover:opacity-75 hover:shadow-2xl;
 }
 
 .fa-bluesky {
@@ -165,9 +172,6 @@ div[class^="border-"] {
   @apply grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-4xl w-full m-8 sm:text-left;
 }
 
-.summary-grid nav {
-  @apply hidden md:block;
-}
 
 .social-media-nav .social-media-icon {
   @apply mx-1 md:mx-2 lg:mx-4;

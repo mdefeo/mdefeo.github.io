@@ -10,21 +10,20 @@ const ExperienceListItem: React.FC<ExperienceListItemProps> = ({
   location,
   responsibilities,
 }) => {
-  // Helper function to render responsibilities correctly
-  const renderResponsibilities = (responsibilities: string | string[]) => {
-    if (typeof responsibilities === 'string') {
-      return <p className="text-sm text-secondary-content">{responsibilities}</p>;
-    } else if (Array.isArray(responsibilities)) {
-      return (
-        <ul className="text-sm m-0 pl-3 text-secondary-content">
-          {responsibilities.map((task, index) => (
-            <li key={index}>{task}</li>
-          ))}
-        </ul>
-      );
-    }
-    return null;
-  };
+  // Render responsibilities based on type
+  let responsibilitiesContent = <></>; // Default empty fragment for no responsibilities
+
+  if (typeof responsibilities === 'string') {
+    responsibilitiesContent = <p className="text-sm text-secondary-content">{responsibilities}</p>;
+  } else if (Array.isArray(responsibilities)) {
+    responsibilitiesContent = (
+      <ul className="text-sm m-0 pl-3 text-secondary-content">
+        {responsibilities.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
+    );
+  }
 
   return (
     <div className="flex flex-col sm:flex-row sm:space-x-8 mb-4">
@@ -46,7 +45,7 @@ const ExperienceListItem: React.FC<ExperienceListItemProps> = ({
           <p className="text-md mb-2 text-base-300">{position}</p>
           <p className="text-right text-sm text-base-300 md:block hidden">{location}</p>
         </div>
-        {renderResponsibilities(responsibilities)}
+        {responsibilitiesContent}
       </div>
     </div>
   );
