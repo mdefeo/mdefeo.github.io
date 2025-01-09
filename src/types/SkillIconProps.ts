@@ -8,3 +8,4 @@ export interface SkillIconProps {
   className?: string;
   isFontAwesome?: boolean;
 }
+

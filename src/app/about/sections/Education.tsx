@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import ExperienceListItem from '@/components/ui/ExperienceListItem'; // Ensure to import the component
+import ExperienceListItem from '@/components/ui/ExperienceListItem';
 import educationData from '@/config/data/experience/educationData.json';
 
 export default function Education() {
@@ -9,14 +8,15 @@ export default function Education() {
       <article>
         {educationData.map((item, index) => (
           <ExperienceListItem
+            id={index}
             key={index}
             logoSrc={item.logoSrc}
             altText={item.altText}
-            businessName={item.institutionName}
+            institutionName={item.institutionName}
             duration={item.duration}
-            position={item.degree}
+            title={item.degree}
             location={item.location}
-            responsibilities={item.description}
+            description={item.description}
           />
         ))}
       </article>

@@ -4,28 +4,30 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import navigationData from "@/config/data/mainNavigation.json";
 import SocialMediaLinks from "@/config/data/socialMediaLinks.json";
+import MainNavigationItem from "./MainNavigationItem";
 import { NavigationItem } from "@/interfaces/MainNavigationInterface";
 import SocialMediaNavigation from "./SocialMediaNavigation";
-import MainNavigationItem from "./MainNavigationItem";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Signature from "@/components/ui/Signature";
 
 export default function MainNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<NavigationItem | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const overFlowClass = "overflow-hidden";
 
   useEffect(() => {
     if (isOpen) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add(overFlowClass);
       setHoveredItem(null);
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove(overFlowClass);
     }
 
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove(overFlowClass);
     };
   }, [isOpen]);
 
@@ -56,7 +58,7 @@ export default function MainNavigation() {
         leaveTo="opacity-0"
       >
         <Popover.Panel
-          className="absolute left-1 top-1 mt-0 z-50 py-0 w-full h-full px-0 focus:outline-none bg-white"
+          className="absolute left-0 top-0 m-0 z-50 py-0 w-full h-full px-0 focus:outline-none bg-white"
           onMouseLeave={(e) => {
             const relatedTarget = e.relatedTarget as Node | null;
             const currentTarget = e.currentTarget as Node | null;
@@ -67,14 +69,26 @@ export default function MainNavigation() {
             }
           }}
         >
-          <div className="main-nav w-full flex-auto overflow-hidden text-sm shadow-lg ring-0 bg-white z-50">
-            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0 p-4">
+          <div className="main-nav">
+            <Popover.Button
+              className="popover-button-close"
+              onClick={() => setIsOpen(false)}
+            >
+              <FontAwesomeIcon
+                icon={faTimes}
+                aria-hidden="true"
+                className={`h-6 w-6`}
+              />
+            </Popover.Button>
+            <Signature />
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0 mt-6 p-0">
               {navigationData.map((item) => (
                 <MainNavigationItem
                   key={item.name}
                   item={item}
                   setHoveredItem={setHoveredItem}
                   setImageLoaded={setImageLoaded}
+                  onClick={() => setIsOpen(false)}
                 />
               ))}
               <div className="hidden lg:flex flex-col items-center justify-start p-4 lg:col-span-2">
@@ -84,7 +98,6 @@ export default function MainNavigation() {
                       <div className="w-full h-full bg-accent animate-pulse skeleton"></div>
                     </div>
                   )}
-
                   <Image
                     src={`/images/previews/${hoveredItem ? hoveredItem.previewImage : "default.jpg"}`}
                     alt={hoveredItem?.previewDescription ?? "Family is everything."}
@@ -100,7 +113,7 @@ export default function MainNavigation() {
               </div>
             </div>
             <div className="p-4 justify-center flex bg-white">
-              <SocialMediaNavigation size="xl" links={SocialMediaLinks} />
+              <SocialMediaNavigation size="2x" links={SocialMediaLinks} />
             </div>
           </div>
         </Popover.Panel>

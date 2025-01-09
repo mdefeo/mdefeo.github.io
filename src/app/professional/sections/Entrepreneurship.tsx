@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
-import entrepreneurshipData from '@/config/data/experience/entrepreneurshipData.json'; // Import the JSON data
-import ExperienceListItem from '@/components/ui/ExperienceListItem'; // Ensure to import the component
+import entrepreneurshipData from '@/config/data/experience/entrepreneurshipData.json';
+import ExperienceListItem from '@/components/ui/ExperienceListItem';
 
 export default function Entrepreneurship() {
   return (
@@ -9,14 +8,15 @@ export default function Entrepreneurship() {
       <article>
         {entrepreneurshipData.map((item, index) => (
           <ExperienceListItem
+            id={index}
             key={index}
             logoSrc={item.logoSrc}
             altText={item.altText}
-            businessName={item.businessName}
+            institutionName={item.institutionName}
             duration={item.duration}
-            position={item.position}
+            title={item.title}
             location={item.location}
-            responsibilities={item.responsibilities}
+            description={item.description}
           />
         ))}
       </article>

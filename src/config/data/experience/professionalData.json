@@ -7,6 +7,7 @@
     "tilteShortName": "Back End Developer",
     "location": "Omaha, NE",
     "duration": "2023 - Present",
+    "altText": "Medical Solutions",
     "description": [
       "Engineered centralized job listing application using Azure Service Bus and Redis, streamlining asynchronous data processing.",
       "Provided technical mentorship and onboarded new developers, promoting collaboration and adherence to best practices.",
@@ -45,6 +46,7 @@
     "tilteShortName": "Senior Engineer",
     "location": "Furlong, PA",
     "duration": "2017 - 2023",
+    "altText": "United BioSource",
     "description": [
       "Architected PHP-based B2B data visualization portals, increasing customer retention by 10%.",
       "Implemented SOC 2 and HIPAA compliance protocols to ensure data security and meet regulatory standards.",
@@ -87,6 +89,7 @@
     "tilteShortName": "Senior Engineer",
     "location": "Paulsboro, NJ",
     "duration": "2015 - 2017",
+    "altText": "Sunbelt",
     "description": [
       "Architected PHP and SQL-based Rental Management Software, enabling efficient tracking of $11M in equipment assets.",
       "Developed real-time GPS alert systems, improving delivery efficiency by 35% and eliminating theft incidents.",
@@ -115,6 +118,7 @@
     "tilteShortName": "Web Developer",
     "location": "Horsham, PA",
     "duration": "2014 - 2015",
+    "altText": "Toll Brothers",
     "description": [
       "Developed high-visibility consumer-facing sites to market new developments, including luxury Park Avenue buildings with listings up to $35 million, as featured on Bravo’s Million Dollar Listing.",
       "Spearheaded the development of Toll Career Center, with real-time job listings sourced from iCIMS and an internal API, leading to a 10% increase in job candidates.",
@@ -142,6 +146,7 @@
     "tilteShortName": "Senior Developer",
     "location": "Philadelphia, PA",
     "duration": "2012 - 2014",
+    "altText": "Brownstein Group",
     "description": [
       "Managed a team of developers to deliver award-winning websites for Fortune 500 companies like IKEA.",
       "Created IKEA’s Seasonal Launch Vehicle (SLV), an interactive digital catalog driving customer engagement with over 500,000 monthly users."
@@ -172,6 +177,7 @@
     "tilteShortName": "Web Developer",
     "location": "Philadelphia, PA",
     "duration": "2005 - 2012",
+    "altText": "Saint Joseph's University",
     "description": [
       "Built and maintained department-specific Learning Management Systems (LMS).",
       "Developed APIs to interface with the University’s Blackboard LMS.",

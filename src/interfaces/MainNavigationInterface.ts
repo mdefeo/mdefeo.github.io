@@ -21,3 +21,11 @@ export interface MainNavigationInterface {
   imageLoaded: boolean;
   handleImageLoad: () => void;
 }
+
+
+export interface NavigationProps {
+  item: NavigationItem;
+  setHoveredItem: (item: NavigationItem | null) => void;
+  setImageLoaded: (loaded: boolean) => void;
+  onClick: () => void; 
+}

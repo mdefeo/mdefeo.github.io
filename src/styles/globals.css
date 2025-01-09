@@ -77,6 +77,10 @@ ul li {
   @apply leading-6;
 }
 
+hr {
+  @apply my-2 border-primary-content w-full;
+}
+
 /* Initial Border Styling Using Tailwind */
 div[class^="border-"] {
   @apply hidden md:block fixed bg-success w-3 h-3 z-40 opacity-0;
@@ -136,6 +140,10 @@ div[class^="border-"] {
   animation: fadeIn 1.5s ease-out 1.5s 1 forwards;
 }
 
+.popover-button-close {
+  @apply inline-flex items-center gap-x-1 z-50 text-neutral fixed p-0 m-0 md:top-11 md:left-11 top-3 left-3 focus:outline-none opacity-100;
+}
+
 .social-media-icon {
   @apply mx-1 md:mx-2 lg:mx-4 mt-1 transition-all ease-in-out hover:opacity-75 hover:shadow-2xl;
 }
@@ -175,4 +183,9 @@ div[class^="border-"] {
 
 .social-media-nav .social-media-icon {
   @apply mx-1 md:mx-2 lg:mx-4;
+}
+
+.main-nav {
+  @apply mx-auto flex-auto overflow-hidden text-sm shadow-lg ring-0 bg-white md:mt-4 justify-self-center align-middle; 
+  width: calc(100% - 1.5rem);
 }

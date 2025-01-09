@@ -4,21 +4,20 @@ import { ExperienceListItemProps } from '@/interfaces/ExperienceListInterface';
 const ExperienceListItem: React.FC<ExperienceListItemProps> = ({
   logoSrc,
   altText,
-  businessName,
+  institutionName,
   duration,
-  position,
+  title,
   location,
-  responsibilities,
+  description,
 }) => {
-  // Render responsibilities based on type
-  let responsibilitiesContent = <></>; // Default empty fragment for no responsibilities
+  let descriptionContent = <></>;
 
-  if (typeof responsibilities === 'string') {
-    responsibilitiesContent = <p className="text-sm text-secondary-content">{responsibilities}</p>;
-  } else if (Array.isArray(responsibilities)) {
-    responsibilitiesContent = (
+  if (typeof description === 'string') {
+    descriptionContent = <p className="text-sm text-secondary-content">{description}</p>;
+  } else if (Array.isArray(description)) {
+    descriptionContent = (
       <ul className="text-sm m-0 pl-3 text-secondary-content">
-        {responsibilities.map((task, index) => (
+        {description.map((task, index) => (
           <li key={index}>{task}</li>
         ))}
       </ul>
@@ -38,14 +37,14 @@ const ExperienceListItem: React.FC<ExperienceListItemProps> = ({
       </div>
       <div className="flex-1 mb-4">
         <div className="flex justify-between items-top">
-          <h3 className="mb-0">{businessName}</h3>
+          <h3 className="mb-0">{institutionName}</h3>
           <p className="text-right text-md md:block hidden text-base-300">{duration}</p>
         </div>
         <div className="flex justify-between items-top">
-          <p className="text-md mb-2 text-base-300">{position}</p>
+          <p className="text-md mb-2 text-base-300">{title}</p>
           <p className="text-right text-sm text-base-300 md:block hidden">{location}</p>
         </div>
-        {responsibilitiesContent}
+        {descriptionContent}
       </div>
     </div>
   );

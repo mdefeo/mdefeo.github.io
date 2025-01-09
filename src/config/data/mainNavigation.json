@@ -1,50 +1,31 @@
 [
   {
-    "name": "About",
+    "name": "Personal",
     "href": "/",
-    "icon": "faFireBurner",
-    "previewImage": "about.jpg",
+    "icon": "faGuitar",
+    "previewImage": "music.jpg",
     "previewDescription": "I may work in dev, but grew up in kitchens.", 
     "subItems": [
       { "name": "Summary", "href": "/#summary" },
       { "name": "Education", "href": "/#education" },
+      { "name": "Skills", "href": "/#skills" },
+      { "name": "Music", "href": "/#music" },
+      { "name": "Food", "href": "/#food" },
       { "name": "Chat", "href": "/#chat" }
     ]
   },
   {
-    "name": "CV",
-    "href": "/cv",
+    "name": "Professional",
+    "href": "/professional",
     "icon": "faDisplay",
     "previewImage": "cv.jpg",
     "previewDescription": "Engineer by day, MBA student by night.",
     "subItems": [
-      { "name": "Entrepreneurship", "href": "/cv#entrepreneurship" },
-      { "name": "Experience", "href": "/cv#experience" },
-      { "name": "Skills", "href": "/cv#skills" }
-    ]
-  },
-  {
-    "name": "Portfolio",
-    "href": "/portfolio",
-    "icon": "faCode",
-    "previewImage": "portfolio.jpg",
-    "previewDescription": "Ooh, shiny things!",
-    "subItems": [
-      { "name": "Case Studies", "href": "/portfolio" },
-      { "name": "Projects", "href": "/portfolio#projects" },
-      { "name": "Recognition", "href": "/portfolio#recognition" }
-    ]
-  },
-  {
-    "name": "Music",
-    "href": "/music",
-    "icon": "faGuitar",
-    "previewImage": "music.jpg",
-    "previewDescription": "New music coming soon.",
-    "subItems": [
-      { "name": "Bands", "href": "/music" },
-      { "name": "Songs", "href": "/music#songs" },
-      { "name": "Gear", "href": "/music#favorites" }
+      { "name": "Experience", "href": "/professional#experience" },
+      { "name": "Case Studies", "href": "/professional/#case-studies" },
+      { "name": "Entrepreneurship", "href": "/professional#entrepreneurship" },
+      { "name": "Projects", "href": "/professional#projects" },
+      { "name": "Recognition", "href": "/professional#recognition" }
     ]
   }
 ]
