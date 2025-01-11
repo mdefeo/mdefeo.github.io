@@ -4,7 +4,9 @@ import educationData from '@/config/data/experience/educationData.json';
 
 export default function Education() {
   return (
-    <section id="education" aria-labelledby="education-heading" role="contentinfo">
+    <section className="relative" id="education" aria-labelledby="education-heading" role="contentinfo">
+      <h2 className="align-middle rotate-180 [writing-mode:vertical-rl] [text-orientation:mixed] text-5xl left-0 top-10 absolute">Education</h2>
+
       <article>
         {educationData.map((item, index) => (
           <ExperienceListItem

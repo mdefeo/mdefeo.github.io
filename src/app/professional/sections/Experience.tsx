@@ -1,54 +1,56 @@
-import { useState, useEffect } from 'react';
+import { Tab } from '@headlessui/react';
 import { ExperienceListItemProps } from "@/interfaces/ExperienceListInterface";
 import ExperienceListItem from "@/components/ui/ExperienceListItem";
-import ExperienceDrawer from "@/components/cv/ExperienceDrawer"; 
 import professionalData from "@/config/data/experience/professionalData.json";
+import Image from "next/image";
 
 const Experience: React.FC<{ onExperienceSelect: (experience: ExperienceListItemProps) => void }> = ({ onExperienceSelect }) => {
-  const [experiences, setExperiences] = useState<ExperienceListItemProps[]>([]);
-  const [selectedExperience, setSelectedExperience] = useState<ExperienceListItemProps | null>(null);
-
-  useEffect(() => {
-    setExperiences(professionalData);
-  }, []);
-
-  useEffect(() => {
-    if (!selectedExperience && experiences.length > 0) {
-      setSelectedExperience(experiences[0]);
-      onExperienceSelect(experiences[0]);
-    }
-  }, [experiences, onExperienceSelect, selectedExperience]);
-
-  const handleExperienceSelect = (experience: ExperienceListItemProps) => {
-    setSelectedExperience(experience);
-    onExperienceSelect(experience);
-  };
 
   return (
-    <section id="experience" aria-labelledby="experience-heading">
-      <div className="flex flex-wrap justify-start gap-4">
-        {selectedExperience && (
-          <div className="selected-job-container">
-            <ExperienceListItem
-              id={selectedExperience.id}
-              key={selectedExperience.id}
-              logoSrc={selectedExperience.logoSrc}
-              altText={selectedExperience.title}
-              institutionName={selectedExperience.institutionName}
-              duration={selectedExperience.duration}
-              title={selectedExperience.title}
-              location={selectedExperience.location}
-              description={selectedExperience.description}
-              onClick={() => handleExperienceSelect(selectedExperience)}
-              selected={true}
-            />
-          </div>
-        )}
+    <section
+      aria-labelledby="experience-heading"
+      id="experience"
+      role="contentinfo"
+      className="experiemce-section flex flex-col justify-center h-auto md:h-screen gap-4"
+    >
+      <div className="flex flex-wrap justify-center gap-4">
+        <Tab.Group>
+          <Tab.List className="tabs mb-6">
+            {professionalData.map((experience) => (
+              <Tab
+                key={experience.id}
+                className={`tab ${experience.id === experience.id ? "tab-active focus-visible:outline-none outline-none" : ""}`}
+              >
+                <Image
+                  src={experience.logoSrc}
+                  alt={experience.title}
+                  width={40}
+                  height={40}
+                  className="object-contain rounded-full"
+                />
+              </Tab>
+            ))}
+          </Tab.List>
+          <Tab.Panels className="mt-4">
+            {professionalData.map((experience) => (
+              <Tab.Panel key={experience.id}>
+                <div className="selected-job-container">
+                  <ExperienceListItem
+                    id={experience.id}
+                    logoSrc={experience.logoSrc}
+                    altText={experience.title}
+                    institutionName={experience.institutionName}
+                    duration={experience.duration}
+                    title={experience.title}
+                    location={experience.location}
+                    description={experience.description}
+                  />
+                </div>
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
+        </Tab.Group>
       </div>
-      <ExperienceDrawer 
-        experiences={experiences} 
-        onExperienceSelect={handleExperienceSelect} 
-      />
     </section>
   );
 };

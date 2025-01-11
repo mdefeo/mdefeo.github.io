@@ -1,5 +1,4 @@
 "use client";
-
 import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,22 +11,21 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
 
   return (
     <div className="flex flex-col items-start md:flex-row md:items-start gap-8 mb-8">
-      <div className="w-full md:w-1/3">
+      <div className="w-full md:w-1/3 mx-auto">
         <Link href={url} target="_blank" rel="noopener noreferrer">
           <Image
             src={`/images/studies/${image || 'default.jpg'}`}
             alt={name}
             width={500}
             height={300}
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover rounded-lg shadow-lg mx-auto"
           />
         </Link>
-        <h3 className="text-xl text-gray-700 mt-4 py-0">{title}</h3>
+        <h3 className="text-xl text-gray-700 mt-6 py-0">{title}</h3>
         <p className="text-gray-500 mb-4 italic">{description}</p>
         <div className="flex flex-wrap mt-6">
           {skills.length > 0 ? (
             skills.map((skill, index) => {
-              // Check if the icon exists in the local icons object
               const isLocalIcon = skill.icon in icons;
               return (
                 <SkillIcon
@@ -36,7 +34,7 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
                   alt={skill.alt}
                   size={18}
                   className="inline-flex text-lg mr-4 mb-4"
-                  isFontAwesome={!isLocalIcon} // Set isFontAwesome based on the check
+                  isFontAwesome={!isLocalIcon}
                 />
               );
             })
@@ -71,7 +69,7 @@ const CaseStudy: FC<CaseStudyProps> = ({ caseStudy }) => {
           </>
         )}
       </div>
-      <div className="w-full md:block hidden md:w-1/6 self-start text-sm text-gray-700">
+      <div className="w-full lg:block hidden md:w-1/6 self-start text-sm text-gray-700">
         <div className="mb-4">
           <Image
             src={`/images/businesses/${clientLogo || 'default-logo.jpg'}`}

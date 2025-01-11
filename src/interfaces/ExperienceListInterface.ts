@@ -6,12 +6,6 @@ export interface Technology {
 export interface ExperienceListProps {
   experiences: ExperienceListItemProps[];
   selectedExperience: ExperienceListItemProps;
-  onExperienceSelect: (experience: ExperienceListItemProps) => void;
-}
-
-export interface ExperiencesDrawerProps {
-  experiences: ExperienceListItemProps[];
-  onExperienceSelect: (experience: ExperienceListItemProps) => void;
 }
 
 export interface ExperienceListItemProps {
@@ -26,7 +20,6 @@ export interface ExperienceListItemProps {
   technologies?: Technology[]; 
   institutionNameShortName?: string; 
   titleShortName?: string; 
-  onClick?: () => void; 
   selected?: boolean;
 }
 

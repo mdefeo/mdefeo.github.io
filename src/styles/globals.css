@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply min-h-screen bg-primary text-neutral scroll-smooth leading-5;
+  @apply min-h-screen bg-primary text-neutral scroll-smooth leading-5 m-0 p-0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
@@ -25,12 +25,12 @@ a {
 
 /* Layout Styles */
 main {
-  @apply w-screen h-auto md:h-screen grid grid-cols-1 bg-primary align-middle py-10 gap-4 md:gap-8 md:fixed md:overflow-x-hidden z-10 mx-auto;
+  @apply w-screen h-auto md:h-screen grid grid-cols-1 bg-primary align-middle p-0 m-0 gap-4 md:gap-8 md:fixed md:overflow-x-hidden z-10 mx-auto;
 }
 
 /* Section Layout */
 section {
-  @apply w-full h-auto md:min-h-screen grid place-items-center py-1 px-10 md:p-20 lg:p-6 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary max-h-none;
+  @apply w-full h-auto md:min-h-screen grid place-items-center py-1 px-10 md:p-0  md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-primary max-h-none;
 }
 
 /* Image Hover Effects */
