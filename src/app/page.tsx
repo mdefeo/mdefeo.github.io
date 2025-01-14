@@ -1,6 +1,7 @@
 "use client";
+
 import React from "react";
-import { Summary, Chat, Education, Skills } from "./about/sections";
+import { Summary, Education, Skills } from "./about/sections";
 
 export default function AboutPage() {
   return (
@@ -8,7 +9,6 @@ export default function AboutPage() {
       <Summary />
       <Education />
       <Skills />
-      <Chat />
     </>
   );
 }

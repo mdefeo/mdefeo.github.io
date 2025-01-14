@@ -6,7 +6,13 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { SkillIconProps } from "@/types/SkillIconProps";
 import icons from "@/config/icons";
 
-const SkillIcon: FC<SkillIconProps> = ({ name, alt, size = 28, className = "inline-flex text-2xl mr-4 mb-4", isFontAwesome = false }) => {
+const SkillIcon: FC<SkillIconProps> = ({
+  name,
+  alt,
+  size = 28,
+  className = "inline-flex text-2xl mr-4 mb-4",
+  isFontAwesome = false,
+}) => {
   return (
     <div className="tooltip tooltip-top" data-tip={alt}>
       {isFontAwesome ? (

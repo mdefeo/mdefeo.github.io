@@ -39,7 +39,6 @@ export default function Summary() {
           <p className="italic text-secondary-content text-base md:text-sm font-light"> Want to learn more? 
             &nbsp;<Link href="#chat" onClick={handleScroll}>Let's chat!</Link></p>
         </div>
-
         <div className="sm:order-2 order-1 flex justify-center sm:justify-end items-center h-full sm:h-auto">
           <div className="relative mx-auto md:w-80 md:h-80 sm:h-auto">
             <Link
@@ -58,6 +57,17 @@ export default function Summary() {
               />
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="relative ml-3 h-[1em] w-36 overflow-hidden">
+        <div className="pull-quote-slide absolute h-full w-full -translate-y-full leading-none">
+          Quote One
+        </div>
+        <div className="pull-quote-slide absolute h-full w-full -translate-y-full leading-none [animation-delay:0.83s]">
+          Quote Two
+        </div>
+        <div className="pull-quote-slide absolute h-full w-full -translate-y-full leading-none [animation-delay:1.83s]">
+          Quote Three
         </div>
       </div>
     </section>

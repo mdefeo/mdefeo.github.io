@@ -7,7 +7,11 @@ import { Tab } from "@headlessui/react";
 
 export default function CaseStudies() {
   const [caseStudies] = useState<CaseStudiesInterface[]>(caseStudiesData);
-  const [selectedCaseStudy] = useState<CaseStudiesInterface>(caseStudies[0]);
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState<CaseStudiesInterface>(caseStudies[0]);
+
+  const handleTabSelect = (study: CaseStudiesInterface) => {
+    setSelectedCaseStudy(study); // Dynamically update selected case study
+  };
 
   return (
     <section
@@ -16,12 +20,12 @@ export default function CaseStudies() {
       role="contentinfo"
       className="case-studies-section flex flex-col items-center justify-center h-auto md:h-screen gap-4"
     >
-      <Tab.Group>
+      <Tab.Group onChange={(index) => handleTabSelect(caseStudies[index])}>
         <Tab.List className="tabs tabs-bordered mb-6">
           {caseStudies.map((study) => (
             <Tab
               key={study.name}
-              className={`tab ${selectedCaseStudy.name === study.name ? "tab-active focus-visible:outline-none   text-gray-700 font-semibold" : ""}`}
+              className={`tab ${selectedCaseStudy.name === study.name ? "tab-active focus-visible:outline-none text-gray-700 font-semibold" : ""}`}
             >
               {study.name}
             </Tab>

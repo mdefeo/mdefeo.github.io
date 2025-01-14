@@ -11,6 +11,8 @@ import MainNavigationItem from "./MainNavigationItem";
 import { NavigationItem } from "@/interfaces/MainNavigationInterface";
 import SocialMediaNavigation from "./SocialMediaNavigation";
 import Signature from "@/components/ui/Signature";
+import { usePathname } from "next/navigation"; // Import usePathname from next/navigation
+import { observeImages } from "@/animations/elementObserver"; // Import observeImages function
 
 export default function MainNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +20,14 @@ export default function MainNavigation() {
   const [imageLoaded, setImageLoaded] = useState(false);
   const overFlowClass = "overflow-hidden";
 
+  // Get the current pathname from the router
+  const pathname = usePathname();
+
   useEffect(() => {
+    // Trigger image observation whenever the route changes
+    observeImages();
+
+    // Handle opening and closing the navigation
     if (isOpen) {
       document.body.classList.add(overFlowClass);
       setHoveredItem(null);
@@ -29,7 +38,7 @@ export default function MainNavigation() {
     return () => {
       document.body.classList.remove(overFlowClass);
     };
-  }, [isOpen]);
+  }, [pathname, isOpen]); // Re-run on pathname change (route change)
 
   const handleImageLoad = () => {
     setImageLoaded(true);

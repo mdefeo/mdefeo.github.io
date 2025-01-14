@@ -10,8 +10,7 @@
       { "name": "Education", "href": "/#education" },
       { "name": "Skills", "href": "/#skills" },
       { "name": "Music", "href": "/#music" },
-      { "name": "Food", "href": "/#food" },
-      { "name": "Chat", "href": "/#chat" }
+      { "name": "Food", "href": "/#food" }
     ]
   },
   {
